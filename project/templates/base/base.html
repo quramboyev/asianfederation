@@ -1,7 +1,8 @@
 {% load static %}
 {% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="{{ CURRENT_LANGUAGE }}" style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -64,7 +65,7 @@
             <div>
                 <img src="{% static 'base/images/globe-icon.png' %}" alt="Language">
                 <select name="language" id="languageSelect">
-                    {% get_current_language as CURRENT_LANGUAGE %}
+
                     {% get_available_languages as AVAILABLE_LANGUAGES %}
                     {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
                     {% for language in languages %}
