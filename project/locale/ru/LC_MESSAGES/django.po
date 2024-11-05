@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-13 21:50+0500\n"
+"PO-Revision-Date: 2024-08-13 22:42+0500\n"
+"Last-Translator:   <jim@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: apps/home/models.py:8 apps/home/models.py:41 apps/home/models.py:85
+msgid "Title"
+msgstr "Заголовок"
+
+#: apps/home/models.py:9 apps/home/models.py:86 apps/product/models.py:23
+msgid "Description"
+msgstr "Описание"
+
+#: apps/home/models.py:11 apps/home/models.py:28
+msgid "Is Active?"
+msgstr "Активен?"
+
+#: apps/home/models.py:14 apps/home/models.py:15
+msgid "About Us"
+msgstr "О нас"
+
+#: apps/home/models.py:24
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: apps/home/models.py:25
+msgid "Email Address"
+msgstr "Адрес электронной почты"
+
+#: apps/home/models.py:26
+msgid "Address"
+msgstr "Адрес"
+
+#: apps/home/models.py:27
+msgid "Location"
+msgstr "Расположение"
+
+#: apps/home/models.py:31 apps/home/models.py:32 templates/index.html:111
+msgid "Contact Us"
+msgstr "Связаться с нами"
+
+#: apps/home/models.py:43
+msgid "Icon"
+msgstr "Иконка"
+
+#: apps/home/models.py:44
+msgid "Link"
+msgstr "Ссылка"
+
+#: apps/home/models.py:47 apps/home/models.py:48
+msgid "Social Media"
+msgstr "Социальные сети"
+
+#: apps/home/models.py:57 apps/home/models.py:70 apps/home/models.py:88
+#: apps/product/models.py:26
+msgid "Image"
+msgstr "Изображение"
+
+#: apps/home/models.py:60
+msgid "Photo"
+msgstr "Фото"
+
+#: apps/home/models.py:61 templates/base/base.html:93
+msgid "Gallery"
+msgstr "Галерея"
+
+#: apps/home/models.py:71
+msgid "File"
+msgstr "Файл"
+
+#: apps/home/models.py:72
+msgid "Type"
+msgstr "Тип"
+
+#: apps/home/models.py:75
+msgid "Document"
+msgstr "Документ"
+
+#: apps/home/models.py:76 templates/base/base.html:94
+msgid "Documents"
+msgstr "Документы"
+
+#: apps/home/models.py:92 apps/home/models.py:93 templates/base/base.html:95
+msgid "News"
+msgstr "Новости"
+
+#: apps/product/models.py:8 apps/product/models.py:22
+msgid "title"
+msgstr "заголовок"
+
+#: apps/product/models.py:12 apps/product/models.py:27
+msgid "Category"
+msgstr "Категория"
+
+#: apps/product/models.py:13
+msgid "Categories"
+msgstr "Категории"
+
+#: apps/product/models.py:24 templates/detail.html:24
+msgid "Color"
+msgstr "Цвет"
+
+#: apps/product/models.py:24
+msgid "black"
+msgstr "чёрный"
+
+#: apps/product/models.py:28 templates/base/base.html:43
+#: templates/base/base.html:72 templates/index.html:35
+msgid "products"
+msgstr "Продукты"
+
+#: apps/product/models.py:29
+msgid "Price"
+msgstr "Цена"
+
+#: apps/product/models.py:30 templates/detail.html:23
+msgid "Size"
+msgstr "Размер"
+
+#: apps/product/models.py:31 templates/detail.html:25
+msgid "View"
+msgstr "Вид"
+
+#: apps/product/models.py:34
+msgid "Product"
+msgstr "Продукт"
+
+#: apps/product/models.py:35 templates/base/base.html:92
+msgid "Products"
+msgstr "Продукты"
+
+#: config/settings.py:121
+msgid "English"
+msgstr "Английский"
+
+#: config/settings.py:122
+msgid "Russian"
+msgstr "Русский"
+
+#: config/settings.py:123
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: templates/base/base.html:31
+msgid "Hayat Cable"
+msgstr "Hayat Cable"
+
+#: templates/base/base.html:41 templates/base/base.html:70
+msgid "home"
+msgstr "Дом"
+
+#: templates/base/base.html:42 templates/base/base.html:71
+#: templates/index.html:21
+#| msgid "About Us"
+msgid "about us"
+msgstr "О нас"
+
+#: templates/base/base.html:44 templates/base/base.html:73
+msgid "catalog"
+msgstr "Каталог"
+
+#: templates/base/base.html:45 templates/base/base.html:74
+#: templates/index.html:60
+#| msgid "Gallery"
+msgid "gallery"
+msgstr "Галерея"
+
+#: templates/base/base.html:46 templates/base/base.html:75
+#: templates/index.html:70
+#| msgid "Documents"
+msgid "documents"
+msgstr "Документы"
+
+#: templates/base/base.html:47 templates/base/base.html:76
+#: templates/index.html:86
+msgid "news"
+msgstr "Новости"
+
+#: templates/base/base.html:48 templates/base/base.html:77
+#| msgid "Contact Us"
+msgid "contacts"
+msgstr "Связаться с нами"
+
+#: templates/base/base.html:90
+msgid "Home"
+msgstr "Дом"
+
+#: templates/base/base.html:91
+#| msgid "About Us"
+msgid "About us"
+msgstr "О нас"
+
+#: templates/base/base.html:96
+#| msgid "Contact Us"
+msgid "Contacts"
+msgstr "Связаться с нами"
+
+#: templates/catalogs.html:12
+#| msgid "products"
+msgid "Catalog products"
+msgstr "Продукты"
+
+#: templates/catalogs.html:15
+msgid "Download catalog"
+msgstr "Загрузить каталог"
+
+#: templates/detail.html:11
+msgid "Home page"
+msgstr "Домашняя страница"
+
+#: templates/detail.html:12
+#| msgid "Products"
+msgid "Products catalog"
+msgstr "Продукты"
+
+#: templates/detail.html:13
+#| msgid "Products"
+msgid "Products info"
+msgstr "Продукты"
+
+#: templates/index.html:11
+msgid "The cable, You can trust!"
+msgstr "Кабель которому, Вы можете доверять!"
+
+#: templates/index.html:12
+msgid ""
+"The high quality of used materials ensure the reliability of our products"
+msgstr ""
+"Высокое качество используемых материалов обеспечивает надежность нашей "
+"продукции."
+
+#: templates/index.html:15
+#| msgid "Contact Us"
+msgid "contact us"
+msgstr "Связаться с нами"
+
+#: templates/index.html:48
+msgid "view more"
+msgstr "посмотреть больше"
+
+#: templates/index.html:77
+msgid "Download"
+msgstr "Скачать"
+
+#: templates/index.html:99
+msgid "2 mins read"
+msgstr "2 минуты чтения"
+
+#: templates/index.html:119
+msgid "Contact information is not available at the moment."
+msgstr "Контент на данный момент недоступен."

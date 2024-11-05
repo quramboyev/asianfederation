@@ -1,0 +1,120 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+          integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="{% static 'base/images/logo.svg' %}">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'base/styles/main.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script type="text/javascript" src="{% static 'base/scripts/main.js' %}" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const languageSelect = document.getElementById('languageSelect');
+
+            languageSelect.addEventListener('change', function () {
+                const selectedValue = this.value;
+                if (selectedValue) {
+                    // Assuming you have set up language switching URLs like /en/, /ru/, etc.
+                    let list = window.location.pathname.split('/')
+
+                    window.location.pathname = `/${selectedValue}/${list.slice(2).join('/')}`
+                }
+            });
+        });
+    </script>
+    <style>
+        select option {
+            background-color: #000000 !important;
+            margin: 12px !important;
+            padding: 12px !important;
+            color: white;
+        }
+    </style>
+    {% block head %}
+
+    {% endblock %}
+    <title>{% trans "Hayat Cable" %}</title>
+</head>
+<body>
+<button id="scrollUpBtn" title="Go to top">↑</button>
+<nav>
+    <div class="content-nav">
+        <div class="logo">
+            <img src="{% static 'base/images/logo.png' %}" alt="Logo">
+        </div>
+        <div class="items">
+        </div>
+        <div class="lang-search">
+            <img src="{% static 'base/images/search-icon.png' %}" alt="Search">
+            <div>
+                <img src="{% static 'base/images/globe-icon.png' %}" alt="Language">
+                <select name="language" id="languageSelect">
+                    {% get_current_language as CURRENT_LANGUAGE %}
+                    {% get_available_languages as AVAILABLE_LANGUAGES %}
+                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option {% if language.code == CURRENT_LANGUAGE %} selected {% endif %}
+                                                                           style="background-color: transparent"
+                                                                           value="{{ language.code }}">{{ language.code }}</option>
+                    {% endfor %}
+                </select>
+
+            </div>
+        </div>
+        <!-- Mobile toggle button -->
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- Mobile navigation menu -->
+    <div class="nav-mobile">
+        <a href="{% url 'home' %}">{% trans "home" %}</a>
+        <a href="{% url 'home' %}#about-us">{% trans "about us" %}</a>
+        <a href="{% url 'home' %}#products">{% trans "products" %}</a>
+{#        <a href="{% url 'category' %}">{% trans "catalog" %}</a>#}
+        <a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a>
+        <a href="{% url 'home' %}#documents">{% trans "documents" %}</a>
+        <a href="{% url 'home' %}#news">{% trans "news" %}</a>
+        <a href="{% url 'home' %}#contacts">{% trans "contacts" %}</a>
+    </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="{% static 'base/images/logo.png' %}" alt="HayatKabel Logo">
+        </div>
+        <div class="footer-items">
+            <ul class="footer-nav">
+                <li><a href="#">{% trans "Home" %}</a></li>
+                <li><a href="#">{% trans "About us" %}</a></li>
+                <li><a href="#">{% trans "Products" %}</a></li>
+                <li><a href="#">{% trans "Gallery" %}</a></li>
+                <li><a href="#">{% trans "Documents" %}</a></li>
+                <li><a href="#">{% trans "News" %}</a></li>
+                <li><a href="#">{% trans "Contacts" %}</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

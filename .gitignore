@@ -1,0 +1,10 @@
+.idea/
+.idea/*
+__*__/
+*.pyc
+api/static
+api/media
+*/migrations/*
+!migrations/__init__.py
+*.whl
+poetry.lock
