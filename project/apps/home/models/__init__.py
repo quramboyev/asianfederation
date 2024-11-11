@@ -1,1 +1,2 @@
-from .models import DocumentModel
+from .models import *
+from .images import *
