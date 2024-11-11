@@ -499,3 +499,49 @@ strong, .internationla-documents-title{
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+/* history page */
+.section-title, .section-text, .goal-item {
+    color: var(--dark-green);
+}
+
+.content {
+    padding: 10px 15px;
+    border: 1px solid rgba(241, 234, 234, .3);
+    box-shadow: -2px 5px 10px rgb(241, 234, 234);
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.goals-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.goal-item {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.goal-item:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: var(--dark-green);
+    border-radius: 50%;
+}

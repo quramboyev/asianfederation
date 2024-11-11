@@ -19,3 +19,6 @@ def antidoping(request):
 
 def command(request):
     return render(request, 'command.html')
+
+def history(request):
+    return render(request, 'history.html')
