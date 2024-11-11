@@ -1,7 +1,126 @@
 {% extends "base/base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'home/styles/main.css' %}">
+{% endblock %}
 
 {% block content %}
-    <div class="container" style="height: 100vh">
-        <h1 class="size-40" style="color: white">Hello world</h1>
+<div class="container">
+  <section class="gallery-section">
+    <h1 class="view-box-title">Галлерия кубока мира по рукопашному бою</h1>
+    <div class="gallery-sec general-style">
+      <div class="view-box">
+        <div class="big-photo">
+          <img id="banner" src="{% static 'home/images/gallery1.jpg' %}" alt="" class="big-img">
+        </div>
+        <div class="gallery-content">
+          <h2 class="gallery-content-title">Итоги "Кубока мира по рукопашному бою 2021</h2>
+          <p class="gallery-content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque
+            excepturi vitae provident
+            exercitationem, qui nostrum ea placeat officia itaque officiis autem veniam neque architecto quidem libero
+            nulla soluta quas cumque recusandae fuga enim rerum. Dolorem, veniam non nam quo corporis ea adipisci
+            voluptatem
+            culpa eaque molestias beatae. Itaque ut magni neque velit nostrum suscipit quos, vel, consequatur dicta
+            nihil
+            nam
+            ab ducimus aspernatur quod possimus, fugiat sit autem aliquam nobis. Ipsa, a est mollitia eveniet
+            accusantium
+            itaque
+            amet voluptate porro incidunt dignissimos corrupti quam unde quibusdam ut enim vel magni rem? Modi alias
+            iste
+            accusamus
+            sunt sequi voluptas perspiciatis ....</p>
+          <button class="more-btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <ul class="gallery-list" id="galleryl">
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery6.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery11.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery2.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery3.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery10.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery8.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery6.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery10.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery11.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery4.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery10.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery5.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery7.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery8.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery6.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+          <li class="gallery-item">
+            <img src="{% static 'home/images/gallery10.jpg' %}" alt="photo gallery" class="gallery-img">
+          </li>
+        </ul>
+      </div>
     </div>
+  </section>
+  <section class="news-section">
+    <div class="main-title-wrapper">
+      <a href="#" class="news-title">Главные новости</a>
+    </div>
+    <div class="news-wrapper">
+      <div class="news-item general-style">
+        <div class="news-img-wrapper">
+          <img src="{% static 'home/images/student-cuboc.jpg' %}" alt="asian final" class="news-img">
+        </div>
+        <div class="news-info-wrapper">
+          <h2 class="news-info-title">Студенческий кубок по рукопашному бою</h2>
+          <time class="news-date" datetime="2024-11-04">02.11.2024</time>
+        </div>
+      </div>
+      <div class="news-item general-style">
+        <div class="news-img-wrapper">
+          <img src="{% static 'home/images/student-cuboc.jpg' %}" alt="asian final" class="news-img">
+        </div>
+        <div class="news-info-wrapper">
+          <h2 class="news-info-title">Студентческий кубок по рукопашному бою</h2>
+          <time class="news-date" datetime="2024-11-04">02.11.2024</time>
+        </div>
+      </div>
+      <a href="{% url 'antidoping' %}" class="antidoping general-style" id="clickableDoping">
+        <span class="antidoping-title-m">Антидопинг</span>
+      </a>
+      <div class="hsif-tv general-style" id="clickableVid"></div>
+      <div class="antidoping history general-style">
+        <span class="history-title">История</span>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 {% endblock %}

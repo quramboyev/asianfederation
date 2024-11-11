@@ -17,12 +17,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <script type="text/javascript" src="{% static 'base/scripts/main.js' %}" defer></script>
+    <script type="text/javascript" src="{% static 'base/scripts/base.js' %}" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const languageSelect = document.getElementById('languageSelect');
@@ -52,13 +56,23 @@
     <title>{% trans "Hayat Cable" %}</title>
 </head>
 <body>
-<button id="scrollUpBtn" title="Go to top">↑</button>
+<button id="scrollUpBtn" title="Go to top">&#8963;</button>
 <nav>
     <div class="content-nav">
-        <div class="logo">
-            <img src="{% static 'base/images/logo.png' %}" alt="Logo">
-        </div>
-        <div class="items">
+        <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo">
+                <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
+                <span class="site-name">Азиатская Федерация <br> Рокопашного боя</span>
+            </div>
+            <div class="items">
+                <a href="{% url 'home' %}">{% trans "home" %}</a>
+                <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
+                <a href="{% url 'home' %}#products">{% trans "results" %}</a>
+                {# <a href="{% url 'category' %}">{% trans "calendar" %}</a> #}
+                <a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a>
+                <a href="{% url 'home' %}#news">{% trans "news" %}</a>
+                <a href="{% url 'events_calendar' %}">{% trans "calendar of events" %}</a>
+            </div>
         </div>
         <div class="lang-search">
             <img src="{% static 'base/images/search-icon.png' %}" alt="Search">
@@ -88,10 +102,9 @@
     <div class="nav-mobile">
         <a href="{% url 'home' %}">{% trans "home" %}</a>
         <a href="{% url 'home' %}#about-us">{% trans "about us" %}</a>
-        <a href="{% url 'home' %}#products">{% trans "products" %}</a>
-{#        <a href="{% url 'category' %}">{% trans "catalog" %}</a>#}
+        <a href="{% url 'home' %}#products">{% trans "results" %}</a>
+        {# <a href="{% url 'category' %}">{% trans "calendar" %}</a> #}
         <a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a>
-        <a href="{% url 'home' %}#documents">{% trans "documents" %}</a>
         <a href="{% url 'home' %}#news">{% trans "news" %}</a>
         <a href="{% url 'home' %}#contacts">{% trans "contacts" %}</a>
     </div>
@@ -102,17 +115,18 @@
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="{% static 'base/images/logo.png' %}" alt="HayatKabel Logo">
+            <img src="{% static 'home/images/logo.svg' %}" alt="Азиатская Федерация Рокопашного боя">
+            <span class="site-name">Азиатская Федерация Рокопашного боя</span>
         </div>
         <div class="footer-items">
             <ul class="footer-nav">
-                <li><a href="#">{% trans "Home" %}</a></li>
-                <li><a href="#">{% trans "About us" %}</a></li>
-                <li><a href="#">{% trans "Products" %}</a></li>
-                <li><a href="#">{% trans "Gallery" %}</a></li>
-                <li><a href="#">{% trans "Documents" %}</a></li>
-                <li><a href="#">{% trans "News" %}</a></li>
-                <li><a href="#">{% trans "Contacts" %}</a></li>
+                <li><a href="{% url 'home' %}">{% trans "home" %}</a></li>
+                <li><a href="{% url 'home' %}#about-us">{% trans "about us" %}</a></li>
+                <li><a href="{% url 'home' %}#products">{% trans "results" %}</a></li>
+                {# <li><a href="{% url 'category' %}">{% trans "calendar" %}</a></li> #}
+                <li><a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a></li>
+                <li><a href="{% url 'home' %}#news">{% trans "news" %}</a></li>
+                <li><a href="{% url 'home' %}#contacts">{% trans "contacts" %}</a></li>
             </ul>
         </div>
     </div>

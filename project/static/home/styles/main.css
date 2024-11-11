@@ -1,0 +1,315 @@
+:root {
+    --header-light: #94a68e;
+    --white: #fff;
+    --main-back: #d5ddcb;
+    --item-back: #869765;
+    --header-dark: #131a12;
+    --font-white: #f8f8f1c9;
+    --dark-green: #030300;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;   
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+    cursor: pointer;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+/* gallery sec */
+.view-box-title {
+    color: var(--main-back);
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.gallery-sec {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--item-back);  
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.view-box {
+    width: 48%;
+}
+
+.big-img {
+    width: 100%;
+    border-radius: 5px 5px 0  0;
+}
+
+.gallery-content {
+    width: 100%;
+    display: grid;
+    gap: 10px;  
+    padding-top: 10px;
+    margin: 0;
+}
+
+.gallery-content-title {
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+.more-btn {
+    background-color: var(--color-body);
+    padding: 7px;   
+    color: var(--white); 
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    color: #868639c9;
+    background-color: #90af8ac9;
+    transition: 0.7s;
+}
+
+.more-btn:active {
+    color: #868639c9;
+    background-color: #90af8ac9;
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.gallery {
+    width: 50%;
+    padding:  0 10px 10px;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    height: 7vw;
+}
+.gallery-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+/* news section */
+.news-title {
+    color: var(--font-white);
+    font-size: 28px;
+    font-weight:600;
+    line-height: 34px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.news-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-item {
+    width: 49%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--item-back);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.news-item:hover {
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.news-img-wrapper {
+    width: 230px;
+    height: 95px;
+}
+
+.news-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.news-info-wrapper {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+}
+.news-info-title {
+    color: var(--white);
+    font-size: 23px;
+    font-weight: 600;
+}
+.news-date {
+    font-size: 14px;
+    color: rgb(209, 203, 203);
+    align-self: start; 
+    justify-self: start; 
+}
+
+
+
+
+.antidoping{
+    width: 30%;
+    height: 23vh;
+    width: 30%;
+    cursor: pointer; 
+    background-image: url(../images/antidoping.jpg);  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.antidoping:hover {
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.antidoping-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--font-white);
+}
+
+.hsif-tv {
+    width: 30%;
+    height: 23vh;
+    width: 30%;
+    cursor: pointer; 
+    background-image: url(../images/hsif.png);  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e6e3e7;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hsif-tv:hover {
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.history {
+    background-image: url(../images/history-b.png);
+    position: relative;
+}
+.history-title {
+    color: #030300;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+/* events calendar */
+table {
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #7D7D7D;
+    width: 70%;
+}
+.th {
+    color: blue;
+    padding: 10px 20px;
+    border: solid #7D7D7D;
+    border-width: 0 1px 1px 0;
+}
+
+.td {
+    padding: 10px 20px;
+    border: solid #7D7D7D;
+    border-width: 0 1px 1px 0;
+}
+
+.file-download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-btn {
+    display: inline-block;
+    align-content: center;
+    padding: 10px 20px;
+    background-color: #023222;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; 
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--dark-green );
+}
