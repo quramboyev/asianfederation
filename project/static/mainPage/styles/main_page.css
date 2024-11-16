@@ -1,0 +1,78 @@
+/* Общий стиль для мобильных устройств */
+@media (min-width: 300px) and (max-width: 870px)  {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .view-box-title {
+    font-size: 20px;
+  }
+  
+  .view-box {
+    width: 45%;
+  }
+  
+  .gallery-list {
+    width: 54%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .gallery-item {
+    width: 40px;
+    height: 30px;
+  }
+  .gallery-content {
+    width: 100%;
+  }
+
+  .gallery-content-title {
+    font-size: 17px;
+  }
+
+  .gallery-content-info {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .news-wrapper {
+    display: flex;;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .antidoping, .hsif-tv, .history {
+    width: 35%;
+    height: 15vh;
+    margin-bottom: 10px;
+  }
+
+  .antidoping-title-m {
+    display: none;
+  }
+
+  .antidoping-title-m, .history-title {
+    font-size: 12px;
+  }
+
+  .contest-header {
+    font-size: 22px;
+  }
+
+  .section-sc {
+    width: 100%;
+  }
+
+  .scroll-wrapper {
+    width: 100%;
+  }
+
+  .contest-info-wrapper {
+    display: none;
+  }
+
+}
+

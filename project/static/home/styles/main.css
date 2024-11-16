@@ -79,13 +79,16 @@ table {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 .view-box {
-    width: 48%;
+    width: 42%;
+    display: flex;
+    align-items: center;
 }
 
 .big-img {
@@ -94,11 +97,15 @@ table {
 }
 
 .gallery-content {
-    width: 100%;
+    width: 60%;
     display: grid;
     gap: 10px;  
     padding-top: 10px;
     margin: 0;
+}
+
+.gallery-content-info{
+    text-align: justify;
 }
 
 .gallery-content-title {
@@ -140,7 +147,7 @@ table {
 }
 
 .gallery-item {
-    height: 7vw;
+    height: 6.5vw;
 }
 .gallery-img {
     height: 100%;
@@ -148,72 +155,11 @@ table {
     border-radius: 5px;
 }
 
-
-
-/* news section */
-.news-title {
-    font-size: 28px;
-    font-weight:600;
-    line-height: 34px;
-    padding: 5px 15px;
-    cursor: pointer;
-}
-
 .news-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
 }
-
-.news-item {
-    width: 49%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.news-item:hover {
-    transition: 0.7s;
-    transform: scale(1.02);
-}
-
-.news-img-wrapper {
-    width: 230px;
-    height: 95px;
-}
-
-.news-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-
-.news-info-wrapper {
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 8px;
-}
-.news-info-title {
-    font-size: 23px;
-    font-weight: 600;
-}
-.news-date {
-    font-size: 14px;
-    color: rgb(209, 203, 203);
-    align-self: start; 
-    justify-self: start; 
-}
-
-
-
 
 .antidoping{
     width: 30%;
@@ -322,7 +268,36 @@ table {
 }
 
 
-/* about us */
+/* about us  commmand page  */
+.hidden-box {
+    padding: 10px;
+    row-gap: 20px;
+    
+}
+
+.hidden-box .arrow {
+    text-align: center;
+    width: 100%;
+    height: 10px;
+    transform: rotateZ(180deg);
+}
+
+.hidden-box.closed {
+    height: 0;
+    visibility: hidden;
+}
+
+.hidden-box.closed * {
+    height: 0;
+    visibility: hidden;
+}
+
+.hidden-box.closed .arrow {
+    height: 20px;
+    transform: rotateZ(0deg);
+    visibility: visible;
+}
+
 .about-us-wrapper {
     display: grid;
     row-gap: 30px;
@@ -337,20 +312,25 @@ table {
     line-height: 115%;
 }
 
-.management-wrapper {
-    padding: 0px 40px;
+.hidden-part-wrapper {
     display: grid;
-    row-gap: 20px;
+    row-gap: 7px;
+}
+
+.management-wrapper {
+    display: grid;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
-    padding: 30px;
+    padding: 10px;
 }
+
 
 .management-title {
     font-size: 20px;
     border-bottom: 1px solid rgb(220, 217, 217);
     box-shadow: 0 3px 3px rgb(226, 226, 226);
     padding: 10px;
+    color: var(--dark-green);
 }
 
 .management-description{
@@ -433,13 +413,13 @@ strong, .internationla-documents-title{
 }
 
 .doping-info, .international-standart{
-    line-height: 20px;
+    line-height: 15px;
     letter-spacing: 0.5px;
 }
 
 
 .link-button {
-    width: 430px;
+    width: 30%;
     background-color: var(--green);
     color: #ffffff; 
     padding: 10px 20px; 
@@ -498,4 +478,189 @@ strong, .internationla-documents-title{
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+/* history page */
+.section-title, .section-text, .goal-item {
+    color: var(--dark-green);
+}
+
+.content {
+    padding: 10px 15px;
+    border: 1px solid rgba(241, 234, 234, .3);
+    box-shadow: -2px 5px 10px rgb(241, 234, 234);
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.goals-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.goal-item {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.goal-item:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: var(--dark-green);
+    border-radius: 50%;
+}
+
+
+/* scroll bar */
+.section-sc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contest-header {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.scroll-wrapper {
+    width: 45%;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid;
+    row-gap: 20px;
+}
+
+
+.contest-buttons-list    {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contest-button-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(2, 50, 34);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contest-button-item.active {
+    color: var(--dark-green);
+    background-color: var(--font-white);
+    box-shadow: 1px 3px 5px var(--dark-green);
+    font-weight: bold;  
+}
+
+.events {
+    width: 98%;
+    height: 370px;
+    margin: 0 auto;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flag {
+    width: 20px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.events-info {
+    flex-grow: 1;
+    padding-right: 5px;
+}
+
+.events-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.events-date {
+    color: #666;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.details-button {
+    background-color: rgb(2, 50, 34);
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* contest info right scroll bar */
+.contest-info-wrapper {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;        
+}
+
+.contest-img-wrapper {
+    width: 45%;
+    height: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cotest-about {
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    row-gap: 5px;
+}
+
+.contest-data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
 }
