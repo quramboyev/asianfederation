@@ -5,7 +5,7 @@
 }
 
 /* Общий стиль для мобильных устройств */
-@media (min-width: 300px) and (max-width: 870px)  {
+@media (max-width: 870px)  {
   .container {
     width: 100%;
   }
@@ -84,5 +84,6 @@
 
 }
 
-
-
+@media (max-width: 300px) {
+    
+}
