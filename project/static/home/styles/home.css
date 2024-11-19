@@ -1,0 +1,598 @@
+:root {
+    --header-light: #94a68e;
+    --white: #fff;
+    --main-back: #d5ddcb;
+    --item-back: #F0EEE9;
+    --header-dark: #131a12;
+    --font-white: #f8f8f1c9;
+    --dark-green: rgb(2, 50, 34);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;   
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+    cursor: pointer;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* general style */
+.general-style {
+    border: 1px solid rgba(241, 234, 234, .3);
+    box-shadow: -2px 5px 10px rgb(241, 234, 234);
+}
+
+.general-text, .view-box-title, .gallery-content-title, .gallery-content-info, .news-title, .news-info-title, .antidoping-title-m, .history-title {
+    color: var(--dark-green);
+}
+
+
+/* gallery sec */
+.view-box-title {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.gallery-sec {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.view-box {
+    width: 48%;
+}
+
+.big-img {
+    width: 100%;
+    border-radius: 5px 5px 0  0;
+}
+
+.gallery-content {
+    width: 100%;
+    display: grid;
+    gap: 10px;  
+    padding-top: 10px;
+    margin: 0;
+}
+
+.gallery-content-title {
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+.more-btn {
+    background-color: var(--dark-green);
+    padding: 7px;   
+    color: var(--white); 
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: #162714c9;
+    transition: 0.7s;
+}
+
+.more-btn:active {
+    color: #868639c9;
+    background-color: #90af8ac9;
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.gallery {
+    width: 50%;
+    padding:  0 10px 10px;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    height: 7vw;
+}
+.gallery-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+/* news section */
+.news-title {
+    font-size: 28px;
+    font-weight:600;
+    line-height: 34px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.news-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+.antidoping{
+    width: 30%;
+    height: 23vh;
+    width: 30%;
+    cursor: pointer; 
+    background-image: url(../images/doping.png);  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.antidoping:hover {
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.antidoping-title-m {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+    bottom: 7px;
+}
+
+.hsif-tv {
+    width: 30%;
+    height: 23vh;
+    width: 30%;
+    cursor: pointer; 
+    background-image: url(../images/hsif.PNG);  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hsif-tv:hover {
+    transition: 0.7s;
+    transform: scale(1.02);
+}
+
+.history {
+    background-image: url(../images/history-b.png);
+    position: relative;
+}
+.history-title {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+/* events calendar */
+table {
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #7D7D7D;
+    width: 70%;
+}
+.th {
+    color: blue;
+    padding: 10px 20px;
+    border: solid #7D7D7D;
+    border-width: 0 1px 1px 0;
+}
+
+.td {
+    padding: 10px 20px;
+    border: solid #7D7D7D;
+    border-width: 0 1px 1px 0;
+}
+
+.file-download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-btn {
+    display: inline-block;
+    align-content: center;
+    padding: 10px 20px;
+    background-color: var(--dark-green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; 
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #162714c9;
+}
+
+
+/* about us */
+.about-us-wrapper {
+    display: grid;
+    row-gap: 30px;
+}
+
+.about-us-f {
+    margin: auto;
+    padding: 30px 40px;
+}
+
+.about-us-info {
+    line-height: 115%;
+}
+
+.management-wrapper {
+    padding: 0px 40px;
+    display: grid;
+    row-gap: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.management-title {
+    font-size: 20px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    box-shadow: 0 3px 3px rgb(226, 226, 226);
+    padding: 10px;
+}
+
+.management-description{
+    font-size: 17px;
+    line-height: 115%;
+    font-weight: bold;
+}
+
+.asian-menegment {
+    font-weight: normal;
+}
+
+.management-description-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+}
+
+.manegement-description-item {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-img-wrapper {
+    width: 150px;
+    height: 130px;
+}
+
+.description-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.description-details {
+    display: grid;
+    row-gap: 5px;
+}
+
+.description-position {
+    font-size: 12px;
+    color: gray;
+}
+
+.description-surname {
+    font-size: 23px;
+    font-weight: 700;
+    color: #023222;
+}
+
+.description-country {
+    font-size: 12px;
+    color: gray;
+}
+
+
+/* antidoping */
+.antidoping-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.doping-title {
+    letter-spacing: 0.5px;
+}
+
+strong, .internationla-documents-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.doping-rules {
+    color: #023222;
+    font-weight: 600;
+    line-height: 30px;
+    border-bottom: 1px solid var(--green);
+}
+
+.doping-info, .international-standart{
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.link-button {
+    width: 430px;
+    background-color: var(--green);
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-weight: bold;
+    font-size: 16px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+}
+
+.link-button:hover {
+    background-color: #015c3a; 
+}
+
+.internationla-documents-title {
+    margin: 10px 0;
+}
+
+/* about us page */
+.about-us-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #023222;
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    row-gap: 5px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #023222;
+}
+
+.our-goals {
+    display: grid;
+    row-gap: 5px;
+}
+
+.contact-info {
+    display: grid;
+    row-gap: 5px;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #023222;
+}
+
+.contact-info a {
+    color: #023222;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* history page */
+.section-title, .section-text, .goal-item {
+    color: var(--dark-green);
+}
+
+.content {
+    padding: 10px 15px;
+    border: 1px solid rgba(241, 234, 234, .3);
+    box-shadow: -2px 5px 10px rgb(241, 234, 234);
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.goals-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.goal-item {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.goal-item:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: var(--dark-green);
+    border-radius: 50%;
+}
+
+
+/* scroll bar */
+.section-sc {
+    display: flex;
+    justify-content: space-between;
+}
+.contest-header {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.scroll-wrapper {
+    width: 45%;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid;
+    row-gap: 20px;
+}
+
+
+.contest-buttons-list    {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contest-button-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(2, 50, 34);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contest-button-item.active {
+    color: var(--dark-green);
+    background-color: var(--font-white);
+    box-shadow: 1px 3px 5px var(--dark-green);
+    font-weight: bold;  
+}
+
+.events {
+    width: 98%;
+    height: 370px;
+    margin: 0 auto;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flag {
+    width: 20px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.events-info {
+    flex-grow: 1;
+    padding-right: 5px;
+}
+
+.events-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.events-date {
+    color: #666;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.details-button {
+    background-color: rgb(2, 50, 34);
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+

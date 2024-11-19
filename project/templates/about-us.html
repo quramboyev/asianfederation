@@ -3,6 +3,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'home/styles/main.css' %}">
+<link rel="stylesheet" href="{% static 'about/styles/style.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -10,12 +11,12 @@
   <h1 class="about-us-title">О нас</h1>
   <div class="content">
     <p class="bold-text">Азиатская Федерация Рукопашного Боя</p>
-    <p>
+    <p class="about-us">
       Мы — организация, посвященная развитию и продвижению рукопашного боя в Азии. Наша миссия — укрепление
       традиций боевых искусств, воспитание сильных духом и телом спортсменов, а также популяризация здорового
       образа жизни.
     </p>
-    <p>
+    <p class="about-us">
       Наша федерация организует и поддерживает соревнования на всех уровнях, от любительских до
       профессиональных. Мы гордимся тем, что объединяем спортсменов, тренеров и любителей боевых искусств,
       которые стремятся к саморазвитию и дисциплине.
@@ -34,12 +35,11 @@
 
   <div class="contact-info">
     <p><span class="bold-text">Контакты:</span></p>
-    <p><i class="fa-solid fa-phone"></i> : <a href="tel:+998909323388">+998 (90) 932-33-88</a></p>
-    <p><i class="fa-brands fa-instagram"></i> : <a href="https://www.instagram.com/yourpage" target="_blank">@asian hand
+    <p><i class="fa-solid fa-phone"></i> : <a class="type-connecting" href="tel:+998909323388">+998 (90) 932-33-88</a></p>
+    <p><i class="fa-brands fa-instagram"></i> : <a class="type-connecting" href="https://www.instagram.com/yourpage" target="_blank">@asian hand
         to hand</a></p>
-    <p><i class="fa-regular fa-envelope"></i>: <a href="mailto:ahf_h2h@yahoo.comz target=" _blank>ahf_h2h@yahoo.com</a>
-    </p>
-    <p><i class="fa-solid fa-location-dot"></i> : ул. Лабзак дом.1, г. Ташкент, Узбекистан</p>
+    <p><i class="fa-regular fa-envelope"></i>: <a class="type-connecting" href="mailto:ahf_h2h@yahoo.comz target=" _blank>ahf_h2h@yahoo.com</a></p>
+    <p class="type-connecting"><i class="fa-solid fa-location-dot"></i> : ул. Лабзак дом.1, г. Ташкент, Узбекистан</p>
   </div>
 </div>
 

@@ -20,7 +20,7 @@
 }
 
 body {
-    background: var(--white-color); 
+    background: white; 
 }
 
 nav {
@@ -165,7 +165,6 @@ nav > div.content-nav {
 header {
     width: 100%;
     height: calc(100vh - 100.74px);
-    background-image: url('../images/header.png');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -358,12 +357,21 @@ footer {
 
     .products-content, .documents-items, .gallery-content.slider {
         flex-direction: column;
-        justify-content: center;
+        justify-content:Эт center;
     }
+    
+}
 
-    /*.products-content .card, .documents-items .item, .gallery-content img, .news-content .card-news {*/
-    /*    max-width: 100%;*/
-    /*}*/
+@media (min-width: 772px) and (max-width: 900px)  {
+    .logo .site-name {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 870px) {
+    nav > div.content-nav {
+        width: 95%; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -481,3 +489,10 @@ footer {
     }
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+    nav > div.content-nav {
+        width: 100%!important   ;
+        padding: 0 15px;
+        margin: 0!important;
+    }
+}

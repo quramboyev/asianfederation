@@ -75,9 +75,7 @@
             </div>
         </div>
         <div class="lang-search">
-            <img src="{% static 'base/images/search-icon.png' %}" alt="Search">
             <div>
-                <img src="{% static 'base/images/globe-icon.png' %}" alt="Language">
                 <select name="language" id="languageSelect">
 
                     {% get_available_languages as AVAILABLE_LANGUAGES %}
@@ -121,7 +119,7 @@
         <div class="footer-items">
             <ul class="footer-nav">
                 <li><a href="{% url 'home' %}">{% trans "home" %}</a></li>
-                <li><a href="{% url 'home' %}#about-us">{% trans "about us" %}</a></li>
+                <li><a href="{% url 'about_us' %}">{% trans "about us" %}</a></li>
                 <li><a href="{% url 'home' %}#products">{% trans "results" %}</a></li>
                 {# <li><a href="{% url 'category' %}">{% trans "calendar" %}</a></li> #}
                 <li><a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a></li>
