@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block content %}
-	<div id="gallery"></div>
+	<div id="gallery">
+    {% for image in images %}
+        <img src="{{ image.file.url }}" alt="">
+    {% endfor %}
+    </div>
     <script>
         const gallery = document.getElementById('gallery');
 

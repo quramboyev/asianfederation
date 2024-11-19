@@ -14,11 +14,14 @@ def events_calendar(request):
 def about_us(request):
     return render(request, 'about-us.html')
 
+
 def antidoping(request):
     return render(request, 'antidoping.html')
 
+
 def command(request):
     return render(request, 'command.html')
+
 
 def history(request):
     return render(request, 'history.html')
