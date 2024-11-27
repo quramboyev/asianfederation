@@ -5,7 +5,7 @@
 }
 
 /* Общий стиль для мобильных устройств */
-@media (min-width: 300px) and (max-width: 870px)  {
+@media (max-width: 870px)  {
   .container {
     width: 100%;
   }
@@ -19,13 +19,14 @@
   .contest-info-wrapper, .contest-img-wrapper, .comtest-about {
     display: none;
   }
+
   .section-sc {
     width: 90%;
     margin: 0 auto;
   }
   
   .scroll-wrapper {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -39,11 +40,9 @@
   }
   
   .slides {
-    width: 100%;
-    padding: 0 15px;
-  }
+    width: 1200%;
+    }
 
-  
   .gallery-content {
     width: 100%;
   }
@@ -84,5 +83,9 @@
 
 }
 
-
-
+@media (max-width: 300px) {
+    .contest-info-wrapper, .contest-img-wrapper, .comtest-about {
+    display: none;
+  }
+  
+}

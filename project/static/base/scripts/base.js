@@ -52,6 +52,7 @@ function showCalendar() {
 }
 
 
+
 // slides
 const slides = document.querySelector('.slides');
 let prevIndex = 0;
@@ -86,12 +87,10 @@ document.onkeydown = (event) => {
     switch (event.key) {
         case keys.right: {
             moveNext()
-            console.log('next')
             break
         }
         case keys.left: {
             movePrev()
-            console.log('prev')
             break
         }
     }
@@ -104,6 +103,5 @@ setInterval(() => {
 }, 3000)
 
 function updateSlider() {
-    
     slides.style.transform = `translateX(-${currentIndex * slides.scrollWidth / totalSlides}px)`;
 }
