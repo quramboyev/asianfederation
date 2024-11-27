@@ -1,5 +1,5 @@
 version: '3.9'
-name: 'hayat_cable'
+name: 'h2hf'
 
 networks:
   dev:
@@ -41,9 +41,9 @@ services:
 
   postgres-db:
     environment:
-      POSTGRES_USER: hayat_cable_user
-      POSTGRES_DB: hayat_cable_db
-      POSTGRES_PASSWORD: hayat_cable_password
+      POSTGRES_USER: h2hf_user
+      POSTGRES_DB: h2hf_db
+      POSTGRES_PASSWORD: h2hf_password
     image: postgres:15.0-alpine
     volumes:
       - pg_data:/var/lib/postgresql/data:rw
