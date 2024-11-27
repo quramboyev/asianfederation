@@ -31,7 +31,7 @@ services:
       - dev
   project:
     <<: *base-project
-    command: ["make", "run_server"]
+    command: ["make", "run"]
     depends_on:
       - postgres-db
     ports:
