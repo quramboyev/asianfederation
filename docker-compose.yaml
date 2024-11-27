@@ -9,8 +9,6 @@ x-base-project: &base-project
     - .env
   volumes:
     - './project:/opt/project'
-    - './static:/opt/project/static'
-    - './media:/opt/project/media'
   build:
     context: .
     dockerfile: Dockerfile
@@ -26,8 +24,8 @@ services:
       - project
       - postgres-db
     volumes:
-      - './static:/usr/share/nginx/html/static'
-      - './media:/usr/share/nginx/html/media'
+      - './project/static:/usr/share/nginx/html/static'
+      - './project/media:/usr/share/nginx/html/media'
       - './nginx.conf:/etc/nginx/nginx.conf'
       - './ssl-certificate/:/etc/letsencrypt/live'
       - static_volume:/static
