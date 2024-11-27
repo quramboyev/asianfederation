@@ -9,6 +9,7 @@
 }
 
 * {
+    /* outline: 1px solid green !important; */
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -83,6 +84,7 @@ table {
     display: flex;
     width: 1200%;
     transition: 0.5s ease-in-out;
+    padding-left: 0;
 }
 
 .slide {
@@ -147,7 +149,7 @@ table {
 }
 
 .gallery-content {
-    width: 60%;
+    width: 100%;
     display: grid;
     gap: 10px;  
     padding-top: 10px;
@@ -216,7 +218,8 @@ table {
     height: 23vh;
     width: 30%;
     cursor: pointer; 
-    background-image: url(../images/doping.png);  
+    background-image: url(../images/steroid.png);  
+    background-color: var(--dark-green);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -245,7 +248,8 @@ table {
     height: 23vh;
     width: 30%;
     cursor: pointer; 
-    background-image: url(../images/hsif.PNG);  
+    background-image: url(../images/hsif_white.png);
+    background-color: var(--dark-green);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -261,7 +265,7 @@ table {
 }
 
 .history {
-    background-image: url(../images/history-b.png);
+    background-image: url(../images/bezfon-removebg-preview.png);
     position: relative;
 }
 .history-title {
