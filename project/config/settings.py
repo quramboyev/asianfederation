@@ -8,11 +8,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-@7yh4@-5#@**qhkn2!m-izk*jwu2(k#j)rcyniyk$ox7p=wr%("
 
-DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-
+DEBUG = False
 DOMAIN_NAME = env("DOMAIN_NAME")
+
+ALLOWED_HOSTS = [DOMAIN_NAME, 'localhost', '127.0.0.1']
+
 
 INSTALLED_APPS = [
     "jazzmin",
@@ -144,7 +145,8 @@ STATICFILES_DIRS = BASE_DIR / "assets",
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
+CSRF_TRUSTED_ORIGINS = [f"https://{DOMAIN_NAME}"]
+CSRF_ALLOWED_ORIGINS = [f"https://{DOMAIN_NAME}"]
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
