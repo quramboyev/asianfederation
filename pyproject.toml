@@ -16,6 +16,7 @@ django-jazzmin = "2.6.0"
 pillow = "^10.4.0"
 django-rosetta = "^0.10.0"
 django-parler = "^2.3"
+gunicorn = "^23.0.0"
 
 [tool.poetry.group.dev.dependencies]
 Django = "5.0"

@@ -35,4 +35,4 @@ run: migrate collectstatic
 	python manage.py runserver 0.0.0.0:8000
 
 run_server: collectstatic migrate
-	gunicorn lms_backend.wsgi:application --bind 0.0.0.0:8000
+	gunicorn project.config.wsgi:application --bind 0.0.0.0:8000

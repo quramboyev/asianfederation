@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block head %}
+{#    <link rel="stylesheet" href="{% static "" %}">#}
+{% endblock %}
+
+{% block content %}
+	<div id="gallery">
+    {% for image in images %}
+        <img src="{{ image.file.url }}" alt="">
+    {% endfor %}
+    </div>
+    <script>
+        const gallery = document.getElementById('gallery');
+
+    </script>
+{% endblock %}
