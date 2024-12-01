@@ -24,8 +24,7 @@ services:
       - project
       - postgres-db
     volumes:
-      - './project/static:/usr/share/nginx/html/static'
-      - './project/media:/usr/share/nginx/html/media'
+      - './project:/usr/share/nginx/html'
       - './nginx.conf:/etc/nginx/nginx.conf'
       - './ssl-certificate/:/etc/letsencrypt/live'
       - static_volume:/static
@@ -33,7 +32,7 @@ services:
       - dev
   project:
     <<: *base-project
-    command: ["make", "run"]
+    command: ["make", "run_server"]
     depends_on:
       - postgres-db
     ports:
