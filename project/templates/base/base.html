@@ -3,7 +3,6 @@
 {% get_current_language as CURRENT_LANGUAGE %}
 <!DOCTYPE html>
 <html lang="{{ CURRENT_LANGUAGE }}" style="scroll-behavior: smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,14 +14,11 @@
     <link rel="icon" href="{% static 'base/images/logo.svg' %}">
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'base/styles/main.css' %}">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
@@ -31,7 +27,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const languageSelect = document.getElementById('languageSelect');
-
             languageSelect.addEventListener('change', function () {
                 const selectedValue = this.value;
                 if (selectedValue) {
@@ -54,9 +49,8 @@
     {% block head %}
 
     {% endblock %}
-    <title>{% trans "Hayat Cable" %}</title>
+    <title>{% trans "Asian hand to hand federation" %}</title>
 </head>
-
 <body>
     <button id="scrollUpBtn" title="Go to top">&#8963;</button>
     <nav>
@@ -64,7 +58,7 @@
             <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
                 <div class="logo">
                     <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
-                    <span class="site-name">Азиатская Федерация <br> Рокопашного боя</span>
+                    <span class="site-name">Азиатская Федерация <br> Рукопашного боя</span>
                 </div>
                 <div class="items">
                     <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>

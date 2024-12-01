@@ -12,7 +12,7 @@ SECRET_KEY = "django-insecure-@7yh4@-5#@**qhkn2!m-izk*jwu2(k#j)rcyniyk$ox7p=wr%(
 DEBUG = False
 DOMAIN_NAME = env("DOMAIN_NAME")
 
-ALLOWED_HOSTS = [DOMAIN_NAME, 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [DOMAIN_NAME, 'localhost', '127.0.0.1', '0.0.0.0']
 
 
 INSTALLED_APPS = [
@@ -323,3 +323,45 @@ JAZZMIN_UI_TWEAKS = {
     },
     "actions_sticky_top": False
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'django.log',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'gunicorn': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
+
+DJANGO_SETTINGS_MODULE="config.settings"
