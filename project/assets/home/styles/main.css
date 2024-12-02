@@ -9,7 +9,6 @@
 }
 
 * {
-    /* outline: 1px solid green !important; */
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -53,10 +52,13 @@ table {
 
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 15px;
 }
+
 
 /* general style */
 .general-style {
@@ -117,8 +119,9 @@ table {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
+.home-section {
+    width: 100%;
+}
 
 /*  */
 .view-box-title {
@@ -137,19 +140,30 @@ table {
     margin-bottom: 20px;
 }
 
+.view-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .view-box {
-    width: 42%;
+    width: 50%;
+    height: 90%;
     display: flex;
     align-items: center;
 }
 
 .big-img {
     width: 100%;
+    height: 100%;
     border-radius: 5px 5px 0  0;
+    object-fit: contain;
 }
 
 .gallery-content {
     width: 100%;
+    height: 100%;
     display: grid;
     gap: 10px;  
     padding-top: 10px;
@@ -186,26 +200,26 @@ table {
     transform: scale(1.02);
 }
 
-.gallery {
-    width: 50%;
-    padding:  0 10px 10px;
-}
 
 .gallery-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: 50%;
+    height: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 2px;
-    flex-wrap: wrap;
 }
-
+/* 
 .gallery-item {
     height: 6.5vw;
-}
+} */
 .gallery-img {
     height: 100%;
     width: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
+
 
 .news-wrapper {
     display: flex;
@@ -322,11 +336,6 @@ table {
 }
 
 
-/* about us  commmand page  */
-.flags{
-    
-}
-
 
 .fa-instagram {
     color: #131a12;
@@ -382,6 +391,7 @@ table {
 
 .management-wrapper {
     display: grid;
+    row-gap: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
     padding: 10px;
@@ -527,7 +537,10 @@ strong, .internationla-documents-title{
 }
 
 .contact-info {
-    display: grid;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     row-gap: 5px;
     margin-top: 30px;
     font-size: 1.1em;
