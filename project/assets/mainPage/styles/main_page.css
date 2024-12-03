@@ -1,4 +1,22 @@
-@media (min-width: 870px) {
+@media (max-width: 1200px) {
+  .home-section {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 970px) {
+  .scroll-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contest-info-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 872px) {
   .slider, .slides {
     display: none;
   }
@@ -26,6 +44,19 @@
   }
   
   .scroll-wrapper {
+    width: 100%;
+  }
+  
+  .flags {
+    display: none;
+  }
+  .centeral-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
     width: 100%;
   }
 }

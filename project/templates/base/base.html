@@ -64,8 +64,7 @@
                     <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
                     <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
                     <a href="{% url 'command' %}#products">{% trans "Команда" %}</a>
-                    <a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a>
-                    <a href="{% url 'home' %}#news">{% trans "news" %}</a>
+                    <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
                     <a href="{% url 'events_calendar' %}">{% trans "Календарь событий" %}</a>
                 </div>
             </div>
@@ -96,8 +95,7 @@
             <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
             <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
             <a href="{% url 'command' %}#products">{% trans "Команда" %}</a>
-            <a href="{% url 'home' %}#gallery">{% trans "gallery" %}</a>
-            <a href="{% url 'home' %}#news">{% trans "news" %}</a>
+            <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
             <a href="{% url 'events_calendar' %}">{% trans "Календарь событий" %}</a>
         </div>
     </nav>
@@ -107,71 +105,88 @@
                 <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/armenia.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/azerbainjan.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/bangladesh.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/georigia.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/india.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/iran.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/iraq.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/japan.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/jordan.svg' %}" alt="" class="flags-img">
             </div>
-
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/syria.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/tajikistan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/uzbekistan.svg' %}" alt="" class="flags-img">
+            </div>
 
             
         </div>
-        <div>
+        <div class="centeral-content">
         {% block content %}
 
         {% endblock %}
         </div>
         <div class="flags" >
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/kazakhstan.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/kuwait.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/kyrgzstan.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/lebanon.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/malaysia.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/maldives.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/mongolia.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/pakistan.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/philippines.svg' %}" alt="" class="flags-img">
             </div>
             <div class="flags-wrapper" style="width: 100%;">
-                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+                <img src="{% static 'base/images/flags/qatar.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/saudia-arabia.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/singapore.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/south-korea.svg' %}" alt="" class="flags-img">
             </div>
             
         </div>
@@ -193,13 +208,13 @@
                         </p>
                     </li>
                     <li><i class="fa-regular fa-envelope"></i>: 
-                        <a class="type-connecting" href="mailto:ahf_h2h@yahoo.comz target=" _blank>ahf_h2h@yahoo.com</a>
+                        <a class="type-connecting" href="mailto:ahf_h2h@yahoo.comz" target="_blank">ahf_h2h@yahoo.com</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-items">
                 <ul class="footer-nav">
-                    <li class="general-color">Адрес</li>
+                    <li class="general-color">Адрес:</li>
                     <li>
                         <p class="type-connecting general-color">ул. Лабзак дом.1, г. Ташкент, Узбекистан</p>
                     </li>
@@ -220,12 +235,12 @@
                     </li>
                     <li>
                         <a class="type-connecting" href="https://www.instagram.com/yourpage" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="type-connecting">
-                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-youtube"></i>
                         </a>
                     </li>
                 </ul>

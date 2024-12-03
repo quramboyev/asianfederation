@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: Unbounded;
+    font-family: "Unbounded";
     box-sizing: border-box!important;
     scrollbar-width: thin;
     scrollbar-color: var(--green) var(--color-body);
@@ -119,6 +119,7 @@ nav > div.content-nav {
     z-index: 999;
 }
 
+
 .nav-mobile a {
     color: #fff;
     padding: 10px 0;
@@ -202,19 +203,33 @@ header {
 }
 
 /* flags */
+
+.centeral-content {
+    width: 80vw;
+}
+
 .back-stage {
-    height: 100%; 
+    height: 100%;
+    width: 100%;
     display: flex; 
     justify-content: space-between; 
 }
 
 .flags {
-    width: 10vw; 
+    width: 7vw; 
     max-height: 100%; 
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
     align-items: center;
+}
+
+.flags-wrapper {
+    width: 100%;
+}
+
+.flags-img {
+    width: 100%;
 }
 
 /*footer section */
@@ -283,7 +298,6 @@ footer {
     font-size: 16px;
     transition: color 0.3s;
     font-weight: 300;
-    text-transform: capitalize;
 }
 
 .gap-2 a:hover {
