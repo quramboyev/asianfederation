@@ -3,9 +3,36 @@
     width: 100%;
   }
 
+  .flags {
+    width: 5vw;
+  }
+
+  .centeral-content {
+    width: 90vw;
+  }
+
 }
 
 @media (max-width: 970px) {
+  .view-box-title {
+    font-size: 30px;
+  }
+
+  .gallery-content-title {
+    font-size: 20px;
+  }
+
+  .gallery-content-info {
+    font-size: 14px;
+  }
+
+  .more-btn {
+    font-size: 16px;
+  }
+
+  .contest-s-info {
+    font-size: 14px;
+  }
   .scroll-wrapper {
     width: 100%;
     margin-bottom: 20px;
@@ -34,12 +61,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 780px) {
-  .contest-info-wrapper, .contest-img-wrapper, .comtest-about {
-    display: none;
-  }
+  
 
   .section-sc {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   
@@ -57,7 +82,28 @@
   }
 
   .container {
+      width: 100%;
+  }
+
+  .sc-wrapper {
     width: 100%;
+  }
+  
+  .scroll-wrapper {
+    width: 100%;
+  }
+
+  .right-news {
+    width: 100%;
+  }
+
+  .contest-info-wrapper {
+    height: auto;
+    padding: 10px;
+  }
+
+  .contest-header {
+    padding: 10px;
   }
 }
 
