@@ -326,10 +326,12 @@ footer {
     color: white;
 }
 
+.fa-phone, .fa-envelope {
+    color: white;
+}
 
 
-
-.fa-telegram, .fa-instagram {
+.fa-telegram, .fa-youtube,  .fa-facebook, .fa-instagram {
     color: white;
     font-size: 20px;
 }
