@@ -28,11 +28,9 @@
             <img src="{% static 'home/images/img9.jpg' %}" alt="" class="slide-img" />
           </li>
           <li class="slide">
-            <img src="{% static 'home/images/gimg10.jpg' %}" alt="" class="slide-img" />
+            <img src="{% static 'home/images/img10.jpg' %}" alt="" class="slide-img" />
           </li>
-          <li class="slide">
-            <img src="{% static 'home/images/gallery1.jpg' %}" alt="" class="slide-img" />
-          </li>
+
           <li class="slide">
             <img src="{% static 'home/images/img1.jpg' %}" alt="" class="slide-img" />
           </li>
@@ -59,7 +57,7 @@
       </div>
       <div class="view-wrapper">
         <div class="view-box">
-          <img id="banner" src="{% static 'home/images/gallery1.jpg' %}" alt="" class="big-img">
+          <img id="banner" src="{% static 'home/images/gallery3.jpg' %}" alt="" class="big-img">
         </div>
         <ul class="gallery-list" id="galleryl">
           <li class="gallery-item">
@@ -93,10 +91,6 @@
             <img src="{% static 'home/images/img10.jpg' %}" alt="photo gallery" class="gallery-img">
           </li>
           <li class="gallery-item">
-            <img src="{% static 'home/images/gallery3.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-
-          <li class="gallery-item">
             <img src="{% static 'home/images/gallery7.jpg' %}" alt="photo gallery" class="gallery-img">
           </li>
           <li class="gallery-item">
@@ -112,12 +106,18 @@
       </div>
       <div class="gallery-content">
         <h2 class="gallery-content-title">Открытие Азиатской федерации Рукопашного боя</h2>
-        <p class="gallery-content-info">В столице Узбекистана г. Ташкенте прямо сейчас проходит первый съезд Азиатской федерации 
-          рукопашного боя. Гостей, приехавших для участия в первом Конгрессе Азиатской федерации рукопашного боя, представил 
-          председатель Федерации рукопашного боя правоохранительных органов Узбекистана Р. Джураев. С приветствиями к участникам 
-          конгресса обратились заместитель министра спорта Узбекистана Ш. Махмудов, генеральный секретарь Национального олимпийского 
-          комитета Республики Узбекистан О. Касимов, так же первый вице президент международной федерации рукопашного боя Мирзакулов Б. И 
-          президент Международной федерации рукопашного боя С. Астахов и представители федераций рукопашного боя из 13 стран Азии.....</p>
+        <p class="gallery-content-info">В столице Узбекистана г. Ташкенте прямо сейчас проходит первый съезд Азиатской
+          федерации
+          рукопашного боя. Гостей, приехавших для участия в первом Конгрессе Азиатской федерации рукопашного боя,
+          представил
+          председатель Федерации рукопашного боя правоохранительных органов Узбекистана Р. Джураев. С приветствиями к
+          участникам
+          конгресса обратились заместитель министра спорта Узбекистана Ш. Махмудов, генеральный секретарь Национального
+          олимпийского
+          комитета Республики Узбекистан О. Касимов, так же первый вице президент международной федерации рукопашного
+          боя Мирзакулов Б. И
+          президент Международной федерации рукопашного боя С. Астахов и представители федераций рукопашного боя из 13
+          стран Азии.....</p>
         <button class="more-btn">Подробнее</button>
       </div>
     </div>
@@ -133,131 +133,145 @@
     </div>
     <!-- events -->
 
-    <h3 class="contest-header">Соревнования</h3>
     <div class="section-sc">
-      <div class="scroll-wrapper">
-        <div class="contest-buttons-list">
-          <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">Ближайшие</button>
-          <button class="contest-button-item" onclick="filterEvents('completed', this)">Завершенные</button>
-        </div>
-
-        <div class="events" id="eventsList">
-
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А. Шевченко
-              </p>
-              <p class="events-date">08.11.2024 - 09.11.2024</p>
-            </div>
+      <div class="sc-wrapper">
+        <h3 class="contest-header">Соревнования</h3>
+        <div class="scroll-wrapper">
+          <div class="contest-buttons-list">
+            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">Ближайшие</button>
+            <button class="contest-button-item" onclick="filterEvents('completed', this)">Завершенные</button>
           </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
-              <p class="events-date">06.11.2024 - 08.11.2024</p>
+          <div class="events" id="eventsList">
+
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А.
+                  Шевченко
+                </p>
+                <p class="events-date">08.11.2024 - 09.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Открытый чемпионат Республики Беларусь среди смешанных команд</p>
-              <p class="events-date">06.11.2024 - 06.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
+                <p class="events-date">06.11.2024 - 08.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А. Шевченко
-              </p>
-              <p class="events-date">08.11.2024 - 09.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Открытый чемпионат Республики Беларусь среди смешанных команд</p>
+                <p class="events-date">06.11.2024 - 06.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А. Шевченко
-              </p>
-              <p class="events-date">08.11.2024 - 09.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А.
+                  Шевченко
+                </p>
+                <p class="events-date">08.11.2024 - 09.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
-              <p class="events-date">06.11.2024 - 08.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А.
+                  Шевченко
+                </p>
+                <p class="events-date">08.11.2024 - 09.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Открытый чемпионат Республики Беларусь среди смешанных команд</p>
-              <p class="events-date">06.11.2024 - 06.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
+                <p class="events-date">06.11.2024 - 08.11.2024</p>
+              </div>
             </div>
-          </div>
 
-
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
-              <p class="events-date">06.11.2024 - 08.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Открытый чемпионат Республики Беларусь среди смешанных команд</p>
+                <p class="events-date">06.11.2024 - 06.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Открытый чемпионат Республики Беларусь среди смешанных команд</p>
-              <p class="events-date">06.11.2024 - 06.11.2024</p>
+
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
+                <p class="events-date">06.11.2024 - 08.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А. Шевченко
-              </p>
-              <p class="events-date">08.11.2024 - 09.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Открытый чемпионат Республики Беларусь среди смешанных команд</p>
+                <p class="events-date">06.11.2024 - 06.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <div class="event upcoming">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
-              <p class="events-date">06.11.2024 - 08.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Межрегиональные соревнования на призы Сенатора Российской Федерации А.А.
+                  Шевченко
+                </p>
+                <p class="events-date">08.11.2024 - 09.11.2024</p>
+              </div>
             </div>
-          </div>
 
-          <!-- завершенный-->
-          <div class="event completed">
-            <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-            <div class="events-info">
-              <p class="events-title">Всероссийские соревнования "Памяти Маршала Советского Союза Д.Ф. Устинова"</p>
-              <p class="events-date">02.11.2024 - 03.11.2024</p>
+            <div class="event upcoming">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Практический семинар по подготовке тренеров и специалистов дзюдо</p>
+                <p class="events-date">06.11.2024 - 08.11.2024</p>
+              </div>
+            </div>
+
+            <!-- завершенный-->
+            <div class="event completed">
+              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
+              <div class="events-info">
+                <p class="events-title">Всероссийские соревнования "Памяти Маршала Советского Союза Д.Ф. Устинова"</p>
+                <p class="events-date">02.11.2024 - 03.11.2024</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div class="contest-info-wrapper">
-        <div class="contest-img-wrapper">
-          <img src="{% static 'home/images/gallery 2.jpg' %}" alt="about contest" class="contest-img">
-        </div>
-        <div class="contest-about">
-          <div class="contest-data">
-            <p class="contest-first-info">Новости</p>
-            <p class="contest-s-info">14.11.24-17.11.2024</p>
+      <div class="right-news">
+        <h3 class="contest-header">Новости</h3>
+        <div class="contest-info-wrapper">
+          <div class="contest-img-wrapper">
+            <img src="{% static 'home/images/gallery2.jpg' %}" alt="about contest" class="contest-img">
           </div>
-          
+          <div class="contest-data">
+            <!-- <p class="contest-first-info">Новости</p> -->
+            <p class="contest-s-info">В столице Узбекистана г. Ташкенте прямо сейчас проходит первый съезд Азиатской
+              федерации рукопашного боя. Гостей, приехавших для участия в первом Конгрессе Азиатской федерации
+              рукопашного
+              боя, представил председатель Федерации рукопашного боя правоохранительных органов Узбекистана Р. Джураев.
+              С приветствиями к участникам конгресса обратились заместитель министра спорта Узбекистана Ш. Махмудов,
+              генеральный секретарь Национального олимпийского комитета Республики Узбекистан О. Касимов, так же первый
+              вице президент международной федерации рукопашного боя Мирзакулов Б. И президент Международной федерации
+              рукопашного боя С. Астахов и представители федераций рукопашного боя из 13 стран Азии.</p>
+          </div>
+
         </div>
       </div>
     </div>
