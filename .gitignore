@@ -2,8 +2,8 @@
 .idea/*
 __*__/
 *.pyc
-project/static
-project/media
+api/static
+api/media
 */migrations/*
 !migrations/__init__.py
 *.whl

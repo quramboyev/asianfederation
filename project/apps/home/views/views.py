@@ -8,11 +8,7 @@ def home(request):
 
 
 def events_calendar(request):
-    document = DocumentModel.objects.all()
-    if document.exists():
-        document = document[0]
-    else: 
-        document = None
+    document = DocumentModel.objects.all()[:1][0]
     return render(request, 'events-calendar.html', context={'document': document})
 
 

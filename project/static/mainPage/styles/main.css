@@ -1,0 +1,118 @@
+/* Общий стиль для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .gallery-section .view-box-title {
+      font-size: 1.5em;
+    }
+  
+    .big-photo img.big-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .gallery-content-title {
+      font-size: 1.2em;
+    }
+  
+    .gallery-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .gallery-item {
+      width: 30%;
+    }
+  
+    .news-wrapper {
+      display: block;
+    }
+  
+    .contest-buttons-list {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .events-info {
+      padding: 5px;
+    }
+  
+    .events-title {
+      font-size: 0.9em;
+    }
+  
+    .events-date {
+      font-size: 0.8em;
+    }
+  }
+  
+  /* Переходный стиль для планшетов */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .gallery-section .view-box-title {
+      font-size: 2em;
+    }
+  
+    .gallery-item {
+      width: 22%;
+    }
+  
+    .news-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contest-buttons-list {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .events-title {
+      font-size: 1em;
+    }
+  
+    .events-date {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Стиль для настольных компьютеров */
+  @media (min-width: 1024px) {
+    .container {
+      padding: 30px;
+    }
+  
+    .gallery-section .view-box-title {
+      font-size: 2.5em;
+    }
+  
+    .gallery-item {
+      width: 18%;
+    }
+  
+    .news-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contest-buttons-list {
+      justify-content: space-around;
+    }
+  
+    .events-title {
+      font-size: 1.2em;
+    }
+  
+    .events-date {
+      font-size: 1em;
+    }
+  }
+  
