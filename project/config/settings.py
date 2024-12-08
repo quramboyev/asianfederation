@@ -115,7 +115,7 @@ PARLER_LANGUAGES = {
         {'code': 'uz'}
     ),
     'default': {
-        'fallback': ['en'],
+        'fallbacks': ['en'],
         'hide_untranslated': False,
     }
 }
@@ -364,4 +364,4 @@ LOGGING = {
     },
 }
 
-DJANGO_SETTINGS_MODULE="config.settings"
+# DJANGO_SETTINGS_MODULE="config.settings"
