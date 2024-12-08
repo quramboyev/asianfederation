@@ -9,3 +9,5 @@ api/media
 *.whl
 poetry.lock
 *.log
+*.sqlite3
+*.sqlite

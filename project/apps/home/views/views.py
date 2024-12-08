@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from apps.home.models import DocumentModel
+from apps.home.models import DocumentModel, DocTypeChoice
 
 
 def home(request):
-    return render(request, 'home.html')
+    rule = DocumentModel.objects.filter(type=DocTypeChoice.RULE).translated().first()
+    return render(request, 'home.html', context={'rule': rule})
 
 
 def events_calendar(request):
