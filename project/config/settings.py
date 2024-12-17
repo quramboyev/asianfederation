@@ -353,7 +353,7 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'propagate': True,
         },
         'gunicorn': {
