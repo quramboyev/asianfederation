@@ -762,3 +762,49 @@ strong, .internationla-documents-title{
 .contest-s-info {
     font-size: 16px;
 }
+
+
+/* gallery */
+
+#gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 16px; 
+    padding: 16px; 
+    box-sizing: border-box; 
+}
+
+#gallery img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: 12px; 
+    }
+
+    #gallery img {
+        border-radius: 4px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: 8px; 
+    }
+
+    #gallery img {
+        border-radius: 2px; 
+    }
+}

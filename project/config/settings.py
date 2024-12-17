@@ -159,13 +159,13 @@ INTERNAL_IPS += [ip[:-1] + "1"]
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "Hayat Kabel Admin",
+    "site_title": "Asian hand to hand federation Admin",
 
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_header": "Hayat Kabel",
+    "site_header": "Asian hand to hand",
 
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "Hayat Kabel",
+    "site_brand": "Asian hand to hand",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
     "site_logo": "/base/images/logo.svg",
@@ -183,10 +183,10 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the Hayat Kabel",
+    "welcome_sign": "Welcome to the Asian hand to hand Federation",
 
     # Copyright on the footer
-    "copyright": "Hayat Kabel",
+    "copyright": "AHF",
 
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string
