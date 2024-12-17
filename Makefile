@@ -18,11 +18,11 @@ api-check-fix:
 api-lock:
 	docker compose run --rm api make lock
 
-compose-up:
+up:
 	docker compose up -d
 
-compose-down:
+down:
 	docker compose down
 
-compose-build:
+build:
 	docker compose build
