@@ -1,0 +1,67 @@
+.hidden-gallery {
+    display: none;
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.hidden-gallery.open {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#gallery-slider {
+    height: 100%;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    padding-left: 0;
+    background-color: rgb(2, 50, 34);
+}
+
+.gallery-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+body.sliding {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#close-gallery {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top: 5px;
+    color: white;
+    z-index: 4;
+    font-size: 4em;
+    font-weight: bold;
+    cursor: pointer;
+}
+#prev-gallery {
+    position: absolute;
+    color: white;
+    font-style: 4em;
+    left: 10px;
+    top: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#next-gallery {
+    position: absolute;
+    color: white;
+    font-style: 4em;
+    right: 10px;
+    top: 50%;
+    padding: 10px;
+    cursor: pointer;
+}

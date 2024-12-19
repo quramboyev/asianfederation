@@ -77,7 +77,6 @@ table {
 .slider {
     position: relative;
     width: 100%;
-    max-width: 12000%;
     margin: auto;
     overflow: hidden;
 }
@@ -791,6 +790,7 @@ strong, .internationla-documents-title{
     transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 @media (max-width: 768px) {
     #gallery {

@@ -23,48 +23,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-$('.slider-gallery').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 4,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-});
+// $('.slider-gallery').slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     arrows: false,
+//     responsive: [
+//         {
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 4,
+//             }
+//         },
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 slidesToShow: 3,
+//             }
+//         },
+//         {
+//             breakpoint: 480,
+//             settings: {
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
 // navbar
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.querySelector('nav');
-    const newsSection = document.querySelector('#news');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const navbar = document.querySelector('nav');
+//     const newsSection = document.querySelector('#news');
 
-    window.addEventListener('scroll', function () {
-        const navbarHeight = navbar.offsetHeight;
-        const newsTop = newsSection.getBoundingClientRect().top;
+//     window.addEventListener('scroll', function () {
+//         const navbarHeight = navbar.offsetHeight;
+//         const newsTop = newsSection.getBoundingClientRect().top;
 
-        if (newsTop + 700 <= navbarHeight) {
-            navbar.classList.add('non-sticky');
-        } else {
-            navbar.classList.remove('non-sticky');
-        }
-    });
-});
+//         if (newsTop + 700 <= navbarHeight) {
+//             navbar.classList.add('non-sticky');
+//         } else {
+//             navbar.classList.remove('non-sticky');
+//         }
+//     });
+// });
 
 
