@@ -16,7 +16,7 @@ def home(request):
             'images': images,
             'about': about,
             'events': events,
-        }
+        } 
     )
 
 

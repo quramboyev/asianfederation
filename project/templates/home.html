@@ -12,11 +12,11 @@
 {% block content %}
 <div class="container">
   <section class="home-section">
-    <h1 class="view-box-title">Галлерия</h1>
+    <h1 class="view-box-title">{% trans "Gallery" %}</h1>
     <div class="gallery-sec general-style">
       <div class="slider">
         <ul class="slides">
-          <li class="slide">
+          <!-- <li class="slide">
             <img src="{% static 'home/images/gallery6.jpg' %}" alt="" class="slide-img" />
           </li>
           <li class="slide">
@@ -49,7 +49,7 @@
           </li>
           <li class="slide">
             <img src="{% static 'home/images/img6.jpg' %}" alt="" class="slide-img" />
-          </li>
+          </li> -->
         </ul>
         <div class="navigation">
           <button class="prev">&#10094;</button>
@@ -106,16 +106,13 @@
         </ul>
       </div>
       <div class="gallery-content">
-        <h2 class="gallery-content-title">Открытие Азиатской федерации Рукопашного боя</h2>
-        <p class="gallery-content-info">В столице Узбекистана г. Ташкенте прямо сейчас проходит первый съезд Азиатской
-          федерации рукопашного боя. Гостей, приехавших для участия в первом Конгрессе Азиатской федерации рукопашного боя,
-          представил председатель Федерации рукопашного боя правоохранительных органов Узбекистана Р. Джураев. С приветствиями к
-          участникам конгресса обратились заместитель министра спорта Узбекистана Ш. Махмудов, генеральный секретарь Национального
-          олимпийского комитета Республики Узбекистан О. Касимов, так же первый вице президент международной федерации рукопашного
-          боя Мирзакулов Б. И президент Международной федерации рукопашного боя С. Астахов и представители федераций рукопашного боя из 13
-          стран Азии.....</p>
+        <h2 class="gallery-content-title">{% trans "Opening of the Asian of Hand-to-Hand Federation" %}</h2>
+        <p class="gallery-content-info">{{ about.description }}</p>
+
+        
+
         <button class="more-btn">
-          <a class="gallery-more" href="{% url 'gallery' %}">Подробнее</a>
+          <a class="gallery-more" href="{% url 'gallery' %}">{% trans "Read more" %}</a>
         </button>
         <!-- {% url 'gallery' %} -->
       </div>
@@ -134,11 +131,11 @@
 
     <div class="section-sc">
       <div class="sc-wrapper">
-        <h3 class="contest-header">Соревнования</h3>
+        <h3 class="contest-header">{% trans "Competitions" %}</h3>
         <div class="scroll-wrapper">
           <div class="contest-buttons-list">
-            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">Ближайшие</button>
-            <button class="contest-button-item" onclick="filterEvents('completed', this)">Завершенные</button>
+            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">{% trans "The nearest" %}</button>
+            <button class="contest-button-item" onclick="filterEvents('completed', this)">{% trans "Completed" %}</button>
           </div>
 
           <div class="events" id="eventsList">
@@ -246,19 +243,23 @@
 
 
       <div class="right-news">
-        <h3 class="contest-header">Новости</h3>
+        <h3 class="contest-header">{% trans "news" %}</h3>
         <div class="contest-info-wrapper">
           <div class="contest-img-wrapper">
             <img src="{% static 'home/images/gallery2.jpg' %}" alt="about contest" class="contest-img">
           </div>
           <div class="contest-data">
-            <p class="contest-s-info">В столице Узбекистана г. Ташкенте прямо сейчас проходит первый съезд Азиатской
-              федерации рукопашного боя. Гостей, приехавших для участия в первом Конгрессе Азиатской федерации
-              рукопашного боя, представил председатель Федерации рукопашного боя правоохранительных органов Узбекистана Р. Джураев.
-              С приветствиями к участникам конгресса обратились заместитель министра спорта Узбекистана Ш. Махмудов,
-              генеральный секретарь Национального олимпийского комитета Республики Узбекистан О. Касимов, так же первый
-              вице президент международной федерации рукопашного боя Мирзакулов Б. И президент Международной федерации
-              рукопашного боя С. Астахов и представители федераций рукопашного боя из 13 стран Азии.</p>
+            <p class="contest-s-info">
+              {% blocktrans %}  
+              The first congress of the Asian Federation of Hand-to-Hand Combat is currently taking place in the capital of Uzbekistan, 
+              Tashkent. The guests who came to participate in the first Congress of the Asian Federation of Hand-to-Hand Combat were 
+              introduced by the Chairman of the Federation of Hand-to-Hand Combat of Law Enforcement Agencies of Uzbekistan R. Juraev. 
+              The participants of the congress were greeted by the Deputy Minister of Sports of Uzbekistan Sh. Makhmudov, the Secretary 
+              General of the National Olympic Committee of the Republic of Uzbekistan O. Kasimov, as well as the First Vice-President of 
+              the International Federation of Hand-to-Hand Combat Mirzakulov B., the President of the International Federation of Hand-to-Hand 
+              Combat S. Astakhov and representatives of hand-to-hand combat federations from 13 Asian countries.
+              {% endblocktrans %}
+            </p>
           </div>
 
         </div>
