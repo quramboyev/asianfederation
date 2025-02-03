@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 21:50+0500\n"
+"POT-Creation-Date: 2025-02-03 23:09+0500\n"
 "PO-Revision-Date: 2024-08-13 22:42+0500\n"
 "Last-Translator:   <jim@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,252 +16,696 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: apps/home/models.py:8 apps/home/models.py:41 apps/home/models.py:85
-msgid "Title"
-msgstr "Заголовок"
+#: apps/home/models/models.py:9
+msgid "Calendar"
+msgstr ""
 
-#: apps/home/models.py:9 apps/home/models.py:86 apps/product/models.py:23
-msgid "Description"
-msgstr "Описание"
+#: apps/home/models/models.py:10
+msgid "Anti Doping"
+msgstr ""
 
-#: apps/home/models.py:11 apps/home/models.py:28
-msgid "Is Active?"
-msgstr "Активен?"
+#: apps/home/models/models.py:11
+msgid "Rule"
+msgstr ""
 
-#: apps/home/models.py:14 apps/home/models.py:15
-msgid "About Us"
-msgstr "О нас"
-
-#: apps/home/models.py:24
-msgid "Phone Number"
-msgstr "Номер телефона"
-
-#: apps/home/models.py:25
-msgid "Email Address"
-msgstr "Адрес электронной почты"
-
-#: apps/home/models.py:26
-msgid "Address"
-msgstr "Адрес"
-
-#: apps/home/models.py:27
-msgid "Location"
-msgstr "Расположение"
-
-#: apps/home/models.py:31 apps/home/models.py:32 templates/index.html:111
-msgid "Contact Us"
-msgstr "Связаться с нами"
-
-#: apps/home/models.py:43
-msgid "Icon"
-msgstr "Иконка"
-
-#: apps/home/models.py:44
-msgid "Link"
-msgstr "Ссылка"
-
-#: apps/home/models.py:47 apps/home/models.py:48
-msgid "Social Media"
-msgstr "Социальные сети"
-
-#: apps/home/models.py:57 apps/home/models.py:70 apps/home/models.py:88
-#: apps/product/models.py:26
-msgid "Image"
-msgstr "Изображение"
-
-#: apps/home/models.py:60
-msgid "Photo"
-msgstr "Фото"
-
-#: apps/home/models.py:61 templates/base/base.html:93
-msgid "Gallery"
-msgstr "Галерея"
-
-#: apps/home/models.py:71
-msgid "File"
-msgstr "Файл"
-
-#: apps/home/models.py:72
-msgid "Type"
-msgstr "Тип"
-
-#: apps/home/models.py:75
-msgid "Document"
-msgstr "Документ"
-
-#: apps/home/models.py:76 templates/base/base.html:94
-msgid "Documents"
-msgstr "Документы"
-
-#: apps/home/models.py:92 apps/home/models.py:93 templates/base/base.html:95
-msgid "News"
-msgstr "Новости"
-
-#: apps/product/models.py:8 apps/product/models.py:22
-msgid "title"
-msgstr "заголовок"
-
-#: apps/product/models.py:12 apps/product/models.py:27
-msgid "Category"
-msgstr "Категория"
-
-#: apps/product/models.py:13
-msgid "Categories"
-msgstr "Категории"
-
-#: apps/product/models.py:24 templates/detail.html:24
-msgid "Color"
-msgstr "Цвет"
-
-#: apps/product/models.py:24
-msgid "black"
-msgstr "чёрный"
-
-#: apps/product/models.py:28 templates/base/base.html:43
-#: templates/base/base.html:72 templates/index.html:35
-msgid "products"
-msgstr "Продукты"
-
-#: apps/product/models.py:29
-msgid "Price"
-msgstr "Цена"
-
-#: apps/product/models.py:30 templates/detail.html:23
-msgid "Size"
-msgstr "Размер"
-
-#: apps/product/models.py:31 templates/detail.html:25
-msgid "View"
-msgstr "Вид"
-
-#: apps/product/models.py:34
-msgid "Product"
-msgstr "Продукт"
-
-#: apps/product/models.py:35 templates/base/base.html:92
-msgid "Products"
-msgstr "Продукты"
-
-#: config/settings.py:121
+#: config/settings.py:102
 msgid "English"
 msgstr "Английский"
 
-#: config/settings.py:122
+#: config/settings.py:103
 msgid "Russian"
 msgstr "Русский"
 
-#: config/settings.py:123
+#: config/settings.py:104
 msgid "Uzbek"
 msgstr "Узбекский"
 
-#: templates/base/base.html:31
-msgid "Hayat Cable"
-msgstr "Hayat Cable"
-
-#: templates/base/base.html:41 templates/base/base.html:70
-msgid "home"
-msgstr "Дом"
-
-#: templates/base/base.html:42 templates/base/base.html:71
-#: templates/index.html:21
-#| msgid "About Us"
+#: templates/about-us.html:12
 msgid "About us"
 msgstr "О нас"
 
-#: templates/base/base.html:44 templates/base/base.html:73
-msgid "catalog"
-msgstr "Каталог"
+#: templates/about-us.html:14
+msgid "Азиатская Федерация Рукопашного Боя"
+msgstr ""
 
-#: templates/base/base.html:45 templates/base/base.html:74
-#: templates/index.html:60
-#| msgid "Gallery"
+#: templates/about-us.html:16
+msgid ""
+"\n"
+"          Азиатская Федерация рукопашного боя создана в 2024 году.\n"
+"          Штаб-квартира Федерации находится в Ташкенте.\n"
+"          Цель Федерации – развитие и популяризация рукопашного боя как вида "
+"спорта во всем мире.\n"
+"          Приоритетной задачей Федерации является включение рукопашного боя "
+"в список олимпийских и азиатскиx видов спорта.\n"
+"        "
+msgstr ""
+
+#: templates/about-us.html:24
+msgid ""
+"\n"
+"          Международная Федерация рукопашного боя проводит чемпионаты, "
+"турниры, судейские и обучающие семинары, показательные\n"
+"          выступления в разных странах мира, сотрудничая со спортсменами из "
+"других видов единоборств.\n"
+"        "
+msgstr ""
+
+#: templates/about-us.html:30
+msgid "Наши цели"
+msgstr ""
+
+#: templates/about-us.html:33
+msgid "Продвижение рукопашного боя как вида спорта"
+msgstr ""
+
+#: templates/about-us.html:34
+msgid ""
+"Организация соревнований и мероприятий для всех возрастов и уровней "
+"подготовки"
+msgstr ""
+
+#: templates/about-us.html:36
+msgid ""
+"Сотрудничество с международными организациями для обмена опытом и знаниями"
+msgstr ""
+
+#: templates/about-us.html:37
+msgid "Поддержка молодых спортсменов и тренеров"
+msgstr ""
+
+#: templates/about-us.html:42
+msgid "Контакты"
+msgstr ""
+
+#: templates/about-us.html:46 templates/base/base.html:232
+msgid "ул. Лабзак дом.1, г. Ташкент, Узбекистан"
+msgstr ""
+
+#: templates/antidoping.html:15
+msgid "Антидопинг"
+msgstr ""
+
+#: templates/antidoping.html:16
+msgid "Допинг"
+msgstr ""
+
+#: templates/antidoping.html:16
+msgid "это совершение одного или несколько нарушений антидопинговых правил"
+msgstr ""
+
+#: templates/antidoping.html:17
+msgid "правил"
+msgstr ""
+
+#: templates/antidoping.html:19
+msgid ""
+"\n"
+"                Обычно допингом называют препараты фармакологического "
+"характера,\n"
+"                которые повышают выносливость организма, имеют особое "
+"воздействие на мышечную\n"
+"                и даже психическую систему спортсмена. Запрещенные препараты "
+"принято делить на\n"
+"                несколько групп в зависимости от характера их воздействия.\n"
+"            "
+msgstr ""
+
+#: templates/antidoping.html:27
+msgid "Сообщить о применении запрещённых препаратов"
+msgstr ""
+
+#: templates/antidoping.html:28
+msgid "Международные документы, регламентирующие антидопинговую деятельность"
+msgstr ""
+
+#: templates/antidoping.html:29
+msgid "Международный стандарт по соответствию"
+msgstr ""
+
+#: templates/antidoping.html:30
+msgid "Международный стандарт по защите частной жизни и личной информации"
+msgstr ""
+
+#: templates/antidoping.html:31
+msgid "Международный стандарт по обрботке результатов"
+msgstr ""
+
+#: templates/antidoping.html:32
+msgid "Международный стандарт по образованию январь"
+msgstr ""
+
+#: templates/antidoping.html:33
+msgid "Международный стандарт по Тестирование и расследования"
+msgstr ""
+
+#: templates/antidoping.html:34
+msgid "Международный стандарт по терапевтическому использованию"
+msgstr ""
+
+#: templates/antidoping.html:35 templates/antidoping.html:38
+msgid "Запрещенный список"
+msgstr ""
+
+#: templates/antidoping.html:36
+msgid "Обзор основных  изменений "
+msgstr ""
+
+#: templates/antidoping.html:37
+msgid "Программма мониторинг"
+msgstr ""
+
+#: templates/antidoping.html:39
+msgid "Обзор основных изменений ЗС"
+msgstr ""
+
+#: templates/antidoping.html:40
+msgid "Спортсменам"
+msgstr ""
+
+#: templates/antidoping.html:41
+msgid "Завершение и возобновление спортивной карьеры"
+msgstr ""
+
+#: templates/antidoping.html:42
+msgid "Дисквалифицированным спорсменам"
+msgstr ""
+
+#: templates/antidoping.html:43
+msgid "Пулы тестирование и информация о нахождении"
+msgstr ""
+
+#: templates/antidoping.html:44
+msgid ""
+"Акт об антидопинговых правах спортсменов и памятка по правам спортсменов"
+msgstr ""
+
+#: templates/base/base.html:52
+msgid "Asian hand to hand federation"
+msgstr ""
+
+#: templates/base/base.html:61
+msgid "Азиатская Федерация"
+msgstr ""
+
+#: templates/base/base.html:61
+msgid "Рукопашного боя"
+msgstr ""
+
+#: templates/base/base.html:65 templates/base/base.html:96
+msgid "about us"
+msgstr "О нас"
+
+#: templates/base/base.html:66 templates/base/base.html:97
+msgid "Команда"
+msgstr ""
+
+#: templates/base/base.html:67 templates/base/base.html:98
 msgid "gallery"
 msgstr "Галерея"
 
-#: templates/base/base.html:46 templates/base/base.html:75
-#: templates/index.html:70
-#| msgid "Documents"
-msgid "documents"
-msgstr "Документы"
+#: templates/base/base.html:68 templates/base/base.html:99
+msgid "Календарь событий"
+msgstr ""
 
-#: templates/base/base.html:47 templates/base/base.html:76
-#: templates/index.html:86
-msgid "news"
-msgstr "Новости"
+#: templates/base/base.html:207
+msgid "Азиатская Федерация Рокопашного боя"
+msgstr ""
 
-#: templates/base/base.html:48 templates/base/base.html:77
-#| msgid "Contact Us"
-msgid "contacts"
-msgstr "Связаться с нами"
+#: templates/base/base.html:208
+msgid "Азиатская Федерация Рукопашного боя"
+msgstr ""
 
-#: templates/base/base.html:90
-msgid "Home"
-msgstr "Дом"
+#: templates/base/base.html:210
+msgid ""
+"\n"
+"                    When citing materials, a link to the press service of "
+"the Judo Federation and the official world website www.hsif.world\n"
+"                "
+msgstr ""
 
-#: templates/base/base.html:91
-#| msgid "About Us"
-msgid "About us"
-msgstr "О нас"
-
-#: templates/base/base.html:96
-#| msgid "Contact Us"
+#: templates/base/base.html:217
 msgid "Contacts"
 msgstr "Связаться с нами"
 
-#: templates/catalogs.html:12
-#| msgid "products"
-msgid "Catalog products"
-msgstr "Продукты"
+#: templates/base/base.html:230
+msgid "Address"
+msgstr "Адрес"
 
-#: templates/catalogs.html:15
-msgid "Download catalog"
-msgstr "Загрузить каталог"
-
-#: templates/detail.html:11
-msgid "Home page"
-msgstr "Домашняя страница"
-
-#: templates/detail.html:12
-#| msgid "Products"
-msgid "Products catalog"
-msgstr "Продукты"
-
-#: templates/detail.html:13
-#| msgid "Products"
-msgid "Products info"
-msgstr "Продукты"
-
-#: templates/index.html:11
-msgid "The cable, You can trust!"
-msgstr "Кабель которому, Вы можете доверять!"
-
-#: templates/index.html:12
-msgid ""
-"The high quality of used materials ensure the reliability of our products"
+#: templates/command.html:16
+msgid "Международная Федерация рукопашного боя создана в 2006 году"
 msgstr ""
-"Высокое качество используемых материалов обеспечивает надежность нашей "
-"продукции."
 
-#: templates/index.html:15
-#| msgid "Contact Us"
-msgid "contact us"
-msgstr "Связаться с нами"
+#: templates/command.html:17
+msgid "Штаб квартира Федерации находится в Москве"
+msgstr ""
 
-#: templates/index.html:48
-msgid "view more"
-msgstr "посмотреть больше"
+#: templates/command.html:18
+msgid ""
+"\n"
+"                        Цель Федерации - развитие и популяризация "
+"рукопашного боя как вида спорта во всем мире.\n"
+"                    Приоритетной задачей Федерации является включение "
+"рукопашного боя в список олимпийских видов спорта.\n"
+"                    Международная Федерация рукопашного боя проводит "
+"чемпионаты, турниры, судейские и обучайщие семинары,\n"
+"                    показательные выступления в разных странах мира, "
+"сотрудничая со спортсменами из других видов\n"
+"                    единоборств.\n"
+"                "
+msgstr ""
 
-#: templates/index.html:77
-msgid "Download"
-msgstr "Скачать"
+#: templates/command.html:29
+msgid "Руководство"
+msgstr ""
 
-#: templates/index.html:99
-msgid "2 mins read"
-msgstr "2 минуты чтения"
+#: templates/command.html:37 templates/command.html:191
+msgid "Мирзакулов"
+msgstr ""
 
-#: templates/index.html:119
-msgid "Contact information is not available at the moment."
-msgstr "Контент на данный момент недоступен."
+#: templates/command.html:38 templates/command.html:192
+msgid "Бахтиер Чориевич"
+msgstr ""
+
+#: templates/command.html:39 templates/command.html:50
+#: templates/command.html:72 templates/command.html:83
+#: templates/command.html:94 templates/command.html:105
+#: templates/command.html:138 templates/command.html:149
+#: templates/command.html:160 templates/command.html:182
+msgid "Президент"
+msgstr ""
+
+#: templates/command.html:40
+msgid "Азиатской Федерации"
+msgstr ""
+
+#: templates/command.html:48
+msgid "Синде"
+msgstr ""
+
+#: templates/command.html:49
+msgid "Прадип Пракаш"
+msgstr ""
+
+#: templates/command.html:51
+msgid "Федерации Индии"
+msgstr ""
+
+#: templates/command.html:59
+msgid "Ваужин"
+msgstr ""
+
+#: templates/command.html:60
+msgid "Парк"
+msgstr ""
+
+#: templates/command.html:61 templates/command.html:116
+#: templates/command.html:127
+msgid "Президент Федерации"
+msgstr ""
+
+#: templates/command.html:62
+msgid "Южной Кореии"
+msgstr ""
+
+#: templates/command.html:70
+msgid "Кадзухиро"
+msgstr ""
+
+#: templates/command.html:71
+msgid "Крейг"
+msgstr ""
+
+#: templates/command.html:73
+msgid "Федерации Японии"
+msgstr ""
+
+#: templates/command.html:81
+msgid "Кабалинов"
+msgstr ""
+
+#: templates/command.html:82
+msgid "Олег"
+msgstr ""
+
+#: templates/command.html:84
+msgid "Федерации Тайланд"
+msgstr ""
+
+#: templates/command.html:92
+msgid "Кыдыралиев"
+msgstr ""
+
+#: templates/command.html:93
+msgid "Рамис"
+msgstr ""
+
+#: templates/command.html:95
+msgid "Федерации Киргизистан"
+msgstr ""
+
+#: templates/command.html:103
+msgid "Ахмеджанов"
+msgstr ""
+
+#: templates/command.html:104
+msgid "Фарход"
+msgstr ""
+
+#: templates/command.html:106
+msgid "Федерации Таджикистан"
+msgstr ""
+
+#: templates/command.html:114
+msgid "Халки"
+msgstr ""
+
+#: templates/command.html:115
+msgid "Ясин"
+msgstr ""
+
+#: templates/command.html:117
+msgid "Исламского Эмирата Афганистан"
+msgstr ""
+
+#: templates/command.html:125
+msgid "Занди"
+msgstr ""
+
+#: templates/command.html:126
+msgid "Аббас"
+msgstr ""
+
+#: templates/command.html:128
+msgid "Исламской Республики Иран"
+msgstr ""
+
+#: templates/command.html:136
+msgid "Хаянгарва"
+msgstr ""
+
+#: templates/command.html:137
+msgid "Санджиху"
+msgstr ""
+
+#: templates/command.html:139
+msgid "Федерации Монголии"
+msgstr ""
+
+#: templates/command.html:147
+msgid "Кайрбаев"
+msgstr ""
+
+#: templates/command.html:148
+msgid "Адил"
+msgstr ""
+
+#: templates/command.html:150
+msgid "Федерации Казахстан"
+msgstr ""
+
+#: templates/command.html:158
+msgid "Ханов"
+msgstr ""
+
+#: templates/command.html:159
+msgid "Ахмет"
+msgstr ""
+
+#: templates/command.html:161
+msgid "Федерации Туркменистан"
+msgstr ""
+
+#: templates/command.html:169
+msgid "Реман"
+msgstr ""
+
+#: templates/command.html:170
+msgid "Зиа Ур"
+msgstr ""
+
+#: templates/command.html:171
+msgid "Президент Исламской"
+msgstr ""
+
+#: templates/command.html:172
+msgid "Федерации Республики Пакистан"
+msgstr ""
+
+#: templates/command.html:180
+msgid "Алномас"
+msgstr ""
+
+#: templates/command.html:181
+msgid "Валид"
+msgstr ""
+
+#: templates/command.html:183
+msgid "Федерации Кувейт"
+msgstr ""
+
+#: templates/command.html:193
+msgid "Вице-Президент"
+msgstr ""
+
+#: templates/command.html:194
+msgid "Республики Узбекистан"
+msgstr ""
+
+#: templates/command.html:202
+msgid "Комитет"
+msgstr ""
+
+#: templates/command.html:204
+msgid ""
+"Комитет по учебно-методической работе и по связам со СМИ, рекламе и "
+"продвижению"
+msgstr ""
+
+#: templates/command.html:211
+msgid "Юсупов"
+msgstr ""
+
+#: templates/command.html:212
+msgid "Сухроб"
+msgstr ""
+
+#: templates/command.html:213
+msgid "Член Коммитета"
+msgstr ""
+
+#: templates/command.html:221
+msgid "Худайберганов"
+msgstr ""
+
+#: templates/command.html:222
+msgid "Юнус"
+msgstr ""
+
+#: templates/command.html:223
+msgid "Член совета"
+msgstr ""
+
+#: templates/command.html:231
+msgid "Расулова"
+msgstr ""
+
+#: templates/command.html:232
+msgid "Назокат"
+msgstr ""
+
+#: templates/command.html:233
+msgid "Пресса"
+msgstr ""
+
+#: templates/command.html:241
+msgid "Муродова"
+msgstr ""
+
+#: templates/command.html:242
+msgid "Маликахон"
+msgstr ""
+
+#: templates/command.html:243
+msgid "Режиссер"
+msgstr ""
+
+#: templates/command.html:253
+msgid "Президум"
+msgstr ""
+
+#: templates/command.html:261
+msgid "президент"
+msgstr ""
+
+#: templates/command.html:262
+msgid "Астахов"
+msgstr ""
+
+#: templates/command.html:263
+msgid "Сергей"
+msgstr ""
+
+#: templates/command.html:264
+msgid "Российская Федерация"
+msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "Заголовок"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "Is Active?"
+#~ msgstr "Активен?"
+
+#~ msgid "About Us"
+#~ msgstr "О нас"
+
+#~ msgid "Phone Number"
+#~ msgstr "Номер телефона"
+
+#~ msgid "Email Address"
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "Location"
+#~ msgstr "Расположение"
+
+#~ msgid "Contact Us"
+#~ msgstr "Связаться с нами"
+
+#~ msgid "Icon"
+#~ msgstr "Иконка"
+
+#~ msgid "Link"
+#~ msgstr "Ссылка"
+
+#~ msgid "Social Media"
+#~ msgstr "Социальные сети"
+
+#~ msgid "Image"
+#~ msgstr "Изображение"
+
+#~ msgid "Photo"
+#~ msgstr "Фото"
+
+#~ msgid "Gallery"
+#~ msgstr "Галерея"
+
+#~ msgid "File"
+#~ msgstr "Файл"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Document"
+#~ msgstr "Документ"
+
+#~ msgid "Documents"
+#~ msgstr "Документы"
+
+#~ msgid "News"
+#~ msgstr "Новости"
+
+#~ msgid "title"
+#~ msgstr "заголовок"
+
+#~ msgid "Category"
+#~ msgstr "Категория"
+
+#~ msgid "Categories"
+#~ msgstr "Категории"
+
+#~ msgid "Color"
+#~ msgstr "Цвет"
+
+#~ msgid "black"
+#~ msgstr "чёрный"
+
+#~ msgid "products"
+#~ msgstr "Продукты"
+
+#~ msgid "Price"
+#~ msgstr "Цена"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid "View"
+#~ msgstr "Вид"
+
+#~ msgid "Product"
+#~ msgstr "Продукт"
+
+#~ msgid "Products"
+#~ msgstr "Продукты"
+
+#~ msgid "Hayat Cable"
+#~ msgstr "Hayat Cable"
+
+#~ msgid "home"
+#~ msgstr "Дом"
+
+#~ msgid "catalog"
+#~ msgstr "Каталог"
+
+#~| msgid "Documents"
+#~ msgid "documents"
+#~ msgstr "Документы"
+
+#~ msgid "news"
+#~ msgstr "Новости"
+
+#~| msgid "Contact Us"
+#~ msgid "contacts"
+#~ msgstr "Связаться с нами"
+
+#~ msgid "Home"
+#~ msgstr "Дом"
+
+#~| msgid "products"
+#~ msgid "Catalog products"
+#~ msgstr "Продукты"
+
+#~ msgid "Download catalog"
+#~ msgstr "Загрузить каталог"
+
+#~ msgid "Home page"
+#~ msgstr "Домашняя страница"
+
+#~| msgid "Products"
+#~ msgid "Products catalog"
+#~ msgstr "Продукты"
+
+#~| msgid "Products"
+#~ msgid "Products info"
+#~ msgstr "Продукты"
+
+#~ msgid "The cable, You can trust!"
+#~ msgstr "Кабель которому, Вы можете доверять!"
+
+#~ msgid ""
+#~ "The high quality of used materials ensure the reliability of our products"
+#~ msgstr ""
+#~ "Высокое качество используемых материалов обеспечивает надежность нашей "
+#~ "продукции."
+
+#~| msgid "Contact Us"
+#~ msgid "contact us"
+#~ msgstr "Связаться с нами"
+
+#~ msgid "view more"
+#~ msgstr "посмотреть больше"
+
+#~ msgid "Download"
+#~ msgstr "Скачать"
+
+#~ msgid "2 mins read"
+#~ msgstr "2 минуты чтения"
+
+#~ msgid "Contact information is not available at the moment."
+#~ msgstr "Контент на данный момент недоступен."
