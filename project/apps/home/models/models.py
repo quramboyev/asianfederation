@@ -66,7 +66,7 @@ class AboutUsModel(TranslatableModel):
         verbose_name_plural = "About Us"
 
     def __str__(self) -> str:
-        return f"{self.description[:10]}:{"selected" if self.selected else ""}"
+        return f"{self.description[:10]}:{'selected' if self.selected else ''}"
 
 
 class GoalModel(TranslatableModel):
