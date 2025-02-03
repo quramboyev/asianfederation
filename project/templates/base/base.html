@@ -58,7 +58,7 @@
         <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
             <div class="logo">
                 <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
-                <span class="site-name">Азиатская Федерация <br> Рукопашного боя</span>
+                <span class="site-name">{% trans "Азиатская Федерация" %} <br> {% trans "Рукопашного боя" %} </span>
             </div>
             <div class="items">
                 <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
@@ -204,14 +204,17 @@
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="{% static 'home/images/logo.svg' %}" alt="Азиатская Федерация Рокопашного боя">
-            <span class="site-name fsn">Азиатская Федерация Рукопашного боя</span>
-            <span class="site-name">При цитировании материалов ссылка на пресс-службу Фeдeрации дзюдо и официальный
-                    всемирный сайт www.hsif.world</span>
+            <img src="{% static 'home/images/logo.svg' %}" alt="{% trans "Азиатская Федерация Рокопашного боя" %}">
+            <span class="site-name fsn">{% trans "Азиатская Федерация Рукопашного боя" %}</span>
+            <span class="site-name">
+                {% blocktrans %}
+                    When citing materials, a link to the press service of the Judo Federation and the official world website www.hsif.world
+                {% endblocktrans %}
+            </span>
         </div>
         <div class="footer-items">
             <ul class="footer-nav">
-                <li class="general-color">Контакты:</li>
+                <li class="general-color">{% trans "Contacts" %}:</li>
                 <li>
                     <p><i class="fa-solid fa-phone"></i>
                         <a class="type-connecting" href="tel: +998909323388">+998(90) 932-33-88</a>
@@ -224,9 +227,9 @@
         </div>
         <div class="footer-items">
             <ul class="footer-nav">
-                <li class="general-color">Адрес:</li>
+                <li class="general-color">{% trans "Address" %}:</li>
                 <li>
-                    <p class="type-connecting general-color">ул. Лабзак дом.1, г. Ташкент, Узбекистан</p>
+                    <p class="type-connecting general-color">{% trans "ул. Лабзак дом.1, г. Ташкент, Узбекистан" %}</p>
                 </li>
             </ul>
 

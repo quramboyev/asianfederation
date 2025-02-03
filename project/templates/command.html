@@ -1,5 +1,7 @@
 {% extends "base/base.html" %}
 {% load static %}
+{% load i18n %}
+
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'home/styles/main.css' %}">
@@ -11,18 +13,20 @@
 <div class="container">
     <div class="about-us-wrapper">
         <div class="about-us-f">
-            <p class="about-us-info">Международная Федерация рукопашного боя создана в 2006 году.
-                Штаб квартира Федерации находится в Москве. <br>
-                Цель Федерации - развитие и популяризация рукопашного боя как вида спорта во всем мире.
-                Приоритетной задачей Федерации является включение рукопашного боя в список олимпийских видов спорта.
-                Международная Федерация рукопашного боя проводит чемпионаты, турниры, судейские и обучайщие семинары,
-                показательные выступления в разных странах мира, сотрудничая со спортсменами из других видов
-                единоборств.
+            <p class="about-us-info">{% trans "Международная Федерация рукопашного боя создана в 2006 году" %}.
+                {% trans "Штаб квартира Федерации находится в Москве" %}. <br>
+                {% blocktrans %}
+                        Цель Федерации - развитие и популяризация рукопашного боя как вида спорта во всем мире.
+                    Приоритетной задачей Федерации является включение рукопашного боя в список олимпийских видов спорта.
+                    Международная Федерация рукопашного боя проводит чемпионаты, турниры, судейские и обучайщие семинары,
+                    показательные выступления в разных странах мира, сотрудничая со спортсменами из других видов
+                    единоборств.
+                {% endblocktrans %}
             </p>
         </div>
         <div class="hidden-part-wrapper" id="hidden-part-wrapper">
             <div class="management-wrapper">
-                <button class="management-title">Руководство</button>
+                <button class="management-title">{% trans "Руководство" %}</button>
                 <div class="hidden-box">
                     <ul class="management-description-list">
                         <li class="manegement-description-item">
@@ -30,10 +34,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Мирзакулов </div>
-                                <div class="description-name">Бахтиер Чориевич</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Азиатской Федерации</div>
+                                <div class="description-surname">{% trans "Мирзакулов" %} </div>
+                                <div class="description-name">{% trans "Бахтиер Чориевич" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Азиатской Федерации" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -41,10 +45,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Синде</div>
-                                <div class="description-name">Прадип Пракаш</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Индии</div>
+                                <div class="description-surname">{% trans "Синде" %}</div>
+                                <div class="description-name">{% trans "Прадип Пракаш" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Индии" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -52,10 +56,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Ваужин</div>
-                                <div class="description-name">Парк</div>
-                                <div class="description-position">Президент Федерации</div>
-                                <div class="description-country">Южной Кореии</div>
+                                <div class="description-surname">{% trans "Ваужин" %}</div>
+                                <div class="description-name">{% trans "Парк" %}</div>
+                                <div class="description-position">{% trans "Президент Федерации" %}</div>
+                                <div class="description-country">{% trans "Южной Кореии" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -63,10 +67,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Кадзухиро</div>
-                                <div class="description-name">Крейг</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Японии</div>
+                                <div class="description-surname">{% trans "Кадзухиро" %}</div>
+                                <div class="description-name">{% trans "Крейг" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Японии" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -74,10 +78,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Кабалинов</div>
-                                <div class="description-name">Олег</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Тайланд</div>
+                                <div class="description-surname">{% trans "Кабалинов" %}</div>
+                                <div class="description-name">{% trans "Олег" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Тайланд" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -85,10 +89,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Кыдыралиев</div>
-                                <div class="description-name">Рамис</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Киргизистан</div>
+                                <div class="description-surname">{% trans "Кыдыралиев" %}</div>
+                                <div class="description-name">{% trans "Рамис" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Киргизистан" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -96,10 +100,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Ахмеджанов</div>
-                                <div class="description-name">Фарход</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Таджикистан</div>
+                                <div class="description-surname">{% trans "Ахмеджанов" %}</div>
+                                <div class="description-name">{% trans "Фарход" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Таджикистан" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -107,10 +111,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Халки</div>
-                                <div class="description-name">Ясин</div>
-                                <div class="description-position">Президент Федерации</div>
-                                <div class="description-country">Исламского Эмирата Афганистан</div>
+                                <div class="description-surname">{% trans "Халки" %}</div>
+                                <div class="description-name">{% trans "Ясин" %}</div>
+                                <div class="description-position">{% trans "Президент Федерации" %}</div>
+                                <div class="description-country">{% trans "Исламского Эмирата Афганистан" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -118,10 +122,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Занди</div>
-                                <div class="description-name">Аббас</div>
-                                <div class="description-position">Президент Федерации </div>
-                                <div class="description-country">Исламской Республики Иран</div>
+                                <div class="description-surname">{% trans "Занди" %}</div>
+                                <div class="description-name">{% trans "Аббас" %}</div>
+                                <div class="description-position">{% trans "Президент Федерации" %}</div>
+                                <div class="description-country">{% trans "Исламской Республики Иран" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -129,10 +133,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Хаянгарва</div>
-                                <div class="description-name">Санджиху</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Монголии</div>
+                                <div class="description-surname">{% trans "Хаянгарва" %}</div>
+                                <div class="description-name">{% trans "Санджиху" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Монголии" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -140,10 +144,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Кайрбаев</div>
-                                <div class="description-name">Адил</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Казахстан</div>
+                                <div class="description-surname">{% trans "Кайрбаев" %}</div>
+                                <div class="description-name">{% trans "Адил" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Казахстан" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -151,10 +155,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Ханов</div>
-                                <div class="description-name">Ахмет</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Туркменистан</div>
+                                <div class="description-surname">{% trans "Ханов" %}</div>
+                                <div class="description-name">{% trans "Ахмет" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Туркменистан" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -162,10 +166,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Реман</div>
-                                <div class="description-name">Зиа Ур</div>
-                                <div class="description-position">Президент Исламской</div>
-                                <div class="description-country">Федерации Республики Пакистан</div>
+                                <div class="description-surname">{% trans "Реман" %}</div>
+                                <div class="description-name">{% trans "Зиа Ур" %}</div>
+                                <div class="description-position">{% trans "Президент Исламской" %}</div>
+                                <div class="description-country">{% trans "Федерации Республики Пакистан" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -173,10 +177,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Алномас</div>
-                                <div class="description-name">Валид</div>
-                                <div class="description-position">Президент</div>
-                                <div class="description-country">Федерации Кувейт</div>
+                                <div class="description-surname">{% trans "Алномас" %}</div>
+                                <div class="description-name">{% trans "Валид" %}</div>
+                                <div class="description-position">{% trans "Президент" %}</div>
+                                <div class="description-country">{% trans "Федерации Кувейт" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -184,10 +188,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Мирзакулов</div>
-                                <div class="description-name">Бахтиер Чориевич</div>
-                                <div class="description-position">Вице-Президент</div>
-                                <div class="description-country">Республики Узбекистан</div>
+                                <div class="description-surname">{% trans "Мирзакулов" %}</div>
+                                <div class="description-name">{% trans "Бахтиер Чориевич" %}</div>
+                                <div class="description-position">{% trans "Вице-Президент" %}</div>
+                                <div class="description-country">{% trans "Республики Узбекистан" %}</div>
                             </div>
                         </li>
                     </ul>
@@ -195,18 +199,18 @@
                 </div>
             </div>
             <div class="management-wrapper">
-                <button class="management-title">Комитет</button>
+                <button class="management-title">{% trans "Комитет" %}</button>
                 <div class="hidden-box closed">
-                    <h2 class="management-description asian-menegment">Комитет по учебно-методической работе и по связам со СМИ, рекламе и продвижению</h2>
+                    <h2 class="management-description asian-menegment">{% trans "Комитет по учебно-методической работе и по связам со СМИ, рекламе и продвижению" %}</h2>
                     <ul class="management-description-list">
                         <li class="manegement-description-item">
                             <div class="description-img-wrapper">
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Юсупов</div>
-                                <div class="description-name">Сухроб</div>
-                                <div class="description-position">Член Коммитета</div>
+                                <div class="description-surname">{% trans "Юсупов" %}</div>
+                                <div class="description-name">{% trans "Сухроб" %}</div>
+                                <div class="description-position">{% trans "Член Коммитета" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -214,9 +218,9 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Худайберганов</div>
-                                <div class="description-name">Юнус</div>
-                                <div class="description-position">Член совета</div>
+                                <div class="description-surname">{% trans "Худайберганов" %}</div>
+                                <div class="description-name">{% trans "Юнус" %}</div>
+                                <div class="description-position">{% trans "Член совета" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -224,9 +228,9 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Расулова</div>
-                                <div class="description-name">Назокат</div>
-                                <div class="description-position">Пресса</div>
+                                <div class="description-surname">{% trans "Расулова" %}</div>
+                                <div class="description-name">{% trans "Назокат" %}</div>
+                                <div class="description-position">{% trans "Пресса" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">
@@ -234,9 +238,9 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-surname">Муродова</div>
-                                <div class="description-name">Маликахон</div>
-                                <div class="description-position">Режиссер</div>
+                                <div class="description-surname">{% trans "Муродова" %}</div>
+                                <div class="description-name">{% trans "Маликахон" %}</div>
+                                <div class="description-position">{% trans "Режиссер" %}</div>
                             </div>
                         </li>
                     </ul>
@@ -246,7 +250,7 @@
                 </div>
             </div>
             <div class="management-wrapper">
-                <button class="management-title">Президум</button>
+                <button class="management-title">{% trans "Президум" %}</button>
                 <div class="hidden-box closed">
                     <ul class="management-description-list">
                         <li class="manegement-description-item">
@@ -254,10 +258,10 @@
                                 <img src="../images/man2.png" alt="" class="description-img">
                             </div>
                             <div class="description-details">
-                                <div class="description-position">президент</div>
-                                <div class="description-surname">Астахов</div>
-                                <div class="description-name">Сергей</div>
-                                <div class="description-country">Российская Федерация</div>
+                                <div class="description-position">{% trans "президент" %}</div>
+                                <div class="description-surname">{% trans "Астахов" %}</div>
+                                <div class="description-name">{% trans "Сергей" %}</div>
+                                <div class="description-country">{% trans "Российская Федерация" %}</div>
                             </div>
                         </li>
                         <li class="manegement-description-item">

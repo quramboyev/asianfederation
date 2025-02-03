@@ -168,7 +168,7 @@ msgstr "Дом"
 #: templates/base/base.html:42 templates/base/base.html:71
 #: templates/index.html:21
 #| msgid "About Us"
-msgid "about us"
+msgid "About us"
 msgstr "О нас"
 
 #: templates/base/base.html:44 templates/base/base.html:73
