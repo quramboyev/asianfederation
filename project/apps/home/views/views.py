@@ -1,10 +1,23 @@
+from datetime import datetime
 from django.shortcuts import render
-from apps.home.models import DocumentModel, DocTypeChoice
+from apps.home.models import DocumentModel, DocTypeChoice, ImageModel, AboutUsModel, CalendarModel
 
 
 def home(request):
+    now = datetime.now()
     rule = DocumentModel.objects.filter(type=DocTypeChoice.RULE).translated().first()
-    return render(request, 'home.html', context={'rule': rule})
+    images = ImageModel.objects.filter(for_date__lte=now)
+    about = AboutUsModel.objects.filter(selected=True).translated().first()
+    events = CalendarModel.objects.filter(_from__gte=now).translated()
+
+    return render(request, 'home.html',
+        context={
+            'rule': rule,
+            'images': images,
+            'about': about,
+            'events': events,
+        }
+    )
 
 
 def events_calendar(request):
