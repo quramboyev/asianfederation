@@ -8,17 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 23:09+0500\n"
-"PO-Revision-Date: 2024-08-13 22:50+0500\n"
-"Last-Translator:   <jim@gmail.com>\n"
+"POT-Creation-Date: 2025-02-04 00:05+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
-
 #: apps/home/models/models.py:9
 msgid "Calendar"
 msgstr ""
@@ -33,75 +31,61 @@ msgstr ""
 
 #: config/settings.py:102
 msgid "English"
-msgstr "Ingliz Tili"
+msgstr ""
 
 #: config/settings.py:103
 msgid "Russian"
-msgstr "Rus Tili"
+msgstr ""
 
 #: config/settings.py:104
 msgid "Uzbek"
-msgstr "O'zbek Tili"
+msgstr ""
 
 #: templates/about-us.html:12
 msgid "About us"
-msgstr "Biz haqimizda"
+msgstr ""
 
 #: templates/about-us.html:14
 msgid "Азиатская Федерация Рукопашного Боя"
 msgstr ""
 
-#: templates/about-us.html:16
+#: templates/about-us.html:18
 msgid ""
 "\n"
-"          Азиатская Федерация рукопашного боя создана в 2024 году.\n"
-"          Штаб-квартира Федерации находится в Ташкенте.\n"
-"          Цель Федерации – развитие и популяризация рукопашного боя как вида "
-"спорта во всем мире.\n"
-"          Приоритетной задачей Федерации является включение рукопашного боя "
-"в список олимпийских и азиатскиx видов спорта.\n"
-"        "
+"      The Asian Federation of Hand-to-Hand Combat was established in 2024.\n"
+"      The headquarters of the Federation is located in Tashkent.\n"
+"      The goal of the Federation is to develop and popularize hand-to-hand "
+"combat as a sport throughout the world.\n"
+"      The priority task of the Federation is to include hand-to-hand combat "
+"in the list of Olympic and Asian sports.\n"
+"      "
 msgstr ""
 
-#: templates/about-us.html:24
+#: templates/about-us.html:26
 msgid ""
 "\n"
-"          Международная Федерация рукопашного боя проводит чемпионаты, "
-"турниры, судейские и обучающие семинары, показательные\n"
-"          выступления в разных странах мира, сотрудничая со спортсменами из "
-"других видов единоборств.\n"
-"        "
+"\n"
+"      "
 msgstr ""
 
-#: templates/about-us.html:30
-msgid "Наши цели"
-msgstr ""
-
-#: templates/about-us.html:33
-msgid "Продвижение рукопашного боя как вида спорта"
+#: templates/about-us.html:31 templates/history.html:70
+msgid "Our goals"
 msgstr ""
 
 #: templates/about-us.html:34
-msgid ""
-"Организация соревнований и мероприятий для всех возрастов и уровней "
-"подготовки"
+msgid "Promoting hand-to-hand combat as a sport"
 msgstr ""
 
-#: templates/about-us.html:36
-msgid ""
-"Сотрудничество с международными организациями для обмена опытом и знаниями"
+#: templates/about-us.html:35
+msgid "Organization of competitions and events for all ages and skill levels"
 msgstr ""
 
-#: templates/about-us.html:37
-msgid "Поддержка молодых спортсменов и тренеров"
+#: templates/about-us.html:39
+msgid "Support for young athletes and coaches"
 msgstr ""
 
-#: templates/about-us.html:42
-msgid "Контакты"
-msgstr ""
-
-#: templates/about-us.html:46 templates/base/base.html:232
-msgid "ул. Лабзак дом.1, г. Ташкент, Узбекистан"
+#: templates/about-us.html:44 templates/base/base.html:220
+msgid "Contacts"
 msgstr ""
 
 #: templates/antidoping.html:15
@@ -112,598 +96,577 @@ msgstr ""
 msgid "Допинг"
 msgstr ""
 
-#: templates/antidoping.html:16
-msgid "это совершение одного или несколько нарушений антидопинговых правил"
-msgstr ""
-
-#: templates/antidoping.html:17
+#: templates/antidoping.html:18
 msgid "правил"
 msgstr ""
 
-#: templates/antidoping.html:19
+#: templates/antidoping.html:21
 msgid ""
 "\n"
-"                Обычно допингом называют препараты фармакологического "
-"характера,\n"
-"                которые повышают выносливость организма, имеют особое "
-"воздействие на мышечную\n"
-"                и даже психическую систему спортсмена. Запрещенные препараты "
-"принято делить на\n"
-"                несколько групп в зависимости от характера их воздействия.\n"
+"            Usually doping refers to drugs of a pharmacological nature,\n"
+"            which increase the body's endurance, have a special effect on "
+"the muscular\n"
+"            and even mental system of an athlete. Prohibited drugs are "
+"usually divided into\n"
+"            several groups depending on the nature of their effect.\n"
 "            "
 msgstr ""
 
-#: templates/antidoping.html:27
-msgid "Сообщить о применении запрещённых препаратов"
-msgstr ""
-
-#: templates/antidoping.html:28
-msgid "Международные документы, регламентирующие антидопинговую деятельность"
-msgstr ""
-
 #: templates/antidoping.html:29
-msgid "Международный стандарт по соответствию"
+msgid "Report the use of prohibited drugs"
 msgstr ""
 
-#: templates/antidoping.html:30
-msgid "Международный стандарт по защите частной жизни и личной информации"
-msgstr ""
-
-#: templates/antidoping.html:31
-msgid "Международный стандарт по обрботке результатов"
-msgstr ""
-
-#: templates/antidoping.html:32
-msgid "Международный стандарт по образованию январь"
-msgstr ""
-
-#: templates/antidoping.html:33
-msgid "Международный стандарт по Тестирование и расследования"
-msgstr ""
-
-#: templates/antidoping.html:34
-msgid "Международный стандарт по терапевтическому использованию"
-msgstr ""
-
-#: templates/antidoping.html:35 templates/antidoping.html:38
-msgid "Запрещенный список"
-msgstr ""
-
-#: templates/antidoping.html:36
-msgid "Обзор основных  изменений "
-msgstr ""
-
-#: templates/antidoping.html:37
-msgid "Программма мониторинг"
-msgstr ""
-
-#: templates/antidoping.html:39
-msgid "Обзор основных изменений ЗС"
-msgstr ""
-
-#: templates/antidoping.html:40
+#: templates/antidoping.html:54
 msgid "Спортсменам"
 msgstr ""
 
-#: templates/antidoping.html:41
-msgid "Завершение и возобновление спортивной карьеры"
+#: templates/antidoping.html:60
+msgid "Pools testing and location information"
 msgstr ""
 
-#: templates/antidoping.html:42
-msgid "Дисквалифицированным спорсменам"
-msgstr ""
-
-#: templates/antidoping.html:43
-msgid "Пулы тестирование и информация о нахождении"
-msgstr ""
-
-#: templates/antidoping.html:44
-msgid ""
-"Акт об антидопинговых правах спортсменов и памятка по правам спортсменов"
-msgstr ""
-
-#: templates/base/base.html:52
+#: templates/base/base.html:53
 msgid "Asian hand to hand federation"
 msgstr ""
 
-#: templates/base/base.html:61
+#: templates/base/base.html:63
 msgid "Азиатская Федерация"
 msgstr ""
 
-#: templates/base/base.html:61
+#: templates/base/base.html:63
 msgid "Рукопашного боя"
 msgstr ""
 
-#: templates/base/base.html:65 templates/base/base.html:96
-msgid "about us"
-msgstr "Biz haqimizda"
-
-#: templates/base/base.html:66 templates/base/base.html:97
-msgid "Команда"
-msgstr ""
-
 #: templates/base/base.html:67 templates/base/base.html:98
-msgid "gallery"
-msgstr "Galereya"
+msgid "about us"
+msgstr ""
 
 #: templates/base/base.html:68 templates/base/base.html:99
-msgid "Календарь событий"
+msgid "Command"
 msgstr ""
 
-#: templates/base/base.html:207
-msgid "Азиатская Федерация Рокопашного боя"
+#: templates/base/base.html:69 templates/base/base.html:100
+msgid "gallery"
 msgstr ""
 
-#: templates/base/base.html:208
-msgid "Азиатская Федерация Рукопашного боя"
+#: templates/base/base.html:70 templates/base/base.html:101
+msgid "Events calendar"
+msgstr ""
+
+#: templates/base/base.html:209
+msgid " Азиатская Федерация Рокопашного боя"
 msgstr ""
 
 #: templates/base/base.html:210
+msgid "Азиатская Федерация Рукопашного боя"
+msgstr ""
+
+#: templates/base/base.html:212
 msgid ""
 "\n"
 "                    When citing materials, a link to the press service of "
-"the Judo Federation and the official world website www.hsif.world\n"
-"                "
+"the Judo Federation and the official world\n"
+"                    website www.hsif.world\n"
+"                    "
 msgstr ""
 
-#: templates/base/base.html:217
-msgid "Contacts"
-msgstr "Biz bilan bog'lanish"
-
-#: templates/base/base.html:230
+#: templates/base/base.html:234
 msgid "Address"
-msgstr "Manzil"
-
-#: templates/command.html:16
-msgid "Международная Федерация рукопашного боя создана в 2006 году"
-msgstr ""
-
-#: templates/command.html:17
-msgid "Штаб квартира Федерации находится в Москве"
 msgstr ""
 
 #: templates/command.html:18
+msgid "The Federation's headquarters are located in Moscow."
+msgstr ""
+
+#: templates/command.html:19
 msgid ""
 "\n"
-"                        Цель Федерации - развитие и популяризация "
-"рукопашного боя как вида спорта во всем мире.\n"
-"                    Приоритетной задачей Федерации является включение "
-"рукопашного боя в список олимпийских видов спорта.\n"
-"                    Международная Федерация рукопашного боя проводит "
-"чемпионаты, турниры, судейские и обучайщие семинары,\n"
-"                    показательные выступления в разных странах мира, "
-"сотрудничая со спортсменами из других видов\n"
-"                    единоборств.\n"
+"                The goal of the Federation is to develop and popularize hand-"
+"to-hand combat as a sport throughout the\n"
+"                world.\n"
+"                The priority task of the Federation is to include hand-to-"
+"hand combat in the list of Olympic sports.\n"
+"                The International Federation of Hand-to-Hand Combat holds "
+"championships, tournaments, referee and\n"
+"                training seminars,\n"
+"                demonstration performances in different countries of the "
+"world, cooperating with athletes from other\n"
+"                types of martial arts.\n"
 "                "
 msgstr ""
 
-#: templates/command.html:29
-msgid "Руководство"
+#: templates/command.html:32
+msgid "Management"
 msgstr ""
 
-#: templates/command.html:37 templates/command.html:191
+#: templates/command.html:40 templates/command.html:194
 msgid "Мирзакулов"
 msgstr ""
 
-#: templates/command.html:38 templates/command.html:192
+#: templates/command.html:41 templates/command.html:195
 msgid "Бахтиер Чориевич"
 msgstr ""
 
-#: templates/command.html:39 templates/command.html:50
-#: templates/command.html:72 templates/command.html:83
-#: templates/command.html:94 templates/command.html:105
-#: templates/command.html:138 templates/command.html:149
-#: templates/command.html:160 templates/command.html:182
+#: templates/command.html:42 templates/command.html:53
+#: templates/command.html:75 templates/command.html:86
+#: templates/command.html:97 templates/command.html:108
+#: templates/command.html:141 templates/command.html:152
+#: templates/command.html:163 templates/command.html:185
 msgid "Президент"
 msgstr ""
 
-#: templates/command.html:40
+#: templates/command.html:43
 msgid "Азиатской Федерации"
 msgstr ""
 
-#: templates/command.html:48
+#: templates/command.html:51
 msgid "Синде"
 msgstr ""
 
-#: templates/command.html:49
+#: templates/command.html:52
 msgid "Прадип Пракаш"
 msgstr ""
 
-#: templates/command.html:51
+#: templates/command.html:54
 msgid "Федерации Индии"
 msgstr ""
 
-#: templates/command.html:59
+#: templates/command.html:62
 msgid "Ваужин"
 msgstr ""
 
-#: templates/command.html:60
+#: templates/command.html:63
 msgid "Парк"
 msgstr ""
 
-#: templates/command.html:61 templates/command.html:116
-#: templates/command.html:127
+#: templates/command.html:64 templates/command.html:119
+#: templates/command.html:130
 msgid "Президент Федерации"
 msgstr ""
 
-#: templates/command.html:62
+#: templates/command.html:65
 msgid "Южной Кореии"
 msgstr ""
 
-#: templates/command.html:70
+#: templates/command.html:73
 msgid "Кадзухиро"
 msgstr ""
 
-#: templates/command.html:71
+#: templates/command.html:74
 msgid "Крейг"
 msgstr ""
 
-#: templates/command.html:73
+#: templates/command.html:76
 msgid "Федерации Японии"
 msgstr ""
 
-#: templates/command.html:81
+#: templates/command.html:84
 msgid "Кабалинов"
 msgstr ""
 
-#: templates/command.html:82
+#: templates/command.html:85
 msgid "Олег"
 msgstr ""
 
-#: templates/command.html:84
+#: templates/command.html:87
 msgid "Федерации Тайланд"
 msgstr ""
 
-#: templates/command.html:92
+#: templates/command.html:95
 msgid "Кыдыралиев"
 msgstr ""
 
-#: templates/command.html:93
+#: templates/command.html:96
 msgid "Рамис"
 msgstr ""
 
-#: templates/command.html:95
+#: templates/command.html:98
 msgid "Федерации Киргизистан"
 msgstr ""
 
-#: templates/command.html:103
+#: templates/command.html:106
 msgid "Ахмеджанов"
 msgstr ""
 
-#: templates/command.html:104
+#: templates/command.html:107
 msgid "Фарход"
 msgstr ""
 
-#: templates/command.html:106
+#: templates/command.html:109
 msgid "Федерации Таджикистан"
 msgstr ""
 
-#: templates/command.html:114
+#: templates/command.html:117
 msgid "Халки"
 msgstr ""
 
-#: templates/command.html:115
+#: templates/command.html:118
 msgid "Ясин"
 msgstr ""
 
-#: templates/command.html:117
+#: templates/command.html:120
 msgid "Исламского Эмирата Афганистан"
 msgstr ""
 
-#: templates/command.html:125
+#: templates/command.html:128
 msgid "Занди"
 msgstr ""
 
-#: templates/command.html:126
+#: templates/command.html:129
 msgid "Аббас"
 msgstr ""
 
-#: templates/command.html:128
+#: templates/command.html:131
 msgid "Исламской Республики Иран"
 msgstr ""
 
-#: templates/command.html:136
+#: templates/command.html:139
 msgid "Хаянгарва"
 msgstr ""
 
-#: templates/command.html:137
+#: templates/command.html:140
 msgid "Санджиху"
 msgstr ""
 
-#: templates/command.html:139
+#: templates/command.html:142
 msgid "Федерации Монголии"
 msgstr ""
 
-#: templates/command.html:147
+#: templates/command.html:150
 msgid "Кайрбаев"
 msgstr ""
 
-#: templates/command.html:148
+#: templates/command.html:151
 msgid "Адил"
 msgstr ""
 
-#: templates/command.html:150
+#: templates/command.html:153
 msgid "Федерации Казахстан"
 msgstr ""
 
-#: templates/command.html:158
+#: templates/command.html:161
 msgid "Ханов"
 msgstr ""
 
-#: templates/command.html:159
+#: templates/command.html:162
 msgid "Ахмет"
 msgstr ""
 
-#: templates/command.html:161
+#: templates/command.html:164
 msgid "Федерации Туркменистан"
 msgstr ""
 
-#: templates/command.html:169
+#: templates/command.html:172
 msgid "Реман"
 msgstr ""
 
-#: templates/command.html:170
+#: templates/command.html:173
 msgid "Зиа Ур"
 msgstr ""
 
-#: templates/command.html:171
+#: templates/command.html:174
 msgid "Президент Исламской"
 msgstr ""
 
-#: templates/command.html:172
+#: templates/command.html:175
 msgid "Федерации Республики Пакистан"
 msgstr ""
 
-#: templates/command.html:180
+#: templates/command.html:183
 msgid "Алномас"
 msgstr ""
 
-#: templates/command.html:181
+#: templates/command.html:184
 msgid "Валид"
 msgstr ""
 
-#: templates/command.html:183
+#: templates/command.html:186
 msgid "Федерации Кувейт"
 msgstr ""
 
-#: templates/command.html:193
+#: templates/command.html:196
 msgid "Вице-Президент"
 msgstr ""
 
-#: templates/command.html:194
+#: templates/command.html:197
 msgid "Республики Узбекистан"
 msgstr ""
 
-#: templates/command.html:202
-msgid "Комитет"
+#: templates/command.html:205
+msgid "Committee"
 msgstr ""
 
-#: templates/command.html:204
-msgid ""
-"Комитет по учебно-методической работе и по связам со СМИ, рекламе и "
-"продвижению"
-msgstr ""
-
-#: templates/command.html:211
+#: templates/command.html:215
 msgid "Юсупов"
 msgstr ""
 
-#: templates/command.html:212
+#: templates/command.html:216
 msgid "Сухроб"
 msgstr ""
 
-#: templates/command.html:213
+#: templates/command.html:217
 msgid "Член Коммитета"
 msgstr ""
 
-#: templates/command.html:221
+#: templates/command.html:225
 msgid "Худайберганов"
 msgstr ""
 
-#: templates/command.html:222
+#: templates/command.html:226
 msgid "Юнус"
 msgstr ""
 
-#: templates/command.html:223
+#: templates/command.html:227
 msgid "Член совета"
 msgstr ""
 
-#: templates/command.html:231
+#: templates/command.html:235
 msgid "Расулова"
 msgstr ""
 
-#: templates/command.html:232
+#: templates/command.html:236
 msgid "Назокат"
 msgstr ""
 
-#: templates/command.html:233
+#: templates/command.html:237
 msgid "Пресса"
 msgstr ""
 
-#: templates/command.html:241
+#: templates/command.html:245
 msgid "Муродова"
 msgstr ""
 
-#: templates/command.html:242
+#: templates/command.html:246
 msgid "Маликахон"
 msgstr ""
 
-#: templates/command.html:243
+#: templates/command.html:247
 msgid "Режиссер"
 msgstr ""
 
-#: templates/command.html:253
-msgid "Президум"
+#: templates/command.html:257
+msgid "Presidium"
 msgstr ""
 
-#: templates/command.html:261
+#: templates/command.html:265
 msgid "президент"
 msgstr ""
 
-#: templates/command.html:262
+#: templates/command.html:266
 msgid "Астахов"
 msgstr ""
 
-#: templates/command.html:263
+#: templates/command.html:267
 msgid "Сергей"
 msgstr ""
 
-#: templates/command.html:264
+#: templates/command.html:268
 msgid "Российская Федерация"
 msgstr ""
 
-#~ msgid "Title"
-#~ msgstr "Sarlavha"
+#: templates/events-calendar.html:14
+msgid "International Hand-to-Hand Combat Events Calendar Plan for 2025"
+msgstr ""
 
-#~ msgid "Description"
-#~ msgstr "Tavsif"
+#: templates/events-calendar.html:19
+msgid "Name of events"
+msgstr ""
 
-#~ msgid "Is Active?"
-#~ msgstr "Faolmi?"
+#: templates/events-calendar.html:20
+msgid "Dates of the event"
+msgstr ""
 
-#~ msgid "About Us"
-#~ msgstr "Biz haqimizda"
+#: templates/events-calendar.html:21
+msgid "Venue"
+msgstr ""
 
-#~ msgid "Phone Number"
-#~ msgstr "Telefon raqami"
+#: templates/events-calendar.html:22
+msgid "Conducting organization"
+msgstr ""
 
-#~ msgid "Email Address"
-#~ msgstr "Elektron pochta manzili"
+#: templates/events-calendar.html:155
+msgid "DOWNLOAD"
+msgstr ""
 
-#~ msgid "Location"
-#~ msgstr "Joylashuv"
+#: templates/history.html:15
+msgid "History"
+msgstr ""
 
-#~ msgid "Contact Us"
-#~ msgstr "Biz bilan bog'lanish"
+#: templates/history.html:17
+msgid ""
+"\n"
+"        Hand-to-hand combat originated in ancient times, when people sought "
+"to protect themselves and their settlements\n"
+"        by creating ways of fighting without using weapons. It developed in "
+"different cultures of the world\n"
+"        independently of each other, forming as an art of self-defense and a "
+"martial craft. Ancient warriors in Egypt,\n"
+"        India, Greece and China studied hand-to-hand techniques to protect "
+"the warrior and enhance their military\n"
+"        skills. In Ancient Greece, such types of wrestling as pankration, an "
+"ancient sport combining elements of boxing\n"
+"        and wrestling, which was popular even at the Olympic Games, were "
+"especially developed. In the East, hand-to-hand\n"
+"        combat was especially developed. Martial arts systems originated in "
+"India,\n"
+"        which then spread to China, giving rise to kung fu. In Japan, such "
+"disciplines as judo, aikido, karate and judo\n"
+"        were formed, which today have become the basis for various schools "
+"of martial arts and hand-to-hand combat\n"
+"        throughout the world. Europe also had its own traditions of hand-to-"
+"hand combat. For example, French savate and\n"
+"        English boxing\n"
+"        developed as sports and military disciplines, and in the Middle "
+"Ages, hand-to-hand combat was an integral part\n"
+"        of knightly training. Over time, many of these techniques became "
+"popular as sports.\n"
+"        In the 20th century, armies in different countries began to develop "
+"specialized hand-to-hand combat systems to\n"
+"        train\n"
+"        soldiers, which led to the creation of modern combat techniques. For "
+"example, the Soviet Union developed the\n"
+"        sambo system, which combined techniques from judo, jiu-jitsu, and "
+"various national types of wrestling. These\n"
+"        techniques\n"
+"        were adapted for combat needs and included not only defense, but "
+"also methods of effective attack.\n"
+"        Today, hand-to-hand combat is used for both sports and military "
+"purposes. Sports competitions in hand-to-hand\n"
+"        combat include various striking and wrestling techniques, and also "
+"remain popular in training for law\n"
+"        enforcement agencies and security services. Many schools and clubs "
+"teach hand-to-hand combat as a self-defense\n"
+"        technique, attracting people of different ages to classes. In "
+"addition to physical training, hand-to-hand combat\n"
+"        contributes to the development of spirit, discipline and respect for "
+"the opponent,\n"
+"        forming a strong character and the ability to concentrate. Modern "
+"hand-to-hand combat federations hold\n"
+"        international competitions and seminars, promoting the "
+"popularization of this martial art and making it\n"
+"        accessible to people around the world. Hand-to-hand combat continues "
+"to develop, contributing to physical\n"
+"        education and training of specialists, playing an important role in "
+"the sports and defense systems of various\n"
+"        countries.\n"
+"        "
+msgstr ""
 
-#~ msgid "Icon"
-#~ msgstr "Belgi"
+#: templates/history.html:52
+msgid "About the Federation"
+msgstr ""
 
-#~ msgid "Link"
-#~ msgstr "Havola"
+#: templates/history.html:54
+msgid ""
+"\n"
+"        The Asian Hand-to-Hand Combat Federation was founded in 2010 and is "
+"based in Tokyo, Japan.\n"
+"        The Federation unites athletes, coaches and amateurs of hand-to-hand "
+"combat from different parts of Asia,\n"
+"        promoting the development and popularization of traditional and "
+"modern martial arts.\n"
+"        "
+msgstr ""
 
-#~ msgid "Social Media"
-#~ msgstr "Ijtimoiy tarmoqlar"
+#: templates/history.html:62
+msgid ""
+"\n"
+"        The main mission of the Federation is to preserve and promote "
+"martial arts, as well as to\n"
+"        train highly qualified specialists and athletes capable of competing "
+"at the international level.\n"
+"        "
+msgstr ""
 
-#~ msgid "Image"
-#~ msgstr "Rasm"
+#: templates/history.html:78
+msgid "Promoting traditional and modern martial arts among young people."
+msgstr ""
 
-#~ msgid "Photo"
-#~ msgstr "Surat"
+#: templates/history.html:85
+msgid "Events and Activities"
+msgstr ""
 
-#~ msgid "Gallery"
-#~ msgstr "Galereya"
+#: templates/history.html:87
+msgid ""
+"\n"
+"        The Federation organizes many competitions every year, including the "
+"Asian Hand-to-Hand Combat Championship,\n"
+"        as well as special training and seminars conducted by leading "
+"coaches and martial artists.\n"
+"        We also actively participate in educational programs aimed at "
+"developing the sport and attracting young\n"
+"        people to hand-to-hand combat.\n"
+"        "
+msgstr ""
 
-#~ msgid "File"
-#~ msgstr "Fayl"
+#: templates/history.html:94
+msgid ""
+"\n"
+"        In addition to competitions, the Federation is engaged in "
+"educational activities, organizing courses and master\n"
+"        classes on technique, physical training and strategy of hand-to-hand "
+"combat.\n"
+"        "
+msgstr ""
 
-#~ msgid "Type"
-#~ msgstr "Turi"
+#: templates/history.html:102
+msgid "Our Values"
+msgstr ""
 
-#~ msgid "Document"
-#~ msgstr "Hujjat"
+#: templates/history.html:104
+msgid ""
+"\n"
+"        The Asian Hand-to-Hand Combat Federation adheres to the principles "
+"of respect, discipline and mutual\n"
+"        assistance. We believe in building strong character, spiritual "
+"development and striving for excellence\n"
+"        through sport. Our athletes and coaches follow these values ​​and "
+"serve as role models for youth and aspiring\n"
+"        athletes.\n"
+"        "
+msgstr ""
 
-#~ msgid "Documents"
-#~ msgstr "Hujjatlar"
+#: templates/home.html:15
+msgid "Gallery"
+msgstr ""
 
-#~ msgid "News"
-#~ msgstr "Yangiliklar"
+#: templates/home.html:109
+msgid "Opening of the Asian of Hand-to-Hand Federation"
+msgstr ""
 
-#~ msgid "title"
-#~ msgstr "sarlavha"
+#: templates/home.html:115
+msgid "Read more"
+msgstr ""
 
-#~ msgid "Category"
-#~ msgstr "Turkum"
+#: templates/home.html:134
+msgid "Competitions"
+msgstr ""
 
-#~ msgid "Categories"
-#~ msgstr "Kategoriyalar"
+#: templates/home.html:254
+msgid "news"
+msgstr ""
 
-#~ msgid "Color"
-#~ msgstr "Rang"
-
-#~ msgid "black"
-#~ msgstr "qora"
-
-#~ msgid "products"
-#~ msgstr "Mahsulotlar"
-
-#~ msgid "Price"
-#~ msgstr "Narxi"
-
-#~ msgid "Size"
-#~ msgstr "Hajmi"
-
-#~ msgid "View"
-#~ msgstr "Ko‘rish"
-
-#~ msgid "Product"
-#~ msgstr "Mahsulot"
-
-#~ msgid "Products"
-#~ msgstr "Mahsulotlar"
-
-#~ msgid "Hayat Cable"
-#~ msgstr "Hayat Cable"
-
-#~ msgid "home"
-#~ msgstr "Uy"
-
-#~ msgid "catalog"
-#~ msgstr "katalog"
-
-#~| msgid "Documents"
-#~ msgid "documents"
-#~ msgstr "Hujjatlar"
-
-#~ msgid "news"
-#~ msgstr "yangiliklar"
-
-#~| msgid "Contact Us"
-#~ msgid "contacts"
-#~ msgstr "Biz bilan bog'lanish"
-
-#~ msgid "Home"
-#~ msgstr "Uy"
-
-#~| msgid "products"
-#~ msgid "Catalog products"
-#~ msgstr "Mahsulotlar"
-
-#~ msgid "Download catalog"
-#~ msgstr " Katalogni yuklab olish"
-
-#~ msgid "Home page"
-#~ msgstr "Bosh sahifa"
-
-#~| msgid "Products"
-#~ msgid "Products catalog"
-#~ msgstr "Mahsulotlar"
-
-#~| msgid "Products"
-#~ msgid "Products info"
-#~ msgstr "Mahsulotlar"
-
-#~ msgid "The cable, You can trust!"
-#~ msgstr "Siz ishonishingiz mumkin bolgan kabel!"
-
-#~ msgid ""
-#~ "The high quality of used materials ensure the reliability of our products"
-#~ msgstr ""
-#~ "Ishlatilgan materiallarning yuqori sifati mahsulotimizning "
-#~ "ishonchliligini ta'minlaydi"
-
-#~| msgid "Contact Us"
-#~ msgid "contact us"
-#~ msgstr "Biz bilan bog'lanish"
-
-#~ msgid "view more"
-#~ msgstr "batafsil"
-
-#~ msgid "Download"
-#~ msgstr "Yuklab olish"
-
-#~ msgid "2 mins read"
-#~ msgstr "2 daqiqa o'qish"
-
-#~ msgid "Contact information is not available at the moment."
-#~ msgstr "Ayni vaqtda ma'lumot mavjud emas"
+#: templates/home.html:261
+msgid ""
+"\n"
+"              The first congress of the Asian Federation of Hand-to-Hand "
+"Combat is currently taking place in the capital\n"
+"              of Uzbekistan,\n"
+"              Tashkent. The guests who came to participate in the first "
+"Congress of the Asian Federation of Hand-to-Hand\n"
+"              Combat were\n"
+"              introduced by the Chairman of the Federation of Hand-to-Hand "
+"Combat of Law Enforcement Agencies of\n"
+"              Uzbekistan R. Juraev.\n"
+"              The participants of the congress were greeted by the Deputy "
+"Minister of Sports of Uzbekistan Sh.\n"
+"              Makhmudov, the Secretary\n"
+"              General of the National Olympic Committee of the Republic of "
+"Uzbekistan O. Kasimov, as well as the First\n"
+"              Vice-President of\n"
+"              the International Federation of Hand-to-Hand Combat Mirzakulov "
+"B., the President of the International\n"
+"              Federation of Hand-to-Hand\n"
+"              Combat S. Astakhov and representatives of hand-to-hand combat "
+"federations from 13 Asian countries.\n"
+"              "
+msgstr ""

@@ -11,15 +11,15 @@
 
 {% block content %}
 <div class="container">
-  <h1 class="about-us-title">План-календарь международных мероприятий по рукопашному бою на 2025 год</h1>
+  <h1 class="about-us-title">{% trans "International Hand-to-Hand Combat Events Calendar Plan for 2025" %}</h1>
   <table style="margin-top: 10px;">
     <thead>
       <tr>
         <th class="th">№</th>
-        <th class="th">Наименование мероприятий</th>
-        <th class="th">Даты проведения</th>
-        <th class="th">Место проведения</th>
-        <th class="th">Проводящая организация</th>
+        <th class="th">{% trans "Name of events" %}</th>
+        <th class="th">{% trans "Dates of the event" %}</th>
+        <th class="th">{% trans "Venue" %}</th>
+        <th class="th">{% trans "Conducting organization" %}</th>
       </tr>
     </thead>
     <tbody>
@@ -152,7 +152,7 @@
     </tbody>
   </table>
   <div class="file-download-btn">
-    <a href="{{ document.file.url }}" tabindex="1" download="{{ document.name }}.pdf" class="download-btn">СКАЧАТЬ</a>
+    <a href="{{ document.file.url }}" tabindex="1" download="{{ document.name }}.pdf" class="download-btn">{% trans "DOWNLOAD" %}</a>
   </div>
 </div>
 

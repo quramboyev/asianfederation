@@ -12,42 +12,42 @@
 {% endblock %}
 
 {% block content %}
-	<div id="gallery">
-    
+<div id="gallery">
+
     {% for image in images %}
-        <img src="{{ image.file.url }}" alt="galllery elements" id="gallery-item" data-index="{{ forloop.counter0 }}">
+    <img src="{{ image.file.url }}" alt="galllery elements" id="gallery-item" data-index="{{ forloop.counter0 }}">
     {% endfor %}
-    </div>
+</div>
 
-    <div id="modal-gallery" class="hidden-gallery">
+<div id="modal-gallery" class="hidden-gallery">
 
-        <span id="close-gallery">&times;</span>
-        <ul id="gallery-slider">
-            {% for image in images %}
-            <li class="slide">
-                <img src="{{ image.file.url }}" alt="" class="gallery-slide">
-            </li>
-            {% endfor %}
-        </ul>
-        <div id="prev-gallery">&#10094;</div>
-        <div id="next-gallery">&#10095;</div>
-    </div>
+    <span id="close-gallery">&times;</span>
+    <ul id="gallery-slider">
+        {% for image in images %}
+        <li class="slide">
+            <img src="{{ image.file.url }}" alt="" class="gallery-slide">
+        </li>
+        {% endfor %}
+    </ul>
+    <div id="prev-gallery">&#10094;</div>
+    <div id="next-gallery">&#10095;</div>
+</div>
 
 <script>
     const gallery = document.getElementById('gallery')
-    
+
     const modalGallery = document.getElementById('modal-gallery')
-    
+
     const slides = document.getElementById('gallery-slider');
     let currentIndex = 0;
     const totalSlides = slides.children.length;
-    slides.style.width = `${totalSlides * 100}%`  
-    
+    slides.style.width = `${totalSlides * 100}%`
+
     const keys = {
         right: 'ArrowRight',
         left: 'ArrowLeft'
     }
-    
+
     const theme = {
         '--clr-white': ['white', 'black']
     }
@@ -56,7 +56,7 @@
         currentIndex = (currentIndex + 1) % totalSlides;
         updateSlider(currentIndex);
     }
-    
+
     const movePrev = () => {
         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         updateSlider(currentIndex);
@@ -76,20 +76,20 @@
             }
         }
     }
-    
+
     function updateSlider(index) {
         slides.style.transform = `translateX(-${index * slides.scrollWidth / totalSlides}px)`;
     }
-    
+
     gallery.onclick = (event) => {
-        currentIndex = event.target.dataset.index % totalSlides  
+        currentIndex = event.target.dataset.index % totalSlides
         document.body.classList.toggle('sliding')
-        modalGallery.classList.toggle('open')  
+        modalGallery.classList.toggle('open')
         updateSlider(currentIndex)
     }
     document.getElementById('close-gallery').onclick = (event) => {
         document.body.classList.toggle('sliding')
-        modalGallery.classList.toggle('open')  
+        modalGallery.classList.toggle('open')
     }
     window.addEventListener('resize', (event) => {
         updateSlider(currentIndex)

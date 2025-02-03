@@ -10,78 +10,105 @@
 
 {% block content %}
 <div class="container">
-    <main class="content">
-        <section class="history-sec">
-          <h2 class="section-title">История</h2>
-          <p class="section-text">
-            Рукопашный бой зародился в древности, когда люди стремились защитить себя и свои поселения, создавая способы
-            ведения боя без использования оружия. Он развивался в разных культурах мира независимо друг от друга,
-            формируясь как искусство самозащиты и боевое ремесло. Древние воины в Египте, Индии, Греции и Китае
-            обучались рукопашным техникам для защиты воина и усиления военного мастерства. В Древней Греции особенно
-            развились такие виды борьбы, как панкратион — древний спорт, сочетающий элементы бокса и борьбы, который был
-            популярен даже на Олимпийских играх.
-            На Востоке рукопашный бой получил особое развитие. В Индии зародились системы боевых искусств,
-            которые затем распространились в Китай, дав начало кунг-фу. В Японии сформировались такие
-            дисциплины, как дзюдо, айкидо, карате и дзюдo, которые сегодня стали основой для различных школ боевых
-            искусств и рукопашного боя во всём мире.
-            В Европе также существовали свои традиции рукопашного боя. Например, французский сават и английский бокс
-            развились как спортивные и военные дисциплины, а в Средние века рукопашный бой был неотъемлемой частью
-            рыцарского обучения. Со временем многие из этих техник стали популярными как виды спорта.
-            В XX веке армии разных стран начали разрабатывать специализированные системы рукопашного боя для подготовки
-            солдат, что привело к созданию современных боевых техник. Например, в Советском Союзе была разработана
-            система самбо, объединившая приёмы из дзюдо, джиу-джитсу и различных национальных видов борьбы. Эти техники
-            адаптировались для боевых нужд и включали в себя не только защиту, но и методы эффективной атаки.
-            Сегодня рукопашный бой используется как для спортивных, так и для военных целей. Спортивные соревнования по
-            рукопашному бою включают различные ударные и борцовские техники, а также остаются популярными в тренировках
-            силовых структур и служб безопасности. Множество школ и клубов обучают рукопашному бою как технике
-            самозащиты, привлекая к занятиям людей разного возраста.
-            Помимо физической подготовки, рукопашный бой способствует развитию духа, дисциплины и уважения к сопернику,
-            формируя сильный характер и умение концентрироваться. Современные федерации рукопашного боя проводят
-            международные соревнования и семинары, способствуя популяризации этого боевого искусства и делая его
-            доступным для людей по всему миру. Рукопашный бой продолжает развиваться, внося вклад в физическое
-            воспитание и подготовку специалистов, играя важную роль в системе спорта и обороны разных стран.
-          </p>
-        </section>
-        <section class="about">
-          <h2 class="section-title">О Федерации</h2>
-          <p class="section-text">Азиатская Федерация Рукопашного Боя была создана в 2010 году и базируется в Токио,
-            Япония. Федерация объединяет спортсменов, тренеров и любителей рукопашного боя с разных уголков Азии,
-            содействуя развитию и популяризации традиционных и современных боевых искусств.</p>
+  <main class="content">
+    <section class="history-sec">
+      <h2 class="section-title">{% trans "History" %}</h2>
+      <p class="section-text">
+        {% blocktrans %}
+        Hand-to-hand combat originated in ancient times, when people sought to protect themselves and their settlements
+        by creating ways of fighting without using weapons. It developed in different cultures of the world
+        independently of each other, forming as an art of self-defense and a martial craft. Ancient warriors in Egypt,
+        India, Greece and China studied hand-to-hand techniques to protect the warrior and enhance their military
+        skills. In Ancient Greece, such types of wrestling as pankration, an ancient sport combining elements of boxing
+        and wrestling, which was popular even at the Olympic Games, were especially developed. In the East, hand-to-hand
+        combat was especially developed. Martial arts systems originated in India,
+        which then spread to China, giving rise to kung fu. In Japan, such disciplines as judo, aikido, karate and judo
+        were formed, which today have become the basis for various schools of martial arts and hand-to-hand combat
+        throughout the world. Europe also had its own traditions of hand-to-hand combat. For example, French savate and
+        English boxing
+        developed as sports and military disciplines, and in the Middle Ages, hand-to-hand combat was an integral part
+        of knightly training. Over time, many of these techniques became popular as sports.
+        In the 20th century, armies in different countries began to develop specialized hand-to-hand combat systems to
+        train
+        soldiers, which led to the creation of modern combat techniques. For example, the Soviet Union developed the
+        sambo system, which combined techniques from judo, jiu-jitsu, and various national types of wrestling. These
+        techniques
+        were adapted for combat needs and included not only defense, but also methods of effective attack.
+        Today, hand-to-hand combat is used for both sports and military purposes. Sports competitions in hand-to-hand
+        combat include various striking and wrestling techniques, and also remain popular in training for law
+        enforcement agencies and security services. Many schools and clubs teach hand-to-hand combat as a self-defense
+        technique, attracting people of different ages to classes. In addition to physical training, hand-to-hand combat
+        contributes to the development of spirit, discipline and respect for the opponent,
+        forming a strong character and the ability to concentrate. Modern hand-to-hand combat federations hold
+        international competitions and seminars, promoting the popularization of this martial art and making it
+        accessible to people around the world. Hand-to-hand combat continues to develop, contributing to physical
+        education and training of specialists, playing an important role in the sports and defense systems of various
+        countries.
+        {% endblocktrans %}
 
-          <p class="section-text">Основной миссией Федерации является сохранение и продвижение боевых искусств, а также
-            подготовка высококвалифицированных специалистов и спортсменов, способных выступать на международном уровне.
-          </p>
-        </section>
+      </p>
+    </section>
+    <section class="about">
+      <h2 class="section-title">{% trans "About the Federation" %}</h2>
+      <p class="section-text">
+        {% blocktrans %}
+        The Asian Hand-to-Hand Combat Federation was founded in 2010 and is based in Tokyo, Japan.
+        The Federation unites athletes, coaches and amateurs of hand-to-hand combat from different parts of Asia,
+        promoting the development and popularization of traditional and modern martial arts.
+        {% endblocktrans %}
+      </p>
 
-        <section class="goals">
-          <h2 class="section-title">Основные цели</h2>
-          <ul class="goals-list">
-            <li class="goal-item">Развитие рукопашного боя как вида спорта и укрепление его роли в обществе.</li>
-            <li class="goal-item">Организация и проведение соревнований и чемпионатов на азиатском и международном уровне.</li>
-            <li class="goal-item">Поддержка и подготовка спортсменов для участия в международных турнирах.</li>
-            <li class="goal-item">Продвижение традиционных и современных боевых искусств среди молодежи.</li>
-            <li class="goal-item">Сотрудничество с международными организациями для обмена опытом и повышения уровня соревнований.</li>
-          </ul>
-        </section>
+      <p class="section-text">
+        {% blocktrans %}
+        The main mission of the Federation is to preserve and promote martial arts, as well as to
+        train highly qualified specialists and athletes capable of competing at the international level.
+        {% endblocktrans %}
+      </p>
+    </section>
 
-        <section class="events-sec">
-          <h2 class="section-title">События и Деятельность</h2>
-          <p class="section-text">Федерация ежегодно организует множество соревнований, включая Чемпионат Азии по
-            рукопашному бою, а также специальные тренировки и семинары, проводимые ведущими тренерами и мастерами боевых
-            искусств. Мы также активно участвуем в образовательных программах, направленных на развитие спорта и
-            привлечение молодежи к рукопашному бою.</p>
+    <section class="goals">
+      <h2 class="section-title">{% trans "Our goals" %}</h2>
+      <ul class="goals-list">
+        <li class="goal-item">{% trans "Development of hand-to-hand combat as a sport and strengthening its role in
+          society." %}</li>
+        <li class="goal-item">{% trans "Organization and holding of competitions and championships at the Asian and
+          international level." %}</li>
+        <li class="goal-item">{% trans "Support and preparation of athletes for participation in international
+          tournaments." %}</li>
+        <li class="goal-item">{% trans "Promoting traditional and modern martial arts among young people." %}</li>
+        <li class="goal-item">{% trans "Cooperation with international organizations to exchange experience and improve
+          the level of competitions." %}</li>
+      </ul>
+    </section>
 
-          <p class="section-text">Кроме соревнований, Федерация занимается образовательной деятельностью, организуя
-            курсы и мастер-классы по технике, физической подготовке и стратегии рукопашного боя.</p>
-        </section>
+    <section class="events-sec">
+      <h2 class="section-title">{% trans "Events and Activities" %}</h2>
+      <p class="section-text">
+        {% blocktrans %}
+        The Federation organizes many competitions every year, including the Asian Hand-to-Hand Combat Championship,
+        as well as special training and seminars conducted by leading coaches and martial artists.
+        We also actively participate in educational programs aimed at developing the sport and attracting young
+        people to hand-to-hand combat.
+        {% endblocktrans %}</p>
+      <p class="section-text">
+        {% blocktrans %}
+        In addition to competitions, the Federation is engaged in educational activities, organizing courses and master
+        classes on technique, physical training and strategy of hand-to-hand combat.
+        {% endblocktrans %}
+      </p>
+    </section>
 
-        <section class="values">
-          <h2 class="section-title">Наши Ценности</h2>
-          <p class="section-text">Азиатская Федерация Рукопашного Боя придерживается принципов уважения, дисциплины и
-            взаимопомощи. Мы верим в формирование сильного характера, духовного развития и стремление к совершенству
-            через спорт. Наши спортсмены и тренеры следуют этим ценностям и служат примером для молодежи и начинающих
-            спортсменов.</p>
-        </section>
+    <section class="values">
+      <h2 class="section-title">{% trans "Our Values" %}</h2>
+      <p class="section-text">
+        {% blocktrans %}
+        The Asian Hand-to-Hand Combat Federation adheres to the principles of respect, discipline and mutual
+        assistance. We believe in building strong character, spiritual development and striving for excellence
+        through sport. Our athletes and coaches follow these values ​​and serve as role models for youth and aspiring
+        athletes.
+        {% endblocktrans %}
+      </p>
+    </section>
 </div>
 
 {% endblock %}

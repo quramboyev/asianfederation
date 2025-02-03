@@ -16,7 +16,7 @@
     <div class="gallery-sec general-style">
       <div class="slider">
         <ul class="slides">
-          <!-- <li class="slide">
+          <li class="slide">
             <img src="{% static 'home/images/gallery6.jpg' %}" alt="" class="slide-img" />
           </li>
           <li class="slide">
@@ -49,7 +49,7 @@
           </li>
           <li class="slide">
             <img src="{% static 'home/images/img6.jpg' %}" alt="" class="slide-img" />
-          </li> -->
+          </li>
         </ul>
         <div class="navigation">
           <button class="prev">&#10094;</button>
@@ -109,7 +109,7 @@
         <h2 class="gallery-content-title">{% trans "Opening of the Asian of Hand-to-Hand Federation" %}</h2>
         <p class="gallery-content-info">{{ about.description }}</p>
 
-        
+
 
         <button class="more-btn">
           <a class="gallery-more" href="{% url 'gallery' %}">{% trans "Read more" %}</a>
@@ -134,17 +134,20 @@
         <h3 class="contest-header">{% trans "Competitions" %}</h3>
         <div class="scroll-wrapper">
           <div class="contest-buttons-list">
-            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">{% trans "The nearest" %}</button>
-            <button class="contest-button-item" onclick="filterEvents('completed', this)">{% trans "Completed" %}</button>
+            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">{% trans "The nearest"
+              %}</button>
+            <button class="contest-button-item" onclick="filterEvents('completed', this)">{% trans "Completed"
+              %}</button>
           </div>
 
           <div class="events" id="eventsList">
             <!-- Ближайшие-->
-             <!-- 2 -->
+            <!-- 2 -->
             <div class="event upcoming">
               <img src="{% static 'home/images/serbia-flag.svg' %}" alt="Russia Flag" class="flag">
               <div class="events-info">
-                <p class="events-title">Первенство Европы юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17) «Поединок» / «Самооборона»</p>
+                <p class="events-title">Первенство Европы юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17)
+                  «Поединок» / «Самооборона»</p>
                 <p class="events-date">25.01.2025 - 26.02.2025</p>
               </div>
             </div>
@@ -176,7 +179,8 @@
             <div class="event upcoming">
               <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
               <div class="events-info">
-                <p class="events-title">Международный турнир юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17) (мужчины, женщины) «Поединок» / «Самооборона»</p>
+                <p class="events-title">Международный турнир юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17)
+                  (мужчины, женщины) «Поединок» / «Самооборона»</p>
                 <p class="events-date">18.04.2025 - 20.04.2025</p>
               </div>
             </div>
@@ -184,7 +188,8 @@
             <div class="event upcoming">
               <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
               <div class="events-info">
-                <p class="events-title">Первенство мира юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17) «Самооборона»</p>
+                <p class="events-title">Первенство мира юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17)
+                  «Самооборона»</p>
                 <p class="events-date">24.04.2025 - 25.04.2025</p>
               </div>
             </div>
@@ -192,7 +197,8 @@
             <div class="event upcoming">
               <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
               <div class="events-info">
-                <p class="events-title">Кубок мира (этап) Международный турнир «Кубок Дружбы» (мужчины, женщины) «Поединок» / «Самооборона»</p>
+                <p class="events-title">Кубок мира (этап) Международный турнир «Кубок Дружбы» (мужчины, женщины)
+                  «Поединок» / «Самооборона»</p>
                 <p class="events-date">24.04.2025 - 27.04.2025</p>
               </div>
             </div>
@@ -216,7 +222,8 @@
             <div class="event upcoming">
               <img src="{% static 'home/images/kyrgyzstan-flag.svg' %}" alt="Russia Flag" class="flag">
               <div class="events-info">
-                <p class="events-title">Международный турнир «KYRGYSTAN OPEN» мужчины, женщины юноши и девушки (12-17лет) «Поединок» / «Самооборона»</p>
+                <p class="events-title">Международный турнир «KYRGYSTAN OPEN» мужчины, женщины юноши и девушки
+                  (12-17лет) «Поединок» / «Самооборона»</p>
                 <p class="events-date">01.07.2025 - 06.07.2025</p>
               </div>
             </div>
@@ -224,7 +231,8 @@
             <div class="event upcoming">
               <img src="{% static 'home/images/uzbekistan-flag.svg' %}" alt="Russia Flag" class="flag">
               <div class="events-info">
-                <p class="events-title">Международный турнир «Кубок Президента Республики Узбекистан» «Лига Чемпионов H2HFIGHT» (мужчины, женщины) «Поединок»</p>
+                <p class="events-title">Международный турнир «Кубок Президента Республики Узбекистан» «Лига Чемпионов
+                  H2HFIGHT» (мужчины, женщины) «Поединок»</p>
                 <p class="events-date">23.07.2025 - 25.07.2025</p>
               </div>
             </div>
@@ -250,13 +258,19 @@
           </div>
           <div class="contest-data">
             <p class="contest-s-info">
-              {% blocktrans %}  
-              The first congress of the Asian Federation of Hand-to-Hand Combat is currently taking place in the capital of Uzbekistan, 
-              Tashkent. The guests who came to participate in the first Congress of the Asian Federation of Hand-to-Hand Combat were 
-              introduced by the Chairman of the Federation of Hand-to-Hand Combat of Law Enforcement Agencies of Uzbekistan R. Juraev. 
-              The participants of the congress were greeted by the Deputy Minister of Sports of Uzbekistan Sh. Makhmudov, the Secretary 
-              General of the National Olympic Committee of the Republic of Uzbekistan O. Kasimov, as well as the First Vice-President of 
-              the International Federation of Hand-to-Hand Combat Mirzakulov B., the President of the International Federation of Hand-to-Hand 
+              {% blocktrans %}
+              The first congress of the Asian Federation of Hand-to-Hand Combat is currently taking place in the capital
+              of Uzbekistan,
+              Tashkent. The guests who came to participate in the first Congress of the Asian Federation of Hand-to-Hand
+              Combat were
+              introduced by the Chairman of the Federation of Hand-to-Hand Combat of Law Enforcement Agencies of
+              Uzbekistan R. Juraev.
+              The participants of the congress were greeted by the Deputy Minister of Sports of Uzbekistan Sh.
+              Makhmudov, the Secretary
+              General of the National Olympic Committee of the Republic of Uzbekistan O. Kasimov, as well as the First
+              Vice-President of
+              the International Federation of Hand-to-Hand Combat Mirzakulov B., the President of the International
+              Federation of Hand-to-Hand
               Combat S. Astakhov and representatives of hand-to-hand combat federations from 13 Asian countries.
               {% endblocktrans %}
             </p>

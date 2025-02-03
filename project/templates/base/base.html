@@ -3,22 +3,23 @@
 {% get_current_language as CURRENT_LANGUAGE %}
 <!DOCTYPE html>
 <html lang="{{ CURRENT_LANGUAGE }}" style="scroll-behavior: smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-          integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="{% static 'base/images/logo.png' %}">
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'base/styles/main.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
@@ -51,215 +52,219 @@
     {% endblock %}
     <title>{% trans "Asian hand to hand federation" %}</title>
 </head>
+
 <body>
-<button id="scrollUpBtn" title="Go to top">&#8963;</button>
-<nav>
-    <div class="content-nav">
-        <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
-            <div class="logo">
-                <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
-                <span class="site-name">{% trans "Азиатская Федерация" %} <br> {% trans "Рукопашного боя" %} </span>
+    <button id="scrollUpBtn" title="Go to top">&#8963;</button>
+    <nav>
+        <div class="content-nav">
+            <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
+                <div class="logo">
+                    <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
+                    <span class="site-name">{% trans "Азиатская Федерация" %} <br> {% trans "Рукопашного боя" %} </span>
+                </div>
+                <div class="items">
+                    <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
+                    <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
+                    <a href="{% url 'command' %}#products">{% trans "Command" %}</a>
+                    <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
+                    <a href="{% url 'events_calendar' %}">{% trans "Events calendar" %}</a>
+                </div>
             </div>
-            <div class="items">
-                <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
-                <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
-                <a href="{% url 'command' %}#products">{% trans "Command" %}</a>
-                <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
-                <a href="{% url 'events_calendar' %}">{% trans "Events calendar" %}</a>
-            </div>
-        </div>
-        <div class="lang-search">
-            <div>
-                <select name="language" id="languageSelect">
+            <div class="lang-search">
+                <div>
+                    <select name="language" id="languageSelect">
 
-                    {% get_available_languages as AVAILABLE_LANGUAGES %}
-                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
-                    {% for language in languages %}
-                    <option {% if language.code == CURRENT_LANGUAGE %} selected {% endif %}
+                        {% get_available_languages as AVAILABLE_LANGUAGES %}
+                        {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                        {% for language in languages %}
+                        <option {% if language.code==CURRENT_LANGUAGE %} selected {% endif %}
                             style="background-color: transparent" value="{{ language.code }}">{{ language.code }}
-                    </option>
-                    {% endfor %}
-                </select>
+                        </option>
+                        {% endfor %}
+                    </select>
 
+                </div>
+            </div>
+            <!-- Mobile toggle button -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        <!-- Mobile toggle button -->
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <!-- Mobile navigation menu -->
+        <div class="nav-mobile">
+            <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
+            <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
+            <a href="{% url 'command' %}#products">{% trans "Command" %}</a>
+            <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
+            <a href="{% url 'events_calendar' %}">{% trans "Events calendar" %}</a>
         </div>
-    </div>
-    <!-- Mobile navigation menu -->
-    <div class="nav-mobile">
-        <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
-        <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
-        <a href="{% url 'command' %}#products">{% trans "Command" %}</a>
-        <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
-        <a href="{% url 'events_calendar' %}">{% trans "Events calendar" %}</a>
-    </div>
-</nav>
-<div class="back-stage">
-    <div class="flags">
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/bahrain.png' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/hong_kong.png' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/india.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/indonesia.png' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/iran.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/iraq.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/japan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/jordan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/kazakhstan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/kuwait.png' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/kyrgzstan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/lebanon.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/malaysia.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/mongolia.svg' %}" alt="" class="flags-img">
-        </div>
-
-    </div>
-    <div class="centeral-content">
-        {% block content %}
-
-        {% endblock %}
-    </div>
-    <div class="flags">
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/nepal.png' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/oman.png' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/pakistan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/palestine.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/uzbekistan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/qatar.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/saudia-arabia.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/singapore.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/south-korea.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/sri_lanka.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/tajikistan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/thailand.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/turkmenistan.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/united_arab_emirates.svg' %}" alt="" class="flags-img">
-        </div>
-        <div class="flags-wrapper" style="width: 100%;">
-            <img src="{% static 'base/images/flags/yemen.svg' %}" alt="" class="flags-img">
-        </div>
-    </div>
-</div>
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="{% static 'home/images/logo.svg' %}" alt="{% trans "Азиатская Федерация Рокопашного боя" %}">
-            <span class="site-name fsn">{% trans "Азиатская Федерация Рукопашного боя" %}</span>
-            <span class="site-name">
-                {% blocktrans %}
-                    When citing materials, a link to the press service of the Judo Federation and the official world website www.hsif.world
-                {% endblocktrans %}
-            </span>
-        </div>
-        <div class="footer-items">
-            <ul class="footer-nav">
-                <li class="general-color">{% trans "Contacts" %}:</li>
-                <li>
-                    <p><i class="fa-solid fa-phone"></i>
-                        <a class="type-connecting" href="tel: +998909323388">+998(90) 932-33-88</a>
-                    </p>
-                </li>
-                <li><i class="fa-regular fa-envelope"></i>
-                    <a class="type-connecting" href="mailto: ahf_h2h@yahoo.com" target="_blank">ahf_h2h@yahoo.com</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-items">
-            <ul class="footer-nav">
-                <li class="general-color">{% trans "Address" %}:</li>
-                <li>
-                    <p class="type-connecting general-color">{% trans "st. Labzak building 1, Tashkent, Uzbekistan" %}</p>
-                </li>
-            </ul>
+    </nav>
+    <div class="back-stage">
+        <div class="flags">
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/bahrain.png' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/china.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/hong_kong.png' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/india.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/indonesia.png' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/iran.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/iraq.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/japan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/jordan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/kazakhstan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/kuwait.png' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/kyrgzstan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/lebanon.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/malaysia.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/mongolia.svg' %}" alt="" class="flags-img">
+            </div>
 
         </div>
-        <div class="footer-items">
-            <ul class="messengers-wrapper">
-                <li>
-                    <a class="type-connecting" href="https://www.instagram.com/yourpage" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="type-connecting">
-                        <i class="fa-brands fa-telegram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="type-connecting" href="https://www.instagram.com/yourpage" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="type-connecting">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
+        <div class="centeral-content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+        <div class="flags">
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/nepal.png' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/oman.png' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/pakistan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/palestine.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/uzbekistan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/qatar.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/saudia-arabia.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/singapore.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/south-korea.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/sri_lanka.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/tajikistan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/thailand.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/turkmenistan.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/united_arab_emirates.svg' %}" alt="" class="flags-img">
+            </div>
+            <div class="flags-wrapper" style="width: 100%;">
+                <img src="{% static 'base/images/flags/yemen.svg' %}" alt="" class="flags-img">
+            </div>
         </div>
     </div>
-</footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="{% static 'home/images/logo.svg' %}" alt="{% trans " Азиатская Федерация Рокопашного боя" %}">
+                <span class="site-name fsn">{% trans "Азиатская Федерация Рукопашного боя" %}</span>
+                <span class="site-name">
+                    {% blocktrans %}
+                    When citing materials, a link to the press service of the Judo Federation and the official world
+                    website www.hsif.world
+                    {% endblocktrans %}
+                </span>
+            </div>
+            <div class="footer-items">
+                <ul class="footer-nav">
+                    <li class="general-color">{% trans "Contacts" %}:</li>
+                    <li>
+                        <p><i class="fa-solid fa-phone"></i>
+                            <a class="type-connecting" href="tel: +998909323388">+998(90) 932-33-88</a>
+                        </p>
+                    </li>
+                    <li><i class="fa-regular fa-envelope"></i>
+                        <a class="type-connecting" href="mailto: ahf_h2h@yahoo.com"
+                            target="_blank">ahf_h2h@yahoo.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <ul class="footer-nav">
+                    <li class="general-color">{% trans "Address" %}:</li>
+                    <li>
+                        <p class="type-connecting general-color">{% trans "st. Labzak building 1, Tashkent, Uzbekistan"
+                            %}</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-items">
+                <ul class="messengers-wrapper">
+                    <li>
+                        <a class="type-connecting" href="https://www.instagram.com/yourpage" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="type-connecting">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="type-connecting" href="https://www.instagram.com/yourpage" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="type-connecting">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
