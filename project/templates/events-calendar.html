@@ -23,132 +23,15 @@
       </tr>
     </thead>
     <tbody>
+      {% for obj in document %}
       <tr>
-        <td class="td">1</td>
-        <td class="td">Международный судейский и тренерский семинар «Поединок» / «Самооборона»</td>
-        <td class="td">24-26 января</td>
-        <td class="td">Сербия, Нови-Пазар</td>
-        <td class="td">ФРБ СР, ЕФРБ, МФРБ</td>
+        <td class="td">{{ forloop.counter }}</td>
+        <td class="td">{{ obj.name }}</td>
+        <td class="td">{{ obj.date }}</td>
+        <td class="td">{{ obj.location }}</td>
+        <td class="td">{{ obj.organizers }}</td>
       </tr>
-      <tr>
-        <td class="td">2</td>
-        <td class="td">Первенство Европы юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17) «Поединок» / «Самооборона»</td>
-        <td class="td">25-26 января</td>
-        <td class="td">Сербия, Нови-Пазар</td>
-        <td class="td">ФРБ СР, ЕФРБ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">3</td>
-        <td class="td">Международный судейский и тренерский семинар «Поединок» и «Самооборона»</td>
-        <td class="td">7 - 9 февраля</td>
-        <td class="td">Россия, Москва</td>
-        <td class="td">ФСМ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">4</td>
-        <td class="td">Международный судейский и тренерский семинар «Поединок» / «Самооборона»</td>
-        <td class="td">15 - 28 февраля</td>
-        <td class="td">Гана, Аккра</td>
-        <td class="td">ФРБ РГ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">5</td>
-        <td class="td">Кубок мира среди полицейских мужчины и женщины «Самооборона» и «Поединок»</td>
-        <td class="td">4 - 8 марта</td>
-        <td class="td">Беларусь, Минск</td>
-        <td class="td">ФРБ БР, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">5</td>
-        <td class="td">Международный турнир "Кубок Дмитрия Донского" мужчины и женщины "Самообарона"</td>
-        <td class="td">1-29 февраля</td>
-        <td class="td">Россия, Москва</td>
-        <td class="td">ФСМ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">6</td>
-        <td class="td">Чемпионат Европы мужчины и женщины «Поединок»</td>
-        <td class="td">28 - 30 марта</td>
-        <td class="td">Венгрия, Будапешт</td>
-        <td class="td">ФРБ РВ, ЕФРБ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">7</td>
-        <td class="td">Международный турнир юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17) (мужчины, женщины) «Поединок» / «Самооборона»</td>
-        <td class="td">18 - 20 апреля</td>
-        <td class="td">Россия, Калининград</td>
-        <td class="td">ФПРБ КО, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">8</td>
-        <td class="td">Первенство мира юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17) «Самооборона»</td>
-        <td class="td">24 - 25 апреля</td>
-        <td class="td">Россия, Москва</td>
-        <td class="td">ФПРБ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">9</td>
-        <td class="td">Кубок мира (этап) Международный турнир «Кубок Дружбы» (мужчины, женщины) «Поединок» / «Самооборона»</td>
-        <td class="td">24 - 27 апреля</td>
-        <td class="td">Россия, Москва</td>
-        <td class="td">ОФПРБ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">10</td>
-        <td class="td">Конференция МФРБ</td>
-        <td class="td">30 - 31 мая</td>
-        <td class="td">Турция, Стамбул</td>
-        <td class="td">МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">11</td>
-        <td class="td">Чемпионат мира (мужчины и женщины) «Поединок» / «Самооборона»</td>
-        <td class="td">30 мая -  1 июня</td>
-        <td class="td">Турция, Стамбул</td>
-        <td class="td">ФРБ РТ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">12</td>
-        <td class="td">Международный турнир «KYRGYSTAN OPEN» мужчины, женщины юноши и девушки (12-17лет) «Поединок» / «Самооборона»</td>
-        <td class="td">1 - 6 июля</td>
-        <td class="td">Кыргызстан, Иссык-Куль</td>
-        <td class="td">НФСРБ КР, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">13</td>
-        <td class="td">Международный турнир «Кубок Президента Республики Узбекистан» «Лига Чемпионов H2HFIGHT» (мужчины, женщины) «Поединок»</td>
-        <td class="td">23 - 25 июля</td>
-        <td class="td">Узбекистан, Наманган</td>
-        <td class="td">ФРБПО РУ, МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">14</td>
-        <td class="td">Юношеские Азиатские Игры юноши и девушки (14-15,16-17 лет) «Поединок»</td>
-        <td class="td">7 - 17 сентября</td>
-        <td class="td">Бахрейн, Манама</td>
-        <td class="td">МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">15</td>
-        <td class="td">Кубок мира (этап) Чемпионат Азии (мужчины и женщины) «Поединок» / «Самооборона»</td>
-        <td class="td">1 - 31 октября</td>
-        <td class="td">по назначению</td>
-        <td class="td">МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">16</td>
-        <td class="td">Кубок мира (Финал) (мужчины и женщины) «Поединок» / «Самооборона»</td>
-        <td class="td">1 - 30 ноября</td>
-        <td class="td">по назначению</td>
-        <td class="td">МФРБ</td>
-      </tr>
-      <tr>
-        <td class="td">17</td>
-        <td class="td">Чемпионат мира в Абсолютной весовой категории (мужчины и женщины) «Поединок»</td>
-        <td class="td">12 - 14 декабря</td>
-        <td class="td">Россия, Москва</td>
-        <td class="td">ФПРБ, МФРБ</td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
   <div class="file-download-btn">

@@ -87,4 +87,34 @@ class GoalModel(TranslatableModel):
     def __str__(self) -> str:
         return self.goal
 
+class CommandModel(TranslatableModel):
+    image = models.ImageField(null=True, blank=True, upload_to='documents/')
+    translations = TranslatedFields(
+        first_name = models.CharField(max_length=15, verbose_name=_("First name")),
+        last_name = models.CharField(max_length=20, verbose_name=_("Last name")),
+        position = models.CharField(max_length=60, verbose_name=_("Position")),
+    )
 
+    class Meta:
+        db_table = "command"
+        verbose_name = "Member"
+        verbose_name_plural = "Members"        
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
+    
+class EventCalendarModel(TranslatableModel):
+    translations = TranslatedFields(
+        name=models.CharField(max_length=255, verbose_name=_("Event name")),
+        date=models.CharField(max_length=100, verbose_name=_("Dates of the event")),
+        location=models.CharField(max_length=100, verbose_name=_("Location")),
+        organizers=models.CharField(max_length=100, verbose_name=_("Conducting organization"))
+    )
+
+    class Meta:
+        db_table = "eventscalendar"
+        verbose_name = _("Events calendar")
+        verbose_name_plural = _("Events calendar")
+
+    def __str__(self):
+        return f"{self.name}"

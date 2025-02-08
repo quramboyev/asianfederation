@@ -1,7 +1,7 @@
 from datetime import datetime
 from django.shortcuts import render
 from apps.home.models import DocumentModel, DocTypeChoice, ImageModel, AboutUsModel, CalendarModel, GalleryModel, \
-    GoalModel
+    GoalModel, EventCalendarModel, CommandModel
 
 
 def home(request):
@@ -20,14 +20,23 @@ def home(request):
         } 
     )
 
-
 def events_calendar(request):
     document = DocumentModel.objects.all()
+    name = EventCalendarModel.objects.filter(selected=True).translated().first()
+    date = EventCalendarModel.objects.filter(selected=True).translated().first()
+    location = EventCalendarModel.objects.filter(selected=True).translated().first()
+    organizers = EventCalendarModel.objects.filter(selected=True).translated().first()
+
     if document.exists():
         document = document[0]
     else: 
         document = None
-    return render(request, 'events-calendar.html', context={'document': document})
+    return render(request, 'events-calendar.html', context={
+        'document': document,
+        'name': name,
+        'date': date,
+        'location': location,
+        'organizers': organizers})
 
 
 def about_us(request):
@@ -41,7 +50,16 @@ def antidoping(request):
 
 
 def command(request):
-    return render(request, 'command.html')
+    image = CommandModel.objects
+    first_name = CommandModel.objects.filter(selected=True).translated().first()
+    last_name = CommandModel.objects.filter(selected=True).translated()
+    position = CommandModel.objects.filter(selected=True).translated()
+    return render(request, 'command.html', context={
+        'image': image, 
+        'first_name': first_name,
+        'last_name': last_name,
+        'position': position
+    })
 
 
 def history(request):
