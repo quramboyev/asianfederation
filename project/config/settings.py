@@ -183,10 +183,10 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the Hayat Kabel",
+    "welcome_sign": "Welcome to Asian hand to hand Federation",
 
     # Copyright on the footer
-    "copyright": "Hayat Kabel",
+    "copyright": "Asian hand to hand",
 
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string
