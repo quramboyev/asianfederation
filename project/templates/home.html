@@ -69,7 +69,7 @@
         </ul>
       </div>
       <div class="gallery-content">
-        <h2 class="gallery-content-title">{% trans "Opening of the Asian of Hand-to-Hand Federation" %}</h2>
+        <h2 class="gallery-content-title">{{ about.title }}</h2>
         <p class="gallery-content-info">{{ about.description }}</p>
 
 
@@ -126,6 +126,10 @@
                 <div class="events-info">
                   <p class="events-title">{{ obj.name }}</p>
                   <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
+                </div>
+              {% empty %}
+                 <div class="alert alert-info text-center">
+                    <span>{% trans "No events" %}</span>
                 </div>
               {% endfor %}
             </div>

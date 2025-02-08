@@ -13,29 +13,14 @@
   <div class="content">
     <p class="bold-text">{% trans "Азиатская Федерация Рукопашного Боя" %}</p>
     <p class="about-us">
-
-
-      {% blocktrans %}
-          The Asian Federation of Hand-to-Hand Combat was established in 2024.
-          The headquarters of the Federation is located in Tashkent.
-          The goal of the Federation is to develop and popularize hand-to-hand combat as a sport throughout the world.
-          The priority task of the Federation is to include hand-to-hand combat in the list of Olympic and Asian sports.
-      {% endblocktrans %}
-    </p>
-    <p class="about-us">
-      {% blocktrans %}
-
-      {% endblocktrans %}
-    </p>
+      {{ about.description }}
     <p>
       <span class="bold-text">{% trans "Our goals" %}:</span>
     </p>
     <ul class="our-goals">
-      <li class="goal-item">{% trans "Promoting hand-to-hand combat as a sport" %};</li>
-      <li class="goal-item">{% trans "Organization of competitions and events for all ages and skill levels" %};
-      </li>
-      <li class="goal-item">{% trans "Cooperation with international organizations to exchange experience and knowledge" %};</li>
-      <li class="goal-item">{% trans "Support for young athletes and coaches" %}.</li>
+        {% for goal in goals %}
+            <li class="goal-item">{{ goal }};</li>
+        {% endfor %}
     </ul>
   </div>
 
