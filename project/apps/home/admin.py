@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import DocumentModel, ImageModel, CalendarModel, AboutUsModel, GoalModel
+from .models import DocumentModel, ImageModel, CalendarModel, AboutUsModel, GoalModel, GalleryModel
 from parler.admin import TranslatableAdmin
 
 
@@ -12,6 +12,13 @@ class ModelAdmin(TranslatableAdmin):
 admin.site.register(DocumentModel, ModelAdmin)
 admin.site.register(CalendarModel, ModelAdmin)
 admin.site.register(ImageModel)
+
+
+@admin.register(GalleryModel)
+class GalleryAdmin(TranslatableAdmin):
+    list_display = ('id', 'title', 'description')
+    list_display_links = ('id', 'title')
+    search_fields = ('title', 'description')
 
 
 @admin.register(AboutUsModel)

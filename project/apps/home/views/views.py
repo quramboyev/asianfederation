@@ -1,13 +1,14 @@
 from datetime import datetime
 from django.shortcuts import render
-from apps.home.models import DocumentModel, DocTypeChoice, ImageModel, AboutUsModel, CalendarModel
+from apps.home.models import DocumentModel, DocTypeChoice, ImageModel, AboutUsModel, CalendarModel, GalleryModel, \
+    GoalModel
+
 
 def home(request):
     now = datetime.now()
     rule = DocumentModel.objects.filter(type=DocTypeChoice.RULE).translated().first()
     images = ImageModel.objects.filter(for_date__lte=now)
-    about = AboutUsModel.objects.filter(selected=True).translated().first()
-    events_old = CalendarModel.objects.filter(_from__lt=now).translated()
+    about = GalleryModel.objects.filter(selected=True).translated().first()
     events = CalendarModel.objects.filter(_from__gte=now).translated()
 
     return render(request, 'home.html',
@@ -16,9 +17,9 @@ def home(request):
             'images': images,
             'about': about,
             'events': events,
-            'events_old': events_old,
-        }
+        } 
     )
+
 
 def events_calendar(request):
     document = DocumentModel.objects.all()
@@ -30,7 +31,9 @@ def events_calendar(request):
 
 
 def about_us(request):
-    return render(request, 'about-us.html')
+    about = AboutUsModel.objects.filter(selected=True).translated().first()
+    goals = GoalModel.objects.filter(disabled=False).translated()
+    return render(request, 'about-us.html', context={'about': about, 'goals': goals})
 
 
 def antidoping(request):
