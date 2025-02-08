@@ -61,48 +61,11 @@
           <img id="banner" src="{% static 'home/images/gallery3.jpg' %}" alt="" class="big-img">
         </div>
         <ul class="gallery-list" id="galleryl">
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img1.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img2.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img3.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img4.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img5.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img6.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img7.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img8.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img9.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/img10.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/gallery7.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/gallery5.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/gallery6.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
-          <li class="gallery-item">
-            <img src="{% static 'home/images/gallery4.jpg' %}" alt="photo gallery" class="gallery-img">
-          </li>
+          {% for image in images|slice:":13" %}
+            <li class="gallery-item">
+              <img class="gallery-img" src="{{ image.file.url }}" alt="galllery elements" data-index="{{ forloop.counter0 }}">
+            </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="gallery-content">
@@ -134,116 +97,37 @@
         <h3 class="contest-header">{% trans "Competitions" %}</h3>
         <div class="scroll-wrapper">
           <div class="contest-buttons-list">
-            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">{% trans "The nearest"
-              %}</button>
-            <button class="contest-button-item" onclick="filterEvents('completed', this)">{% trans "Completed"
-              %}</button>
+            <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">{% trans "The nearest" %}</button>
+            <button class="contest-button-item" onclick="filterEvents('completed', this)">{% trans "Completed" %}</button>
           </div>
 
           <div class="events" id="eventsList">
             <!-- Ближайшие-->
             <!-- 2 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/serbia-flag.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Первенство Европы юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17)
-                  «Поединок» / «Самооборона»</p>
-                <p class="events-date">25.01.2025 - 26.02.2025</p>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/ghana-flag.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Международный судейский и тренерский семинар «Поединок» / «Самооборона»</p>
-                <p class="events-date">15.02.2025 - 28.02.2025</p>
-              </div>
-            </div>
-            <!-- 5 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/belarus-flag.svg' %}" alt="Belarus Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Кубок мира среди полицейских мужчины и женщины «Самооборона» и «Поединок»</p>
-                <p class="events-date">04.03.2025 - 08.03.2025</p>
-              </div>
-            </div>
-            <!-- 6 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/hungary-flag.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Чемпионат Европы мужчины и женщины «Поединок»</p>
-                <p class="events-date">28.03.2025 - 30.03.2025</p>
-              </div>
-            </div>
-            <!-- 7 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Международный турнир юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17)
-                  (мужчины, женщины) «Поединок» / «Самооборона»</p>
-                <p class="events-date">18.04.2025 - 20.04.2025</p>
-              </div>
-            </div>
-            <!-- 8 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Первенство мира юниоры/юниорки (18 – 23), юноши и девушки (14-15,16-17)
-                  «Самооборона»</p>
-                <p class="events-date">24.04.2025 - 25.04.2025</p>
-              </div>
-            </div>
-            <!-- 9 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/ru.svg' %}" alt="Belarus Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Кубок мира (этап) Международный турнир «Кубок Дружбы» (мужчины, женщины)
-                  «Поединок» / «Самооборона»</p>
-                <p class="events-date">24.04.2025 - 27.04.2025</p>
-              </div>
-            </div>
-            <!-- 10 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/turkey-flag.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Конференция МФРБ</p>
-                <p class="events-date">30.05.2025 - 31.05.2025</p>
-              </div>
-            </div>
-            <!-- 11 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/turkey-flag.svg' %}" alt="Belarus Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Чемпионат мира (мужчины и женщины) «Поединок» / «Самооборона»</p>
-                <p class="events-date">30.05.2025 - 01.06.2025</p>
-              </div>
-            </div>
-            <!-- 12 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/kyrgyzstan-flag.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Международный турнир «KYRGYSTAN OPEN» мужчины, женщины юноши и девушки
-                  (12-17лет) «Поединок» / «Самооборона»</p>
-                <p class="events-date">01.07.2025 - 06.07.2025</p>
-              </div>
-            </div>
-            <!-- 13 -->
-            <div class="event upcoming">
-              <img src="{% static 'home/images/uzbekistan-flag.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Международный турнир «Кубок Президента Республики Узбекистан» «Лига Чемпионов
-                  H2HFIGHT» (мужчины, женщины) «Поединок»</p>
-                <p class="events-date">23.07.2025 - 25.07.2025</p>
-              </div>
+            <div class="event upcoming active">
+            {% for obj in events %}
+                <span class="fi fi-{{obj.country_code}}" style="margin-right: 10px"></span>
+                <div class="events-info">
+                  <p class="events-title">{{ obj.name }}</p>
+                  <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
+                </div>
+              {% empty %}
+                 <div class="alert alert-info text-center">
+                    <span>{% trans "No events" %}</span>
+                </div>
+              {% endfor %}
             </div>
 
+
             <!-- завершенный-->
-            <div class="event completed">
-              <img src="{% static 'home/images/ru.svg' %}" alt="Russia Flag" class="flag">
-              <div class="events-info">
-                <p class="events-title">Чемпионат мира по рукопашному бою</p>
-                <p class="events-date">12.12.2024 - 15.12.2024</p>
-              </div>
+            <div class="event completed hidden">
+              {% for obj in events_old %}
+                <span class="fi fi-{{obj.country_code}}" style="margin-right: 10px"></span>
+                <div class="events-info">
+                  <p class="events-title">{{ obj.name }}</p>
+                  <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
+                </div>
+              {% endfor %}
             </div>
           </div>
         </div>

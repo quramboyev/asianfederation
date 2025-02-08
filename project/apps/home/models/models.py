@@ -35,7 +35,11 @@ class CalendarModel(TranslatableModel):
     )
     _from = models.DateField()
     to = models.DateField()
-    country_code = models.CharField(max_length=2)
+    country_code = models.CharField(max_length=3)
+
+    @property
+    def from_(self):
+        return self._from
 
     def finished(self):
         return self.to < datetime.now()
@@ -51,7 +55,7 @@ class CalendarModel(TranslatableModel):
 
 class AboutUsModel(TranslatableModel):
     translations = TranslatedFields(
-        description = models.TextField()
+        description=models.TextField(),
     )
     selected = models.BooleanField(default=False)
 

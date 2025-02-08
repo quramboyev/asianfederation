@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.3/css/flag-icons.min.css" integrity="sha512-bZBu2H0+FGFz/stDN/L0k8J0G8qVsAL0ht1qg5kTwtAheiXwiRKyCq1frwfbSFSJN3jooR5kauE0YjtPzhZtJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="icon" href="{% static 'base/images/logo.png' %}">
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'base/styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}' ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -60,7 +64,7 @@
             <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
                 <div class="logo">
                     <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
-                    <span class="site-name">{% trans "Азиатская Федерация" %} <br> {% trans "Рукопашного боя" %} </span>
+                    <span class="site-name">{% trans "Asian hando to" %} <br> {% trans "hand Federation" %} </span>
                 </div>
                 <div class="items">
                     <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
@@ -77,7 +81,7 @@
                         {% get_available_languages as AVAILABLE_LANGUAGES %}
                         {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
                         {% for language in languages %}
-                        <option {% if language.code==CURRENT_LANGUAGE %} selected {% endif %}
+                        <option {% if language.code == CURRENT_LANGUAGE %} selected {% endif %}
                             style="background-color: transparent" value="{{ language.code }}">{{ language.code }}
                         </option>
                         {% endfor %}
@@ -207,7 +211,7 @@
         <div class="footer-container">
             <div class="footer-logo">
                 <img src="{% static 'home/images/logo.svg' %}" alt="{% trans " Азиатская Федерация Рокопашного боя" %}">
-                <span class="site-name fsn">{% trans "Азиатская Федерация Рукопашного боя" %}</span>
+                <span class="site-name fsn">{% trans "Asian Hand to Hand Federation" %}</span>
                 <span class="site-name">
                     {% blocktrans %}
                     When citing materials, a link to the press service of the Judo Federation and the official world
@@ -233,8 +237,7 @@
                 <ul class="footer-nav">
                     <li class="general-color">{% trans "Address" %}:</li>
                     <li>
-                        <p class="type-connecting general-color">{% trans "st. Labzak building 1, Tashkent, Uzbekistan"
-                            %}</p>
+                        <p class="type-connecting general-color">{% trans "st. Labzak building 1, Tashkent, Uzbekistan" %}</p>
                     </li>
                 </ul>
 
