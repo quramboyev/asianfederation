@@ -9,6 +9,7 @@ def home(request):
     images = ImageModel.objects.filter(for_date__lte=now)
     about = GalleryModel.objects.filter(selected=True).translated().first()
     events = CalendarModel.objects.filter(_from__gte=now).translated()
+    events_old = CalendarModel.objects.filter(_from__gl=now).translated()
 
     return render(request, 'home.html',
         context={
@@ -16,7 +17,8 @@ def home(request):
             'images': images,
             'about': about,
             'events': events,
-        } 
+            'events_ld': events_old,
+        }
     )
 
 def events_calendar(request):
