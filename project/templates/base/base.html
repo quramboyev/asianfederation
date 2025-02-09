@@ -64,13 +64,13 @@
             <div style="width: 65%; display: flex; justify-content: space-between; align-items: center;">
                 <div class="logo">
                     <img src="{% static 'home/images/logo.svg' %}" alt="Logo">
-                    <span class="site-name">{% trans "Asian hando to" %} <br> {% trans "hand Federation" %} </span>
+                    <span class="site-name">{% trans "Asian hand to" %} <br> {% trans "hand Federation" %} </span>
                 </div>
                 <div class="items">
                     <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
-                    <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
+                    <a href="{% url 'about_us' %}">{% trans "About us" %}</a>
                     <a href="{% url 'command' %}#products">{% trans "Command" %}</a>
-                    <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
+                    <a href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
                     <a href="{% url 'events_calendar' %}">{% trans "Events calendar" %}</a>
                 </div>
             </div>
@@ -99,9 +99,9 @@
         <!-- Mobile navigation menu -->
         <div class="nav-mobile">
             <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i></a>
-            <a href="{% url 'about_us' %}">{% trans "about us" %}</a>
+            <a href="{% url 'about_us' %}">{% trans "About us" %}</a>
             <a href="{% url 'command' %}#products">{% trans "Command" %}</a>
-            <a href="{% url 'gallery' %}">{% trans "gallery" %}</a>
+            <a href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
             <a href="{% url 'events_calendar' %}">{% trans "Events calendar" %}</a>
         </div>
     </nav>
@@ -214,8 +214,8 @@
                 <span class="site-name fsn">{% trans "Asian Hand to Hand Federation" %}</span>
                 <span class="site-name">
                     {% blocktrans %}
-                    When citing materials, a link to the press service of the Judo Federation and the official world
-                    website www.hsif.world
+                        When citing materials, a link to the press service of the Judo Federation and the official world
+                        website www.hsif.world
                     {% endblocktrans %}
                 </span>
             </div>

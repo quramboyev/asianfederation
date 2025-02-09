@@ -16,41 +16,11 @@
     <div class="gallery-sec general-style">
       <div class="slider">
         <ul class="slides">
-          <li class="slide">
-            <img src="{% static 'home/images/gallery6.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img7.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img8.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img9.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img10.jpg' %}" alt="" class="slide-img" />
-          </li>
-
-          <li class="slide">
-            <img src="{% static 'home/images/img1.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img2.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img3.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img4.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img5.jpg' %}" alt="" class="slide-img" />
-          </li>
-          <li class="slide">
-            <img src="{% static 'home/images/img6.jpg' %}" alt="" class="slide-img" />
-          </li>
-        </ul>
+          {% for image in images|slice:":13" %}
+            <li class="slide">
+              <img src="{{ image.file.url }}" alt="" class="slide-img" data-index="{{ forloop.counter0 }}" />
+            </li>
+          {% endfor %}
         <div class="navigation">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
@@ -139,7 +109,7 @@
 
 
       <div class="right-news">
-        <h3 class="contest-header">{% trans "news" %}</h3>
+        <h3 class="contest-header">{% trans "News" %}</h3>
         <div class="contest-info-wrapper">
           <div class="contest-img-wrapper">
             <img src="{% static 'home/images/gallery2.jpg' %}" alt="about contest" class="contest-img">
