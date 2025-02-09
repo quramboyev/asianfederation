@@ -1,0 +1,562 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 15:37+0500\n"
+"PO-Revision-Date: 2025-02-09 17:17+0500\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: apps/home/models/images.py:25
+msgid "title"
+msgstr "sarlavha"
+
+#: apps/home/models/images.py:26
+msgid "Description"
+msgstr "Tavsif"
+
+#: apps/home/models/models.py:9
+msgid "Calendar"
+msgstr "Kalendar"
+
+#: apps/home/models/models.py:10
+msgid "Anti Doping"
+msgstr "Dopingga qarshi"
+
+#: apps/home/models/models.py:11
+msgid "Rule"
+msgstr "Qoida"
+
+#: apps/home/models/models.py:92 templates/command.html:31
+msgid "Management"
+msgstr "Boshqaruv"
+
+#: apps/home/models/models.py:93 templates/command.html:52
+msgid "Committee"
+msgstr "Qo'mita"
+
+#: apps/home/models/models.py:94 templates/command.html:72
+msgid "Presidium"
+msgstr "Prezidium"
+
+#: apps/home/models/models.py:100
+msgid "First name"
+msgstr "Ism"
+
+#: apps/home/models/models.py:101
+msgid "Last name"
+msgstr "Familiya"
+
+#: apps/home/models/models.py:102
+msgid "Responsibility"
+msgstr "Mas'uliyat"
+
+#: apps/home/models/models.py:103
+msgid "Federation"
+msgstr "Federatsiya"
+
+#: apps/home/models/models.py:105
+msgid "Position"
+msgstr "Lavozim"
+
+#: apps/home/models/models.py:116
+msgid "Event name"
+msgstr "Tadbir nomi"
+
+#: apps/home/models/models.py:117 templates/events-calendar.html:20
+msgid "Dates of the event"
+msgstr "Tadbir sanalari"
+
+#: apps/home/models/models.py:118
+msgid "Location"
+msgstr "Joylashuv"
+
+#: apps/home/models/models.py:119 templates/events-calendar.html:22
+msgid "Conducting organization"
+msgstr "Tashkilotni o'tkazish"
+
+#: apps/home/models/models.py:124 apps/home/models/models.py:125
+#: templates/base/base.html:74 templates/base/base.html:105
+msgid "Events calendar"
+msgstr "Tadbirlar taqvimi"
+
+#: config/settings.py:102
+msgid "English"
+msgstr "Ingliz"
+
+#: config/settings.py:103
+msgid "Russian"
+msgstr "Rus"
+
+#: config/settings.py:104
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: templates/about-us.html:12 templates/base/base.html:71
+#: templates/base/base.html:102
+msgid "About us"
+msgstr "Biz haqimizda"
+
+#: templates/about-us.html:14
+msgid "Asian hand to hand Federation"
+msgstr "Osiyo qo'l jangi federatsiyasi"
+
+#: templates/about-us.html:18 templates/history.html:69
+msgid "Our goals"
+msgstr "Bizning maqsadlarimiz"
+
+#: templates/about-us.html:28 templates/base/base.html:224
+msgid "Contacts"
+msgstr "Contacts"
+
+#: templates/about-us.html:35 templates/base/base.html:240
+msgid "st. Labzak building 1, Tashkent, Uzbekistan"
+msgstr "Labzak ko`chasi 1 bino, Toshkent, O'zbekiston"
+
+#: templates/anti_doping.html:15
+msgid "Anti-doping"
+msgstr "Antidoping"
+
+#: templates/anti_doping.html:16
+msgid "Doping"
+msgstr "Doping"
+
+#: templates/anti_doping.html:16
+msgid "this is the commission of one or more anti-doping rule violations"
+msgstr "bu bir yoki bir nechta antidoping qoidalarini buzish"
+
+#: templates/anti_doping.html:17
+msgid "rules"
+msgstr "qoidalar"
+
+#: templates/anti_doping.html:20
+msgid ""
+"\n"
+"            Usually doping refers to drugs of a pharmacological nature,\n"
+"            which increase the body's endurance, have a special effect on the muscular\n"
+"            and even mental system of an athlete. Prohibited drugs are usually divided into\n"
+"            several groups depending on the nature of their effect.\n"
+"            "
+msgstr ""
+"\n"
+"Odatda doping farmakologik xususiyatga ega dori-darmonlarni anglatadi,\n"
+"tananing chidamliligini oshiradigan, mushaklarga alohida ta'sir ko'rsatadi\n"
+"va hatto sportchining ruhiy tizimi. Taqiqlangan dorilar odatda quyidagilarga bo'linadi\n"
+"ta'sir qilish xususiyatiga qarab bir necha guruhlar."
+
+#: templates/anti_doping.html:28
+msgid "Report the use of prohibited drugs"
+msgstr "Taqiqlangan dori vositalaridan foydalanish haqida xabar bering"
+
+#: templates/anti_doping.html:29
+msgid "International documents regulating anti-doping activities"
+msgstr "Dopingga qarshi faoliyatni tartibga soluvchi xalqaro hujjatlar"
+
+#: templates/anti_doping.html:31
+msgid "International Standard for Conformity"
+msgstr ""
+
+#: templates/anti_doping.html:33
+msgid ""
+"International standard for the protection of privacy and personal "
+"information"
+msgstr ""
+"Maxfiylik va shaxsiy ma'lumotlarni himoya qilish bo'yicha xalqaro standart"
+
+#: templates/anti_doping.html:35
+msgid "International standard for processing results"
+msgstr "Natijalarni qayta ishlashning xalqaro standarti"
+
+#: templates/anti_doping.html:37
+msgid "International Education Standard January"
+msgstr "Xalqaro ta'lim standarti yanvar"
+
+#: templates/anti_doping.html:39
+msgid "International Standard for Testing and Investigation"
+msgstr "Sinov va tekshirish uchun xalqaro standart"
+
+#: templates/anti_doping.html:41
+msgid "International Standard for Therapeutic Use Exemptions"
+msgstr "Terapevtik foydalanishdan ozod qilishning xalqaro standarti"
+
+#: templates/anti_doping.html:43 templates/anti_doping.html:49
+msgid "Prohibited list"
+msgstr "Taqiqlangan ro'yxat"
+
+#: templates/anti_doping.html:45
+msgid "Overview of the main changes"
+msgstr "Asosiy o'zgarishlarning umumiy ko'rinishi"
+
+#: templates/anti_doping.html:47
+msgid "Monitoring program"
+msgstr "Monitoring dasturi"
+
+#: templates/anti_doping.html:51
+msgid "Overview of the main changes to the Legislative Assembly"
+msgstr ""
+"Qonunchilik Assambleyasiga kiritilgan asosiy o'zgarishlarning umumiy "
+"ko'rinishi"
+
+#: templates/anti_doping.html:52
+msgid "For athletes"
+msgstr "Sportchilar uchun"
+
+#: templates/anti_doping.html:54
+msgid "Ending and resuming a sports career"
+msgstr "Sport karerasini tugatish va davom ettirish"
+
+#: templates/anti_doping.html:56
+msgid "Disqualified athletes"
+msgstr "Diskvalifikatsiya qilingan sportchilar"
+
+#: templates/anti_doping.html:58
+msgid "Pools testing and location information"
+msgstr "Hovuzlarni sinovdan o'tkazish va joylashuv ma'lumotlari"
+
+#: templates/anti_doping.html:60
+msgid "Athletes' Anti-Doping Rights Act and Athletes' Rights Handbook"
+msgstr ""
+"Sportchilarning antidoping huquqlari to'g'risidagi qonun va sportchilarning "
+"huquqlari bo'yicha qo'llanma"
+
+#: templates/base/base.html:57
+msgid "Asian hand to hand federation"
+msgstr "Osiyo qo'l jangi federatsiyasi"
+
+#: templates/base/base.html:67
+msgid "Asian hand to"
+msgstr "Osiyo qo'l"
+
+#: templates/base/base.html:67
+msgid "hand Federation"
+msgstr "jangi federatsiyasi"
+
+#: templates/base/base.html:72 templates/base/base.html:103
+msgid "Command"
+msgstr "Jamoa"
+
+#: templates/base/base.html:73 templates/base/base.html:104
+#: templates/home.html:15
+msgid "Gallery"
+msgstr "Galleriya"
+
+#: templates/base/base.html:213
+msgid " Азиатская Федерация Рокопашного боя"
+msgstr ""
+
+#: templates/base/base.html:214
+msgid "Asian Hand to Hand Federation"
+msgstr "Osiyo qoʻl jangi federatsiyasi"
+
+#: templates/base/base.html:216
+msgid ""
+"\n"
+"                        When citing materials, a link to the press service of the Judo Federation and the official world\n"
+"                        website www.hsif.world\n"
+"                    "
+msgstr ""
+"\n"
+"Materiallarga iqtibos keltirishda Dzyudo federatsiyasi matbuot xizmati va rasmiy dunyoga havola\n"
+"www.hsif.world veb-sayti"
+
+#: templates/base/base.html:238
+msgid "Address"
+msgstr "Manzil"
+
+#: templates/command.html:16
+msgid ""
+"The International Federation of Hand-to-Hand Combat was founded in 2006"
+msgstr "Xalqaro qoʻl jangi federatsiyasi 2006 yilda tashkil etilgan"
+
+#: templates/command.html:17
+msgid "The Federation's headquarters are located in Moscow."
+msgstr "Federatsiyaning bosh qarorgohi Moskvada joylashgan."
+
+#: templates/command.html:18
+msgid ""
+"\n"
+"                The goal of the Federation is to develop and popularize hand-to-hand combat as a sport throughout the\n"
+"                world.\n"
+"                The priority task of the Federation is to include hand-to-hand combat in the list of Olympic sports.\n"
+"                The International Federation of Hand-to-Hand Combat holds championships, tournaments, referee and\n"
+"                training seminars,\n"
+"                demonstration performances in different countries of the world, cooperating with athletes from other\n"
+"                types of martial arts.\n"
+"                "
+msgstr ""
+"\n"
+"Federatsiyaning maqsadi butun mamlakat bo'ylab qo'l jangini sport turi sifatida rivojlantirish va ommalashtirishdan iborat\n"
+"dunyo.\n"
+"Federatsiyaning ustuvor vazifasi qoʻl jangini olimpiya sport turlari roʻyxatiga kiritishdan iborat.\n"
+"Xalqaro qoʻl jangi federatsiyasi chempionatlar, turnirlar, hakamlar va\n"
+"o'quv seminarlari,\n"
+"boshqa mamlakatlar sportchilari bilan hamkorlikda dunyoning turli mamlakatlarida ko'rgazmali chiqishlar\n"
+"jang san'ati turlari."
+
+#: templates/events-calendar.html:14
+msgid "International Hand-to-Hand Combat Events Calendar Plan for 2025"
+msgstr "2025 yil uchun xalqaro qoʻl jangi tadbirlari kalendar rejasi"
+
+#: templates/events-calendar.html:19
+msgid "Name of events"
+msgstr "Voqealar nomi"
+
+#: templates/events-calendar.html:21
+msgid "Venue"
+msgstr "Joy"
+
+#: templates/events-calendar.html:38
+msgid "DOWNLOAD"
+msgstr "YUKLAB OLISH"
+
+#: templates/history.html:15
+msgid "History"
+msgstr "Tarix"
+
+#: templates/history.html:17
+msgid ""
+"\n"
+"            Hand-to-hand combat originated in ancient times, when people sought to protect themselves and their settlements\n"
+"            by creating ways of fighting without using weapons. It developed in different cultures of the world\n"
+"            independently of each other, forming as an art of self-defense and a martial craft. Ancient warriors in Egypt,\n"
+"            India, Greece and China studied hand-to-hand techniques to protect the warrior and enhance their military\n"
+"            skills. In Ancient Greece, such types of wrestling as pankration, an ancient sport combining elements of boxing\n"
+"            and wrestling, which was popular even at the Olympic Games, were especially developed. In the East, hand-to-hand\n"
+"            combat was especially developed. Martial arts systems originated in India,\n"
+"            which then spread to China, giving rise to kung fu. In Japan, such disciplines as judo, aikido, karate and judo\n"
+"            were formed, which today have become the basis for various schools of martial arts and hand-to-hand combat\n"
+"            throughout the world. Europe also had its own traditions of hand-to-hand combat. For example, French savate and\n"
+"            English boxing\n"
+"            developed as sports and military disciplines, and in the Middle Ages, hand-to-hand combat was an integral part\n"
+"            of knightly training. Over time, many of these techniques became popular as sports.\n"
+"            In the 20th century, armies in different countries began to develop specialized hand-to-hand combat systems to\n"
+"            train\n"
+"            soldiers, which led to the creation of modern combat techniques. For example, the Soviet Union developed the\n"
+"            sambo system, which combined techniques from judo, jiu-jitsu, and various national types of wrestling. These\n"
+"            techniques\n"
+"            were adapted for combat needs and included not only defense, but also methods of effective attack.\n"
+"            Today, hand-to-hand combat is used for both sports and military purposes. Sports competitions in hand-to-hand\n"
+"            combat include various striking and wrestling techniques, and also remain popular in training for law\n"
+"            enforcement agencies and security services. Many schools and clubs teach hand-to-hand combat as a self-defense\n"
+"            technique, attracting people of different ages to classes. In addition to physical training, hand-to-hand combat\n"
+"            contributes to the development of spirit, discipline and respect for the opponent,\n"
+"            forming a strong character and the ability to concentrate. Modern hand-to-hand combat federations hold\n"
+"            international competitions and seminars, promoting the popularization of this martial art and making it\n"
+"            accessible to people around the world. Hand-to-hand combat continues to develop, contributing to physical\n"
+"            education and training of specialists, playing an important role in the sports and defense systems of various\n"
+"            countries.\n"
+"        "
+msgstr ""
+"\n"
+"Qo'l jangi qadimgi davrlarda, odamlar o'zlarini va yashash joylarini himoya qilishga intilishgan paytda paydo bo'lgan\n"
+"qurol ishlatmasdan jang qilish usullarini yaratish orqali. U dunyoning turli madaniyatlarida rivojlangan\n"
+"bir-biridan mustaqil ravishda o'zini himoya qilish va jangovar hunarmandchilik san'ati sifatida shakllanadi. Misrdagi qadimgi jangchilar,\n"
+"Hindiston, Gretsiya va Xitoy jangchini himoya qilish va qo'shinlarini kuchaytirish uchun qo'l-qo'l texnikasini o'rganishdi.\n"
+"ko'nikmalar. Qadimgi Yunonistonda kurashning pankration kabi turlari boks elementlarini birlashtirgan qadimiy sport turi.\n"
+"va hatto Olimpiya o'yinlarida ham mashhur bo'lgan kurash ayniqsa rivojlangan. Sharqda qo'l-qo'l\n"
+"kurash ayniqsa rivojlangan. Jang san'ati tizimlari Hindistonda paydo bo'lgan,\n"
+"keyinchalik Xitoyga tarqalib, kung-funi keltirib chiqardi. Yaponiyada dzyudo, aykido, karate va dzyudo kabi fanlar mavjud\n"
+"Bugungi kunda turli xil jang san'atlari va qo'l jangi maktablari uchun asos bo'lib kelgan.\n"
+"butun dunyo bo'ylab. Yevropada ham oʻziga xos qoʻl jangi anʼanalari mavjud edi. Masalan, frantsuz savat va\n"
+"Ingliz boks\n"
+"sport va harbiy intizom sifatida rivojlangan, oʻrta asrlarda esa qoʻl jangi ajralmas qism boʻlgan.\n"
+"ritsarlik mashg'ulotlari. Vaqt o'tishi bilan bu usullarning ko'pchiligi sport sifatida mashhur bo'ldi.\n"
+"20-asrda turli mamlakatlardagi qo'shinlar qo'l jangi uchun ixtisoslashtirilgan tizimlarni ishlab chiqa boshladilar.\n"
+"poyezd\n"
+"askarlar, bu zamonaviy jangovar texnikani yaratishga olib keldi. Masalan, Sovet Ittifoqi ishlab chiqdi\n"
+"dzyudo, jiu-jitsu va turli milliy kurash turlarini birlashtirgan sambo tizimi. Bular\n"
+"texnikalar\n"
+"jangovar ehtiyojlarga moslashtirilgan va nafaqat mudofaa, balki samarali hujum usullarini ham o'z ichiga olgan.\n"
+"Bugungi kunda qoʻl jangi ham sport, ham harbiy maqsadlarda qoʻllaniladi. Qo'l-qo'l sport musobaqalari\n"
+"Jang turli xil zarba va kurash usullarini o'z ichiga oladi, shuningdek, huquqshunoslikka tayyorgarlikda mashhur bo'lib qolmoqda\n"
+"huquqni muhofaza qilish organlari va xavfsizlik xizmatlari. Ko'pgina maktablar va klublarda o'zini himoya qilish uchun qo'l jangi o'rgatiladi\n"
+"texnika, turli yoshdagi odamlarni darslarga jalb qilish. Jismoniy tayyorgarlikdan tashqari, qo'l jangi\n"
+"ruh, intizom va raqibga hurmatni rivojlantirishga hissa qo'shadi;\n"
+"kuchli xarakter va diqqatni jamlash qobiliyatini shakllantirish. Zamonaviy qo'l jangi federatsiyalari o'tkazadi\n"
+"xalqaro musobaqalar va seminarlar, ushbu jang san'atini ommalashtirish va uni yaratishga ko'maklashish\n"
+"butun dunyo bo'ylab odamlar uchun ochiq. Qo'l jangi jismoniy rivojlanishga hissa qo'shib, rivojlanishda davom etmoqda\n"
+"turli sport va mudofaa tizimlarida muhim rol o'ynaydigan mutaxassislarni tayyorlash va tayyorlash\n"
+"mamlakatlar."
+
+#: templates/history.html:51
+msgid "About the Federation"
+msgstr "Federatsiya haqida"
+
+#: templates/history.html:53
+msgid ""
+"\n"
+"        The Asian Hand-to-Hand Combat Federation was founded in 2010 and is based in Tokyo, Japan.\n"
+"        The Federation unites athletes, coaches and amateurs of hand-to-hand combat from different parts of Asia,\n"
+"        promoting the development and popularization of traditional and modern martial arts.\n"
+"        "
+msgstr ""
+"\n"
+"Osiyo qoʻl jangi federatsiyasi 2010-yilda tashkil etilgan boʻlib, u Yaponiyaning Tokio shahrida joylashgan.\n"
+"Federatsiya Osiyoning turli burchaklaridan kelgan sportchilar, murabbiylar va qoʻl jangi havaskorlarini birlashtiradi.\n"
+"an'anaviy va zamonaviy jang san'atlarini rivojlantirish va ommalashtirishga ko'maklashish."
+
+#: templates/history.html:61
+msgid ""
+"\n"
+"        The main mission of the Federation is to preserve and promote martial arts, as well as to\n"
+"        train highly qualified specialists and athletes capable of competing at the international level.\n"
+"        "
+msgstr ""
+"\n"
+"Federatsiyaning asosiy vazifasi jang san'atini saqlash va targ'ib qilish, shuningdek\n"
+"xalqaro miqyosda raqobatlasha oladigan yuqori malakali mutaxassislar va sportchilarni tayyorlash."
+
+#: templates/history.html:71
+msgid ""
+"Development of hand-to-hand combat as a sport and strengthening its role in "
+"society."
+msgstr ""
+"Qo‘l jangini sport turi sifatida rivojlantirish va uning jamiyatdagi rolini "
+"kuchaytirish."
+
+#: templates/history.html:72
+msgid ""
+"Organization and holding of competitions and championships at the Asian and "
+"international level."
+msgstr ""
+"Osiyo va xalqaro miqyosda musobaqalar va chempionatlarni tashkil etish va "
+"o‘tkazish."
+
+#: templates/history.html:73
+msgid ""
+"Support and preparation of athletes for participation in international "
+"tournaments."
+msgstr ""
+"Sportchilarni xalqaro turnirlarda qatnashish uchun qo‘llab-quvvatlash va "
+"tayyorlash."
+
+#: templates/history.html:74
+msgid "Promoting traditional and modern martial arts among young people."
+msgstr ""
+"Yoshlar o‘rtasida an’anaviy va zamonaviy jang san’atlarini targ‘ib qilish."
+
+#: templates/history.html:75
+msgid ""
+"Cooperation with international organizations to exchange experience and "
+"improve the level of competitions."
+msgstr ""
+"Tajriba almashish va musobaqalar saviyasini oshirish maqsadida xalqaro "
+"tashkilotlar bilan hamkorlik qilish."
+
+#: templates/history.html:80
+msgid "Events and Activities"
+msgstr "Tadbirlar va tadbirlar"
+
+#: templates/history.html:82
+msgid ""
+"\n"
+"        The Federation organizes many competitions every year, including the Asian Hand-to-Hand Combat Championship,\n"
+"        as well as special training and seminars conducted by leading coaches and martial artists.\n"
+"        We also actively participate in educational programs aimed at developing the sport and attracting young\n"
+"        people to hand-to-hand combat.\n"
+"        "
+msgstr ""
+"\n"
+"Federatsiya tomonidan har yili ko‘plab musobaqalar, jumladan, qo‘l jangi bo‘yicha Osiyo chempionati,\n"
+"shuningdek, etakchi murabbiylar va jang san'atkorlari tomonidan o'tkaziladigan maxsus trening va seminarlar.\n"
+"Shuningdek, biz sportni rivojlantirish va yoshlarni jalb etishga qaratilgan ta'lim dasturlarida faol ishtirok etamiz\n"
+"odamlarni qo'l jangi uchun."
+
+#: templates/history.html:89
+msgid ""
+"\n"
+"        In addition to competitions, the Federation is engaged in educational activities, organizing courses and master\n"
+"        classes on technique, physical training and strategy of hand-to-hand combat.\n"
+"        "
+msgstr ""
+"\n"
+"Musobaqalardan tashqari, Federatsiya ma'rifiy faoliyat, kurslar tashkil etish va magistrlik bilan shug'ullanadi\n"
+"qo‘l jangi texnikasi, jismoniy tayyorgarligi va strategiyasi bo‘yicha mashg‘ulotlar."
+
+#: templates/history.html:97
+msgid "Our Values"
+msgstr "Bizning qadriyatlarimiz"
+
+#: templates/history.html:99
+msgid ""
+"\n"
+"        The Asian Hand-to-Hand Combat Federation adheres to the principles of respect, discipline and mutual\n"
+"        assistance. We believe in building strong character, spiritual development and striving for excellence\n"
+"        through sport. Our athletes and coaches follow these values ​​and serve as role models for youth and aspiring\n"
+"        athletes.\n"
+"        "
+msgstr ""
+"\n"
+"Osiyo qoʻl jangi federatsiyasi hurmat, intizom va oʻzaro hurmat tamoyillariga amal qiladi.\n"
+"yordam. Biz kuchli xarakterni shakllantirishga, ruhiy rivojlanishga va mukammallikka intilishga ishonamiz\n"
+"sport orqali. Sportchilarimiz va murabbiylarimiz ushbu qadriyatlarga amal qilib, yoshlar va intiluvchanlarga o‘rnak bo‘lishadi\n"
+"sportchilar."
+
+#: templates/home.html:48
+msgid "Read more"
+msgstr "Ko'proq o'qish"
+
+#: templates/home.html:67
+msgid "Competitions"
+msgstr "Musobaqalar"
+
+#: templates/home.html:70
+msgid "The nearest"
+msgstr "Yaqin"
+
+#: templates/home.html:71
+msgid "Completed"
+msgstr "Tugallangan"
+
+#: templates/home.html:86 templates/home.html:102
+msgid "No events"
+msgstr "Musoboqalar mavjud emas"
+
+#: templates/home.html:112
+msgid "News"
+msgstr "Yangiliklar"
+
+#: templates/home.html:119
+msgid ""
+"\n"
+"              The first congress of the Asian Federation of Hand-to-Hand Combat is currently taking place in the capital\n"
+"              of Uzbekistan,\n"
+"              Tashkent. The guests who came to participate in the first Congress of the Asian Federation of Hand-to-Hand\n"
+"              Combat were\n"
+"              introduced by the Chairman of the Federation of Hand-to-Hand Combat of Law Enforcement Agencies of\n"
+"              Uzbekistan R. Juraev.\n"
+"              The participants of the congress were greeted by the Deputy Minister of Sports of Uzbekistan Sh.\n"
+"              Makhmudov, the Secretary\n"
+"              General of the National Olympic Committee of the Republic of Uzbekistan O. Kasimov, as well as the First\n"
+"              Vice-President of\n"
+"              the International Federation of Hand-to-Hand Combat Mirzakulov B., the President of the International\n"
+"              Federation of Hand-to-Hand\n"
+"              Combat S. Astakhov and representatives of hand-to-hand combat federations from 13 Asian countries.\n"
+"              "
+msgstr ""
+"\n"
+"Ayni kunlarda poytaxtimizda Osiyo qo‘l jangi federatsiyasining birinchi qurultoyi bo‘lib o‘tmoqda.\n"
+"O‘zbekiston,\n"
+"Toshkent. Osiyo qoʻl-qoʻl federatsiyasining birinchi Kongressida ishtirok etish uchun kelgan mehmonlar\n"
+"Jang bo'ldi\n"
+"huquqni muhofaza qiluvchi organlar qo‘l jangi federatsiyasi raisi tomonidan kiritilgan.\n"
+"O'zbekiston R. Jo'raev.\n"
+"Kongress ishtirokchilarini O‘zbekiston sport vaziri o‘rinbosari Sh.\n"
+"Mahmudov, kotibi\n"
+"O‘zbekiston Respublikasi Milliy olimpiya qo‘mitasi generali O.Qosimov, shuningdek, Birinchi\n"
+"vitse-prezidenti\n"
+"Xalqaro qoʻl jangi federatsiyasi prezidenti Mirzaqulov B\n"
+"Qo'l-qo'l federatsiyasi\n"
+"Jangovar S.Astaxov va Osiyoning 13 davlatidan qoʻl jangi federatsiyalari vakillari."

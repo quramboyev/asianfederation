@@ -1,0 +1,547 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 15:37+0500\n"
+"PO-Revision-Date: 2025-02-09 16:57+0500\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: apps/home/models/images.py:25
+msgid "title"
+msgstr "заголовок"
+
+#: apps/home/models/images.py:26
+msgid "Description"
+msgstr "Описание"
+
+#: apps/home/models/models.py:9
+msgid "Calendar"
+msgstr "Календарь"
+
+#: apps/home/models/models.py:10
+msgid "Anti Doping"
+msgstr "Антидопинг"
+
+#: apps/home/models/models.py:11
+msgid "Rule"
+msgstr "Правило"
+
+#: apps/home/models/models.py:92 templates/command.html:31
+msgid "Management"
+msgstr "Управление"
+
+#: apps/home/models/models.py:93 templates/command.html:52
+msgid "Committee"
+msgstr "Комитет"
+
+#: apps/home/models/models.py:94 templates/command.html:72
+msgid "Presidium"
+msgstr "Президиум"
+
+#: apps/home/models/models.py:100
+msgid "First name"
+msgstr "Имя"
+
+#: apps/home/models/models.py:101
+msgid "Last name"
+msgstr "Фамилия"
+
+#: apps/home/models/models.py:102
+msgid "Responsibility"
+msgstr "Ответственность"
+
+#: apps/home/models/models.py:103
+msgid "Federation"
+msgstr "Федерация"
+
+#: apps/home/models/models.py:105
+msgid "Position"
+msgstr "Позиция"
+
+#: apps/home/models/models.py:116
+msgid "Event name"
+msgstr "Название события"
+
+#: apps/home/models/models.py:117 templates/events-calendar.html:20
+msgid "Dates of the event"
+msgstr "Даты мероприятия"
+
+#: apps/home/models/models.py:118
+msgid "Location"
+msgstr "Место проведения"
+
+#: apps/home/models/models.py:119 templates/events-calendar.html:22
+msgid "Conducting organization"
+msgstr "Проведение организации"
+
+#: apps/home/models/models.py:124 apps/home/models/models.py:125
+#: templates/base/base.html:74 templates/base/base.html:105
+msgid "Events calendar"
+msgstr "Проведение организации"
+
+#: config/settings.py:102
+msgid "English"
+msgstr "Английский"
+
+#: config/settings.py:103
+msgid "Russian"
+msgstr "Русский"
+
+#: config/settings.py:104
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: templates/about-us.html:12 templates/base/base.html:71
+#: templates/base/base.html:102
+msgid "About us"
+msgstr "О нас"
+
+#: templates/about-us.html:14
+msgid "Asian hand to hand Federation"
+msgstr "Азиатская федерация рукопашного боя"
+
+#: templates/about-us.html:18 templates/history.html:69
+msgid "Our goals"
+msgstr "Наши цели"
+
+#: templates/about-us.html:28 templates/base/base.html:224
+msgid "Contacts"
+msgstr "Контакты"
+
+#: templates/about-us.html:35 templates/base/base.html:240
+msgid "st. Labzak building 1, Tashkent, Uzbekistan"
+msgstr "ул. Лабзак дом 1, Ташкент, Узбекистан"
+
+#: templates/anti_doping.html:15
+msgid "Anti-doping"
+msgstr "Антидопинг"
+
+#: templates/anti_doping.html:16
+msgid "Doping"
+msgstr "Допинг"
+
+#: templates/anti_doping.html:16
+msgid "this is the commission of one or more anti-doping rule violations"
+msgstr "это совершение одного или нескольких нарушений антидопинговых правил"
+
+#: templates/anti_doping.html:17
+msgid "rules"
+msgstr "правила"
+
+#: templates/anti_doping.html:20
+msgid ""
+"\n"
+"            Usually doping refers to drugs of a pharmacological nature,\n"
+"            which increase the body's endurance, have a special effect on the muscular\n"
+"            and even mental system of an athlete. Prohibited drugs are usually divided into\n"
+"            several groups depending on the nature of their effect.\n"
+"            "
+msgstr ""
+"\n"
+"Обычно под допингом подразумевают препараты фармакологического характера,\n"
+"           которые повышают выносливость организма, оказывают особое воздействие на мускулистый\n"
+"            и даже психическая система спортсмена. Запрещенные препараты обычно делится на\n"
+"            несколько групп в зависимости от характера их воздействия.\n"
+"            "
+
+#: templates/anti_doping.html:28
+msgid "Report the use of prohibited drugs"
+msgstr "Сообщить об употреблении запрещенных препаратов"
+
+#: templates/anti_doping.html:29
+msgid "International documents regulating anti-doping activities"
+msgstr "Международные документы, регламентирующие антидопинговую деятельность"
+
+#: templates/anti_doping.html:31
+msgid "International Standard for Conformity"
+msgstr "Международный стандарт соответствия"
+
+#: templates/anti_doping.html:33
+msgid ""
+"International standard for the protection of privacy and personal "
+"information"
+msgstr "Международный стандарт защиты конфиденциальности и личной информации"
+
+#: templates/anti_doping.html:35
+msgid "International standard for processing results"
+msgstr "Международный стандарт обработки результатов"
+
+#: templates/anti_doping.html:37
+msgid "International Education Standard January"
+msgstr "Международный образовательный стандарт январь"
+
+#: templates/anti_doping.html:39
+msgid "International Standard for Testing and Investigation"
+msgstr "Международный стандарт испытаний и расследований"
+
+#: templates/anti_doping.html:41
+msgid "International Standard for Therapeutic Use Exemptions"
+msgstr "Международный стандарт исключений для терапевтического использования"
+
+#: templates/anti_doping.html:43 templates/anti_doping.html:49
+msgid "Prohibited list"
+msgstr "Запрещенный список"
+
+#: templates/anti_doping.html:45
+msgid "Overview of the main changes"
+msgstr "Обзор основных изменений"
+
+#: templates/anti_doping.html:47
+msgid "Monitoring program"
+msgstr "Программа мониторинга"
+
+#: templates/anti_doping.html:51
+msgid "Overview of the main changes to the Legislative Assembly"
+msgstr "Обзор основных изменений в Законодательном собрании"
+
+#: templates/anti_doping.html:52
+msgid "For athletes"
+msgstr "Для спортсменов"
+
+#: templates/anti_doping.html:54
+msgid "Ending and resuming a sports career"
+msgstr "Завершение и возобновление спортивной карьеры"
+
+#: templates/anti_doping.html:56
+msgid "Disqualified athletes"
+msgstr "Дисквалифицированные спортсмены"
+
+#: templates/anti_doping.html:58
+msgid "Pools testing and location information"
+msgstr "Тестирование бассейнов и информация о местоположении"
+
+#: templates/anti_doping.html:60
+msgid "Athletes' Anti-Doping Rights Act and Athletes' Rights Handbook"
+msgstr ""
+"Закон о правах спортсменов против допинга и Справочник по правам спортсменов"
+
+#: templates/base/base.html:57
+msgid "Asian hand to hand federation"
+msgstr "Азиатская федерация рукопашного боя"
+
+#: templates/base/base.html:67
+msgid "Asian hand to"
+msgstr "Азиатская Федерация"
+
+#: templates/base/base.html:67
+msgid "hand Federation"
+msgstr "Рукопашного боя"
+
+#: templates/base/base.html:72 templates/base/base.html:103
+msgid "Command"
+msgstr "Команда"
+
+#: templates/base/base.html:73 templates/base/base.html:104
+#: templates/home.html:15
+msgid "Gallery"
+msgstr "Галерея"
+
+#: templates/base/base.html:213
+msgid " Азиатская Федерация Рокопашного боя"
+msgstr ""
+
+#: templates/base/base.html:214
+msgid "Asian Hand to Hand Federation"
+msgstr "Азиатская Федерация Рокопашного боя"
+
+#: templates/base/base.html:216
+msgid ""
+"\n"
+"                        When citing materials, a link to the press service of the Judo Federation and the official world\n"
+"                        website www.hsif.world\n"
+"                    "
+msgstr ""
+"\n"
+"При цитировании материалов ссылка на пресс-службу Федерации дзюдо и официальный всемирный сайт www.hsif.world"
+
+#: templates/base/base.html:238
+msgid "Address"
+msgstr "Адрес"
+
+#: templates/command.html:16
+msgid ""
+"The International Federation of Hand-to-Hand Combat was founded in 2006"
+msgstr "Международная федерация рукопашного боя была основана в 2006 году."
+
+#: templates/command.html:17
+msgid "The Federation's headquarters are located in Moscow."
+msgstr "Штаб-квартира Федерации находится в Москве."
+
+#: templates/command.html:18
+msgid ""
+"\n"
+"                The goal of the Federation is to develop and popularize hand-to-hand combat as a sport throughout the\n"
+"                world.\n"
+"                The priority task of the Federation is to include hand-to-hand combat in the list of Olympic sports.\n"
+"                The International Federation of Hand-to-Hand Combat holds championships, tournaments, referee and\n"
+"                training seminars,\n"
+"                demonstration performances in different countries of the world, cooperating with athletes from other\n"
+"                types of martial arts.\n"
+"                "
+msgstr ""
+"\n"
+"Целью Федерации является развитие и популяризация рукопашного боя как вида спорта во всем\n"
+"мире.\n"
+"Приоритетной задачей Федерации является включение рукопашного боя в список олимпийских видов спорта.\n"
+"Международная федерация рукопашного боя проводит чемпионаты, турниры, судейские и\n"
+"тренировочные семинары,\n"
+"показательные выступления в разных странах мира, сотрудничая со спортсменами других\n"
+"видов единоборств."
+
+#: templates/events-calendar.html:14
+msgid "International Hand-to-Hand Combat Events Calendar Plan for 2025"
+msgstr "Календарь мероприятий по рукопашному бою на 2025 год"
+
+#: templates/events-calendar.html:19
+msgid "Name of events"
+msgstr "Название событий"
+
+#: templates/events-calendar.html:21
+msgid "Venue"
+msgstr "Место проведения"
+
+#: templates/events-calendar.html:38
+msgid "DOWNLOAD"
+msgstr "СКАЧАТЬ"
+
+#: templates/history.html:15
+msgid "History"
+msgstr "История"
+
+#: templates/history.html:17
+msgid ""
+"\n"
+"            Hand-to-hand combat originated in ancient times, when people sought to protect themselves and their settlements\n"
+"            by creating ways of fighting without using weapons. It developed in different cultures of the world\n"
+"            independently of each other, forming as an art of self-defense and a martial craft. Ancient warriors in Egypt,\n"
+"            India, Greece and China studied hand-to-hand techniques to protect the warrior and enhance their military\n"
+"            skills. In Ancient Greece, such types of wrestling as pankration, an ancient sport combining elements of boxing\n"
+"            and wrestling, which was popular even at the Olympic Games, were especially developed. In the East, hand-to-hand\n"
+"            combat was especially developed. Martial arts systems originated in India,\n"
+"            which then spread to China, giving rise to kung fu. In Japan, such disciplines as judo, aikido, karate and judo\n"
+"            were formed, which today have become the basis for various schools of martial arts and hand-to-hand combat\n"
+"            throughout the world. Europe also had its own traditions of hand-to-hand combat. For example, French savate and\n"
+"            English boxing\n"
+"            developed as sports and military disciplines, and in the Middle Ages, hand-to-hand combat was an integral part\n"
+"            of knightly training. Over time, many of these techniques became popular as sports.\n"
+"            In the 20th century, armies in different countries began to develop specialized hand-to-hand combat systems to\n"
+"            train\n"
+"            soldiers, which led to the creation of modern combat techniques. For example, the Soviet Union developed the\n"
+"            sambo system, which combined techniques from judo, jiu-jitsu, and various national types of wrestling. These\n"
+"            techniques\n"
+"            were adapted for combat needs and included not only defense, but also methods of effective attack.\n"
+"            Today, hand-to-hand combat is used for both sports and military purposes. Sports competitions in hand-to-hand\n"
+"            combat include various striking and wrestling techniques, and also remain popular in training for law\n"
+"            enforcement agencies and security services. Many schools and clubs teach hand-to-hand combat as a self-defense\n"
+"            technique, attracting people of different ages to classes. In addition to physical training, hand-to-hand combat\n"
+"            contributes to the development of spirit, discipline and respect for the opponent,\n"
+"            forming a strong character and the ability to concentrate. Modern hand-to-hand combat federations hold\n"
+"            international competitions and seminars, promoting the popularization of this martial art and making it\n"
+"            accessible to people around the world. Hand-to-hand combat continues to develop, contributing to physical\n"
+"            education and training of specialists, playing an important role in the sports and defense systems of various\n"
+"            countries.\n"
+"        "
+msgstr ""
+"\n"
+"Рукопашный бой зародился в глубокой древности, когда люди стремились защитить себя и свои поселения,\n"
+"создавая способы ведения боя без использования оружия. Он развивался в разных культурах мира\n"
+"независимо друг от друга, формируясь как искусство самообороны и боевое ремесло. Древние воины в Египте,\n"
+"Индии, Греции и Китае изучали приемы рукопашного боя для защиты воина и повышения его воинских\n"
+"навыков. В Древней Греции особое развитие получили такие виды борьбы, как панкратион — древний вид спорта, сочетающий в себе элементы бокса\n"
+"и борьбы, который был популярен даже на Олимпийских играх. На Востоке особое развитие получил рукопашный\n"
+"бой. В Индии зародились системы боевых искусств,\n"
+"которые затем распространились в Китае, дав начало кунг-фу. В Японии сформировались такие дисциплины, как дзюдо, айкидо, каратэ и дзюдо,\n"
+"которые сегодня стали основой для различных школ боевых искусств и рукопашного боя\n"
+"по всему миру. В Европе также были свои традиции рукопашного боя. Например, французский сават и\n"
+"английский бокс\n"
+"развивались как спортивные и военные дисциплины, а в Средние века рукопашный бой был неотъемлемой частью\n"
+"рыцарской подготовки. Со временем многие из этих приемов стали популярными как виды спорта.\n"
+"В 20 веке армии разных стран начали разрабатывать специализированные системы рукопашного боя для\n"
+"подготовки\n"
+"солдат, что привело к созданию современных боевых приемов. Например, в Советском Союзе была разработана\n"
+"система самбо, которая объединила приемы из дзюдо, джиу-джитсу и различных национальных видов борьбы. Эти\n"
+"приемы\n"
+"были адаптированы для нужд боя и включали не только защиту, но и приемы эффективного нападения.\n"
+"Сегодня рукопашный бой используется как в спортивных, так и в военных целях. Спортивные соревнования по рукопашному бою включают в себя различные ударные и борцовские приемы, а также остаются популярными в тренировках для правоохранительных\n"
+"органов и служб безопасности. Многие школы и клубы обучают рукопашному бою как приему самообороны, привлекая к занятиям людей разного возраста. Помимо физической подготовки, рукопашный бой\n"
+"способствует развитию духа, дисциплины и уважения к противнику,\n"
+"формируя сильный характер и умение концентрироваться. Современные федерации рукопашного боя проводят\n"
+"международные соревнования и семинары, способствуя популяризации этого боевого искусства и делая его\n"
+"доступным для людей по всему миру. Рукопашный бой продолжает развиваться, способствуя физическому\n"
+"воспитанию и подготовке специалистов, играя важную роль в спортивной и оборонной системах различных\n"
+"стран."
+
+#: templates/history.html:51
+msgid "About the Federation"
+msgstr "О Федерации"
+
+#: templates/history.html:53
+msgid ""
+"\n"
+"        The Asian Hand-to-Hand Combat Federation was founded in 2010 and is based in Tokyo, Japan.\n"
+"        The Federation unites athletes, coaches and amateurs of hand-to-hand combat from different parts of Asia,\n"
+"        promoting the development and popularization of traditional and modern martial arts.\n"
+"        "
+msgstr ""
+"\n"
+"Азиатская федерация рукопашного боя была основана в 2010 году и базируется в Токио, Япония.\n"
+"Федерация объединяет спортсменов, тренеров и любителей рукопашного боя из разных уголков Азии,\n"
+"способствуя развитию и популяризации традиционных и современных боевых искусств."
+
+#: templates/history.html:61
+msgid ""
+"\n"
+"        The main mission of the Federation is to preserve and promote martial arts, as well as to\n"
+"        train highly qualified specialists and athletes capable of competing at the international level.\n"
+"        "
+msgstr ""
+"\n"
+"Основной миссией Федерации является сохранение и популяризация боевых искусств, а также подготовка высококвалифицированных специалистов и спортсменов, способных выступать на международном уровне."
+
+#: templates/history.html:71
+msgid ""
+"Development of hand-to-hand combat as a sport and strengthening its role in "
+"society."
+msgstr ""
+"Развитие рукопашного боя как вида спорта и усиление его роли в обществе."
+
+#: templates/history.html:72
+msgid ""
+"Organization and holding of competitions and championships at the Asian and "
+"international level."
+msgstr ""
+"Организация и проведение соревнований и чемпионатов азиатского и "
+"международного уровня."
+
+#: templates/history.html:73
+msgid ""
+"Support and preparation of athletes for participation in international "
+"tournaments."
+msgstr ""
+"Поддержка и подготовка спортсменов к участию в международных турнирах."
+
+#: templates/history.html:74
+msgid "Promoting traditional and modern martial arts among young people."
+msgstr ""
+"Популяризация традиционных и современных боевых искусств среди молодежи."
+
+#: templates/history.html:75
+msgid ""
+"Cooperation with international organizations to exchange experience and "
+"improve the level of competitions."
+msgstr ""
+"Сотрудничество с международными организациями с целью обмена опытом и "
+"повышения уровня соревнований."
+
+#: templates/history.html:80
+msgid "Events and Activities"
+msgstr "События и мероприятия"
+
+#: templates/history.html:82
+msgid ""
+"\n"
+"        The Federation organizes many competitions every year, including the Asian Hand-to-Hand Combat Championship,\n"
+"        as well as special training and seminars conducted by leading coaches and martial artists.\n"
+"        We also actively participate in educational programs aimed at developing the sport and attracting young\n"
+"        people to hand-to-hand combat.\n"
+"        "
+msgstr ""
+"\n"
+"Федерация ежегодно организует множество соревнований, в том числе чемпионат Азии по рукопашному бою, а также специальные тренировки и семинары, проводимые ведущими тренерами и мастерами боевых искусств.\n"
+"Мы также активно участвуем в образовательных программах, направленных на развитие вида спорта и привлечение молодежи к рукопашному бою."
+
+#: templates/history.html:89
+msgid ""
+"\n"
+"        In addition to competitions, the Federation is engaged in educational activities, organizing courses and master\n"
+"        classes on technique, physical training and strategy of hand-to-hand combat.\n"
+"        "
+msgstr ""
+"\n"
+"Помимо соревнований, Федерация занимается образовательной деятельностью, организуя курсы и мастер-классы по технике, физической подготовке и стратегии рукопашного боя."
+
+#: templates/history.html:97
+msgid "Our Values"
+msgstr "Наши ценности"
+
+#: templates/history.html:99
+msgid ""
+"\n"
+"        The Asian Hand-to-Hand Combat Federation adheres to the principles of respect, discipline and mutual\n"
+"        assistance. We believe in building strong character, spiritual development and striving for excellence\n"
+"        through sport. Our athletes and coaches follow these values ​​and serve as role models for youth and aspiring\n"
+"        athletes.\n"
+"        "
+msgstr ""
+"\n"
+"Азиатская федерация рукопашного боя придерживается принципов уважения, дисциплины и взаимопомощи. Мы верим в формирование сильного характера, духовного развития и стремления к совершенству\n"
+"через спорт. Наши спортсмены и тренеры следуют этим ценностям и служат образцами для подражания для молодежи и начинающих\n"
+"спортсменов."
+
+#: templates/home.html:48
+msgid "Read more"
+msgstr "Читать далее"
+
+#: templates/home.html:67
+msgid "Competitions"
+msgstr "Соревнования"
+
+#: templates/home.html:70
+msgid "The nearest"
+msgstr "Ближайшие"
+
+#: templates/home.html:71
+msgid "Completed"
+msgstr "Завершенные"
+
+#: templates/home.html:86 templates/home.html:102
+msgid "No events"
+msgstr "Нет событий"
+
+#: templates/home.html:112
+msgid "News"
+msgstr "Новости"
+
+#: templates/home.html:119
+msgid ""
+"\n"
+"              The first congress of the Asian Federation of Hand-to-Hand Combat is currently taking place in the capital\n"
+"              of Uzbekistan,\n"
+"              Tashkent. The guests who came to participate in the first Congress of the Asian Federation of Hand-to-Hand\n"
+"              Combat were\n"
+"              introduced by the Chairman of the Federation of Hand-to-Hand Combat of Law Enforcement Agencies of\n"
+"              Uzbekistan R. Juraev.\n"
+"              The participants of the congress were greeted by the Deputy Minister of Sports of Uzbekistan Sh.\n"
+"              Makhmudov, the Secretary\n"
+"              General of the National Olympic Committee of the Republic of Uzbekistan O. Kasimov, as well as the First\n"
+"              Vice-President of\n"
+"              the International Federation of Hand-to-Hand Combat Mirzakulov B., the President of the International\n"
+"              Federation of Hand-to-Hand\n"
+"              Combat S. Astakhov and representatives of hand-to-hand combat federations from 13 Asian countries.\n"
+"              "
+msgstr ""
+"\n"
+"В настоящее время в\n"
+"столице Узбекистана,\n"
+"Ташкенте, проходит первый конгресс Азиатской федерации рукопашного боя. Гостей, прибывших для участия в первом конгрессе Азиатской федерации рукопашного боя,\n"
+"представил председатель Федерации рукопашного боя правоохранительных органов\n"
+"Узбекистана Р. Джураев.\n"
+"Участников конгресса приветствовали заместитель министра спорта Узбекистана Ш.\n"
+"Махмудов, генеральный\n"
+"секретарь Национального олимпийского комитета Республики Узбекистан О. Касимов, а также первый\n"
+"вице-президент\n"
+"Международной федерации рукопашного боя Мирзакулов Б., президент Международной\n"
+"федерации рукопашного боя С. Астахов и представители федераций рукопашного боя из 13 стран Азии."
