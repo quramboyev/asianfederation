@@ -23,13 +23,13 @@
       </tr>
     </thead>
     <tbody>
-      {% for obj in document %}
+      {% for event in events %}
       <tr>
         <td class="td">{{ forloop.counter }}</td>
-        <td class="td">{{ obj.name }}</td>
-        <td class="td">{{ obj.date }}</td>
-        <td class="td">{{ obj.location }}</td>
-        <td class="td">{{ obj.organizers }}</td>
+        <td class="td">{{ event.name }}</td>
+        <td class="td">{{ event.date }}</td>
+        <td class="td">{{ event.location }}</td>
+        <td class="td">{{ event.organizers }}</td>
       </tr>
       {% endfor %}
     </tbody>

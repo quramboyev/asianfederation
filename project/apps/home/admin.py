@@ -12,8 +12,8 @@ class ModelAdmin(TranslatableAdmin):
 admin.site.register(DocumentModel, ModelAdmin)
 admin.site.register(CalendarModel, ModelAdmin)
 admin.site.register(ImageModel)
-admin.site.register(CommandModel)
-admin.site.register(EventCalendarModel)
+admin.site.register(CommandModel, TranslatableAdmin)
+admin.site.register(EventCalendarModel, TranslatableAdmin)
 
 
 @admin.register(GalleryModel)

@@ -1,8 +1,7 @@
 from datetime import datetime
 from django.shortcuts import render
 from apps.home.models import DocumentModel, DocTypeChoice, ImageModel, AboutUsModel, CalendarModel, GalleryModel, \
-    GoalModel, EventCalendarModel, CommandModel
-
+    GoalModel, EventCalendarModel, CommandModel, PositionChoice
 
 def home(request):
     now = datetime.now()
@@ -22,10 +21,7 @@ def home(request):
 
 def events_calendar(request):
     document = DocumentModel.objects.all()
-    name = EventCalendarModel.objects.filter(selected=True).translated().first()
-    date = EventCalendarModel.objects.filter(selected=True).translated().first()
-    location = EventCalendarModel.objects.filter(selected=True).translated().first()
-    organizers = EventCalendarModel.objects.filter(selected=True).translated().first()
+    events = EventCalendarModel.objects.all().translated()
 
     if document.exists():
         document = document[0]
@@ -33,34 +29,25 @@ def events_calendar(request):
         document = None
     return render(request, 'events-calendar.html', context={
         'document': document,
-        'name': name,
-        'date': date,
-        'location': location,
-        'organizers': organizers})
-
+        'events': events})
 
 def about_us(request):
     about = AboutUsModel.objects.filter(selected=True).translated().first()
     goals = GoalModel.objects.filter(disabled=False).translated()
     return render(request, 'about-us.html', context={'about': about, 'goals': goals})
 
-
-def antidoping(request):
-    return render(request, 'antidoping.html')
-
+def anti_doping(request):
+    return render(request, 'anti_doping.html')
 
 def command(request):
-    image = CommandModel.objects
-    first_name = CommandModel.objects.filter(selected=True).translated().first()
-    last_name = CommandModel.objects.filter(selected=True).translated()
-    position = CommandModel.objects.filter(selected=True).translated()
+    management = CommandModel.objects.filter(position=PositionChoice.MANAGEMENT).translated()
+    committee = CommandModel.objects.filter(position=PositionChoice.COMMITTEE).translated()
+    presidium = CommandModel.objects.filter(position=PositionChoice.PRESIDIUM).translated()
     return render(request, 'command.html', context={
-        'image': image, 
-        'first_name': first_name,
-        'last_name': last_name,
-        'position': position
+        'management': management,
+        "committee": committee,
+        "presidium": presidium,
     })
-
 
 def history(request):
     return render(request, 'history.html')

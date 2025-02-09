@@ -87,14 +87,22 @@ class GoalModel(TranslatableModel):
     def __str__(self) -> str:
         return self.goal
 
+
+class PositionChoice(models.TextChoices):
+    MANAGEMENT = "M", _('Management')
+    COMMITTEE = "C", _('Committee')
+    PRESIDIUM = "P", _('Presidium')
+
+
 class CommandModel(TranslatableModel):
     image = models.ImageField(null=True, blank=True, upload_to='documents/')
     translations = TranslatedFields(
-        first_name = models.CharField(max_length=15, verbose_name=_("First name")),
-        last_name = models.CharField(max_length=20, verbose_name=_("Last name")),
-        position = models.CharField(max_length=60, verbose_name=_("Position")),
+        first_name=models.CharField(max_length=15, verbose_name=_("First name")),
+        last_name=models.CharField(max_length=20, verbose_name=_("Last name")),
+        responsibility=models.CharField(max_length=32, verbose_name=_("Responsibility")),
+        federation=models.CharField(max_length=64, null=True, blank=True, verbose_name=_("Federation")),
     )
-
+    position = models.CharField(max_length=1, choices=PositionChoice.choices, verbose_name=_("Position"), default=PositionChoice.MANAGEMENT)
     class Meta:
         db_table = "command"
         verbose_name = "Member"
