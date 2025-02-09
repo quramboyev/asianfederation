@@ -119,7 +119,7 @@ msgstr "Bizning maqsadlarimiz"
 
 #: templates/about-us.html:28 templates/base/base.html:224
 msgid "Contacts"
-msgstr "Contacts"
+msgstr "Kontaktlar"
 
 #: templates/about-us.html:35 templates/base/base.html:240
 msgid "st. Labzak building 1, Tashkent, Uzbekistan"
