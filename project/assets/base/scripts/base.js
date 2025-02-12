@@ -17,40 +17,38 @@ if (galleryEl !== null) {
             swapBanner(item, item.src)
         }
     }
-    
-    
+
+
     document.getElementById('clickableVid').onclick = () => {
-        window.location.href = 'https://h2hfight.tv/'; 
+        window.location.href = 'https://h2hfight.tv/';
     };
-    
+
     document.getElementById('clickableDoping').onclick = () => {
-        window.location.href = 'https://www.judo.ru/news/10902'; 
+        window.location.href = 'https://www.judo.ru/news/10902';
     };
+}
     
-    // scroll bar
-    let activeAccount = document.querySelector('.contest-button-item.active')
+// scroll bar
+let activeAccount = document.querySelector('.contest-button-item.active')
+
+
+function filterEvents(type, btn) {
+    console.log("test")
+    const events = document.querySelectorAll('.event');
+    activeAccount.classList.remove('active');
+    activeAccount = btn;
+    activeAccount.classList.add('active');
+    events.forEach(event => {
+        if (type === 'upcoming' && event.classList.contains('upcoming')) {
+            event.classList.remove('hidden');
+        } else if (type === 'completed' && event.classList.contains('completed')) {
+            event.classList.remove('hidden');
+        } else {
+            event.classList.add('hidden');
+        }
+    });
+}
     
-    
-    function filterEvents(type, btn) {
-        const events = document.querySelectorAll('.event');
-        activeAccount.classList.remove('active');
-        activeAccount = btn;
-        activeAccount.classList.add('active');
-        events.forEach(event => {
-            if (type === 'upcoming' && event.classList.contains('upcoming')) {
-                event.classList.remove('hidden');
-            } else if (type === 'completed' && event.classList.contains('completed')) {
-                event.classList.remove('hidden');
-            } else {
-                event.classList.add('hidden');
-            }
-        });
-    }
-    
-    function showCalendar() {
-        alert("Показать календарь - функция не реализована");
-    }
-    
-    
-    
+function showCalendar() {
+    alert("Показать календарь - функция не реализована");
 }

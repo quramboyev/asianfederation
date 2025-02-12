@@ -2,7 +2,6 @@
 {% load static %}
 {% load i18n %}
 
-
 {% block head %}
 <link rel="stylesheet" href="{% static 'home/styles/main.css' %}">
 <link rel="stylesheet" href="{% static 'mainPage/styles/main_page.css' %}">
@@ -41,16 +40,12 @@
       <div class="gallery-content">
         <h2 class="gallery-content-title">{{ about.title }}</h2>
         <p class="gallery-content-info">{{ about.description }}</p>
-
-
-
         <button class="more-btn">
           <a class="gallery-more" href="{% url 'gallery' %}">{% trans "Read more" %}</a>
         </button>
         <!-- {% url 'gallery' %} -->
       </div>
     </div>
-
   </section>
   <section class="home-section">
     <div class="news-wrapper">
@@ -61,7 +56,6 @@
       </a>
     </div>
     <!-- events -->
-
     <div class="section-sc">
       <div class="sc-wrapper">
         <h3 class="contest-header">{% trans "Competitions" %}</h3>
@@ -70,44 +64,38 @@
             <button class="contest-button-item active" onclick="filterEvents('upcoming', this)">{% trans "The nearest" %}</button>
             <button class="contest-button-item" onclick="filterEvents('completed', this)">{% trans "Completed" %}</button>
           </div>
-
           <div class="events" id="eventsList">
             <!-- Ближайшие-->
-            <!-- 2 -->
-            <div class="event upcoming active">
               {% for obj in events %}
-                <span class="fi fi-{{obj.country_code}}" style="margin-right: 10px"></span>
-                <div class="events-info">
-                  <p class="events-title">{{ obj.name }}</p>
-                  <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
-                </div>
+                  <div class="event upcoming active">
+                    <span class="fi fi-{{obj.country_code}}" style="margin-right: 10px"></span>
+                    <div class="events-info">
+                      <p class="events-title">{{ obj.name }}</p>
+                      <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
+                    </div>
+                  </div>
               {% empty %}
-                 <div class="alert alert-info text-center">
-                    <span>{% trans "No events" %}</span>
+                 <div class="alert alert-info text-center event upcoming active">
+                    <span class="w-100 text-center">{% trans "No events" %}</span>
                 </div>
               {% endfor %}
-            </div>
-
-
             <!-- завершенный-->
-            <div class="event completed hidden">
               {% for obj in events_old %}
-                <span class="fi fi-{{obj.country_code}}" style="margin-right: 10px"></span>
-                <div class="events-info">
-                  <p class="events-title">{{ obj.name }}</p>
-                  <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
-                </div>
+                  <div class="event completed hidden">
+                    <span class="fi fi-{{obj.country_code}}" style="margin-right: 10px"></span>
+                    <div class="events-info">
+                      <p class="events-title">{{ obj.name }}</p>
+                      <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
+                    </div>
+                  </div>
               {% empty %}
-                 <div class="alert alert-info text-center">
-                    <span>{% trans "No events" %}</span>
+                 <div class="alert alert-info text-center event completed hidden">
+                    <span class="w-100 text-center">{% trans "No events" %}</span>
                 </div>
               {% endfor %}
-            </div>
           </div>
         </div>
       </div>
-
-
       <div class="right-news">
         <h3 class="contest-header">{% trans "News" %}</h3>
         <div class="contest-info-wrapper">

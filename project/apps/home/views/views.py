@@ -2,14 +2,16 @@ from datetime import datetime
 from django.shortcuts import render
 from apps.home.models import DocumentModel, DocTypeChoice, ImageModel, AboutUsModel, CalendarModel, GalleryModel, \
     GoalModel, EventCalendarModel, CommandModel, PositionChoice
+from django.db.models import Q
 
 def home(request):
     now = datetime.now()
     rule = DocumentModel.objects.filter(type=DocTypeChoice.RULE).translated().first()
     images = ImageModel.objects.filter(for_date__lte=now)
     about = GalleryModel.objects.filter(selected=True).translated().first()
-    events = CalendarModel.objects.filter(_from__gte=now).translated()
-    events_old = CalendarModel.objects.filter(_from__lte=now).translated()
+    events = CalendarModel.objects.filter(Q(_from__gte=now) | Q(to__gte=now)).translated()
+    events_old = CalendarModel.objects.filter(to__lt=now).translated()
+    print(events, events_old)
 
     return render(request, 'home.html',
         context={
@@ -17,7 +19,7 @@ def home(request):
             'images': images,
             'about': about,
             'events': events,
-            'events_ld': events_old,
+            'events_old': events_old,
         }
     )
 
