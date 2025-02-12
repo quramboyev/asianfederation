@@ -9,6 +9,10 @@
         font-size: 22px;
     }
 
+    .back-stage {
+        justify-content: center;
+    }
+
     .section-text, .goal-item {
         font-size: 14px;
         text-align: justify;
