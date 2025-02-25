@@ -9,10 +9,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-@7yh4@-5#@**qhkn2!m-izk*jwu2(k#j)rcyniyk$ox7p=wr%("
 
 
-DEBUG = not False
+DEBUG = False
 DOMAIN_NAME = env("DOMAIN_NAME")
 
-ALLOWED_HOSTS = ["*"] # [DOMAIN_NAME, 'localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = [DOMAIN_NAME, 'localhost', '127.0.0.1', '0.0.0.0']
 
 
 INSTALLED_APPS = [
