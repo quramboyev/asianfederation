@@ -34,10 +34,6 @@ COPY ./entrypoint.sh /opt/entrypoint.sh
 RUN chmod +x /opt/entrypoint.sh
 ENTRYPOINT ["/opt/entrypoint.sh"]
 
-FROM base as local
-
-RUN poetry install --no-root --no-cache --no-ansi --no-interaction --with dev \
-    && poetry cache clear pypi --all
 
 FROM base as live
 
