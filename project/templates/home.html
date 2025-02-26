@@ -68,7 +68,7 @@
             <!-- Ближайшие-->
               {% for obj in events %}
                   <div class="event upcoming active">
-                    <span class="fi fi-{{obj.country_code}}" style=""></span>
+                    <span class="fi fi-{{obj.country_code}}" style="background-repeat: no-repeat; background-size: cover; width: 60px; height: 20px; margin-right: 10px;"></span>
                     <div class="events-info">
                       <p class="events-title">{{ obj.name }}</p>
                       <p class="events-date">{{ obj.from_ }} - {{ obj.to }}</p>
