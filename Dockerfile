@@ -30,6 +30,8 @@ RUN poetry config virtualenvs.create false \
     && poetry install --no-root --no-cache --no-ansi --no-interaction --only main \
     && poetry cache clear pypi --all
 
+FROM base as local
+
 COPY ./entrypoint.sh /opt/entrypoint.sh
 RUN chmod +x /opt/entrypoint.sh
 ENTRYPOINT ["/opt/entrypoint.sh"]
