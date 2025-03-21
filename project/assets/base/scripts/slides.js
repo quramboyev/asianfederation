@@ -10,6 +10,7 @@ function init() {
     slides.style.width = `${width * totalSlides}px`
     for (let slide of slides.children)
     slide.style.width = `${width}px`
+    updateSlider()
 }
 
 const resizeObserver = new ResizeObserver(init)
