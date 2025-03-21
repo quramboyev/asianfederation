@@ -83,7 +83,7 @@ table {
 
 .slides {
     display: flex;
-    width: 1200%;
+    width: 100%;
     transition: 0.5s ease-in-out;
     padding-left: 0;
 }

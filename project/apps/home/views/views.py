@@ -11,7 +11,6 @@ def home(request):
     about = GalleryModel.objects.filter(selected=True).translated().first()
     events = CalendarModel.objects.filter(Q(_from__gte=now) | Q(to__gte=now)).translated()
     events_old = CalendarModel.objects.filter(to__lt=now).translated()
-    print(events, events_old)
 
     return render(request, 'home.html',
         context={
