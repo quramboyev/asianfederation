@@ -1,10 +1,11 @@
 let prevIndex = 0;
 let currentIndex = 0;
+const totalSlides = slides.children.length;
+
 // slides
 const slides = document.querySelector('.slides');
 function init() {
 
-    const totalSlides = slides.children.length;
     const width = slides.parentElement.offsetWidth
     slides.style.width = `${width * totalSlides}px`
     for (let slide of slides.children)
@@ -14,7 +15,7 @@ function init() {
 const resizeObserver = new ResizeObserver(init)
 resizeObserver.observe(slides.parentElement)
 
-
+init()
 
 const keys = {
     right: 'ArrowRight',
