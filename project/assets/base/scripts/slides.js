@@ -1,9 +1,9 @@
-
+let prevIndex = 0;
+let currentIndex = 0;
 // slides
 const slides = document.querySelector('.slides');
 function init() {
-    let prevIndex = 0;
-    let currentIndex = 0;
+
     const totalSlides = slides.children.length;
     const width = slides.parentElement.offsetWidth
     slides.style.width = `${width * totalSlides}px`
