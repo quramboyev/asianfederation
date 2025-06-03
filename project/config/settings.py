@@ -16,7 +16,7 @@ ALLOWED_HOSTS = [DOMAIN_NAME, 'localhost', '127.0.0.1', '0.0.0.0']
 
 
 INSTALLED_APPS = [
-    "jazzmin",
+    # "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
